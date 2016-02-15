@@ -1,3 +1,3 @@
 #ShareMyTrip
 
-Trabajo 1 de SDI
+Primer trabajo de prácticas de SDI
