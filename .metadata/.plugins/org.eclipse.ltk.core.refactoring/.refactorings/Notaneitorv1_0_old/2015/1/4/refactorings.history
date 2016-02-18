@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;Notaneitorv1_0/src&apos;&#x0D;&#x0A;- Original project: &apos;Notaneitorv1_0_old&apos;&#x0D;&#x0A;- Destination element: &apos;Notaneitorv1_0/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Notaneitorv1_0_old/src/impl.sdi&#x0D;&#x0A;     Notaneitorv1_0_old/src/com.sdi" description="Copy packages" destination="=Notaneitorv1_0/src" element1="/src&lt;impl.sdi" element2="/src&lt;com.sdi" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1421875009621" version="1.0"/>
+</session>

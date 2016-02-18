@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+org.jboss.ide.eclipse.as.classpath.ui.containers.custom.CustomClasspathPreferencePage.LAST_RUNTIME_SELECTED=org.jboss.ide.eclipse.as.runtime.stripped
+org.jboss.ide.eclipse.as.ui.defaultWebServer=Apache 2 (EXTERNO)
+org.jboss.ide.eclipse.as.ui.preferences.disabled.automatic.server.view=true
+org.jboss.ide.eclipse.as.ui.preferences.enabledDecorators.1=true
+org.jboss.ide.eclipse.as.ui.preferences.runtime.last.type.org.jboss.ide.eclipse.as.runtime.71=S\:\\jboss
+org.jboss.ide.eclipse.as.ui.preferences.runtime.last.type.org.jboss.ide.eclipse.as.runtime.wildfly.80=S\:\\wildfly
+org.jboss.ide.eclipse.as.ui.wizards.LAST_SERVER_CREATED=WildFly 8.0 Runtime Server1420725343085

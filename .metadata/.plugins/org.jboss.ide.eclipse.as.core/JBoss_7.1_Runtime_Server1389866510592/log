@@ -1,0 +1,2173 @@
+!SESSION 2014-01-16 11:09:31.836 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data ../work
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-01-16 11:10:28.210
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-01-16 11:10:35.789
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-01-16 11:12:23.485
+!MESSAGE Module prueba published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-01-16 11:48:08.116
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-01-16 11:48:08.771
+!MESSAGE Server processes have been terminated.
+!SESSION 2014-01-16 12:05:59.312 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-01-16 12:09:25.118
+!MESSAGE Module prueba published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-01-16 12:11:49.283
+!MESSAGE Server processes have been terminated.
+!SESSION 2014-01-16 16:40:54.199 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY unknown 0 0 2014-01-16 16:42:15.374
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-01-16 16:42:20.582
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-01-16 16:42:32.099
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-01-16 16:42:44.577
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-01-16 16:42:57.594
+!MESSAGE Server Startup Succeeded
+!SESSION 2014-02-28 15:20:10.472 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-02-28 15:22:17.840
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-02-28 15:23:05.205
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:23:58.102
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-02-28 15:23:59.163
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:25:35.657
+!MESSAGE 2 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:25:46.345
+!MESSAGE 3 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:29:58.353
+!MESSAGE 2 files modified in module Notaneitorv0_0
+!SESSION 2014-02-28 15:36:42.117 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:43:27.204
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-02-28 15:43:31.665
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-02-28 15:44:01.326
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-02-28 15:45:02.620
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-02-28 15:45:24.348
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY unknown 0 0 2014-02-28 15:45:56.696
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:46:00.885
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-02-28 15:46:01.368
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:47:47.016
+!MESSAGE 2 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:51:32.461
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-02-28 15:51:33.085
+!MESSAGE Module Notaneitorv1_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:53:45.364
+!MESSAGE 2 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:53:52.353
+!MESSAGE 26 files modified in module Notaneitorv1_0
+
+!ENTRY unknown 0 0 2014-02-28 15:54:25.366
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:54:54.192
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-02-28 15:54:54.577
+!MESSAGE Module Notaneitorv1_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:57:23.367
+!MESSAGE 25 files modified in module Notaneitorv1_0
+
+!ENTRY unknown 0 0 2014-02-28 15:57:33.115
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:57:38.013
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-02-28 15:57:38.450
+!MESSAGE Module Notaneitorv1_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:58:37.645
+!MESSAGE 25 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-02-28 15:59:21.649
+!MESSAGE 26 files modified in module Notaneitorv1_0
+!SESSION 2014-03-02 16:53:10.146 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 16:55:28.073
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 16:55:28.931
+!MESSAGE 23 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 16:55:29.461
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-02 16:55:36.278
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-02 16:56:05.039
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 16:56:05.787
+!MESSAGE Module Ejercicios-Ajax on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 17:15:44.001
+!MESSAGE 1 files modified in module Ejercicios-Ajax
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 18:12:13.505
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 18:12:13.957
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 18:13:22.652
+!MESSAGE 2 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 18:13:33.337
+!MESSAGE 2 files modified in module Ejercicios-Properties
+!SESSION 2014-03-02 18:21:16.056 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 18:22:20.791
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 18:22:21.914
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 18:22:22.538
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 18:22:23.428
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-02 18:22:25.331
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-02 18:22:30.122
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 18:22:35.348
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-02 18:22:51.602
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-02 18:26:35.885
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-02 18:26:38.924
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-02 18:27:45.393
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-02 18:28:01.755
+!MESSAGE Server Startup Succeeded
+!SESSION 2014-03-02 21:20:11.334 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:22:07.531
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:22:08.529
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:22:08.888
+!MESSAGE 13 files modified in module Ejercicios-Ajax
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:22:09.980
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-02 21:22:17.592
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-02 21:24:07.384
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:24:12.516
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-02 21:24:23.498
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-02 21:24:28.895
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-02 21:25:35.379
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-02 21:26:00.290
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-02 21:26:17.048
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:27:56.951
+!MESSAGE 2 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:28:03.971
+!MESSAGE 15 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:28:13.239
+!MESSAGE 2 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:29:08.562
+!MESSAGE 3 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:29:20.604
+!MESSAGE 23 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:29:20.979
+!MESSAGE 13 files modified in module Ejercicios-Ajax
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:29:21.259
+!MESSAGE 8 files modified in module Ejercicios-Properties
+
+!ENTRY unknown 0 0 2014-03-02 21:29:37.849
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:29:42.542
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-02 21:30:03.913
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:31:16.034
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:31:16.752
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:33:30.629
+!MESSAGE 1 files modified in module Ejercicios-Properties
+
+!ENTRY unknown 0 0 2014-03-02 21:34:13.433
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:34:22.417
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:34:23.088
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-02 21:34:31.732
+!MESSAGE Error occurred while waiting for Ejercicios-Properties to start on server JBoss 7.1 Runtime Server (INTERNO)
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: JBAS012144: No se pudo conectar a remote://localhost:9999. La conexión falló
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.execute(AS71Manager.java:336)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.getDeploymentNames(AS71Manager.java:389)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.hasDeployment(AS71Manager.java:383)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.getDeploymentStateSafe(AS71Manager.java:207)
+	at org.jboss.ide.eclipse.as.internal.management.as71.JBoss71ManagerService.getDeploymentState(JBoss71ManagerService.java:132)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.getDeploymentState(JBoss7ManagerServiceProxy.java:67)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.getRootModuleState(JBoss7ModuleStateVerifier.java:95)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.isRootModuleStarted(JBoss7ModuleStateVerifier.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.waitModuleStarted(JBoss7ModuleStateVerifier.java:115)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.waitModuleStarted(JBoss7ModuleStateVerifier.java:49)
+	at org.jboss.ide.eclipse.as.ui.launch.JBTWebLaunchableClient.wait(JBTWebLaunchableClient.java:88)
+	at org.jboss.ide.eclipse.as.ui.launch.JBTWebLaunchableClient.launch2(JBTWebLaunchableClient.java:60)
+	at org.jboss.ide.eclipse.as.ui.launch.JBTWebLaunchableClient$1.run(JBTWebLaunchableClient.java:52)
+Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: No se pudo conectar a remote://localhost:9999. La conexión falló
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:129)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:71)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.execute(AS71Manager.java:325)
+	... 12 more
+Caused by: java.net.ConnectException: JBAS012144: No se pudo conectar a remote://localhost:9999. La conexión falló
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:131)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:176)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:144)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:115)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:236)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:141)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:127)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:35:14.972
+!MESSAGE 1 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:35:41.865
+!MESSAGE 1 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:35:53.111
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:36:06.324
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-02 21:36:09.241
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:36:22.203
+!MESSAGE Module Ejercicios-Ajax on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-02 21:36:22.546
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:36:38.145
+!MESSAGE Module Ejercicios-Ajax on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-02 21:36:38.333
+!MESSAGE Module Ejercicios-Ajax on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-02 21:36:54.302
+!MESSAGE Module Ejercicios-Ajax on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+!SESSION 2014-03-02 21:37:39.280 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:38:39.445
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:38:40.475
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:38:41.271
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:38:42.518
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-02 21:38:44.687
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-02 21:39:02.510
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:39:58.684
+!MESSAGE 6 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:40:09.525
+!MESSAGE 13 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:40:41.128
+!MESSAGE 10 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:40:50.846
+!MESSAGE 2 files modified in module Ejercicios-Properties
+
+!ENTRY unknown 0 0 2014-03-02 21:43:49.813
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-02 21:43:50.157
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-02 21:43:50.593
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-02 21:43:50.843
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:44:00.110
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:44:00.874
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:44:47.145
+!MESSAGE 1 files modified in module Ejercicios-Properties
+
+!ENTRY unknown 0 0 2014-03-02 21:45:25.150
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:45:29.550
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-02 21:45:49.675
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:46:23.685
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:46:24.558
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:49:06.087
+!MESSAGE 1 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:49:08.099
+!MESSAGE 2 files modified in module Ejercicios-Properties
+
+!ENTRY unknown 0 0 2014-03-02 21:49:12.061
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:49:21.946
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:49:22.508
+!MESSAGE Module Ejercicios-Properties on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:50:23.095
+!MESSAGE 13 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 21:51:51.133
+!MESSAGE Module Ejercicios-Validacion1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 21:51:51.867
+!MESSAGE Module Ejercicios-Validacion1 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+!SESSION 2014-03-02 22:35:53.132 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 22:40:47.915
+!MESSAGE 8 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 22:40:48.025
+!MESSAGE 2 files modified in module Ejercicios-Validacion1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 22:40:48.617
+!MESSAGE Module Ejercicios-MBeans published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-02 22:40:51.956
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-02 22:41:56.098
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 22:41:59.639
+!MESSAGE Module Ejercicios-MBeans on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-02 22:42:22.975
+!MESSAGE Module Ejercicios-MBeans on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY unknown 0 0 2014-03-02 22:42:23.552
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-02 22:42:24.972
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-02 22:42:40.226
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 22:42:53.345
+!MESSAGE Module Ejercicios-MBeans published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 22:42:54.967
+!MESSAGE Module Ejercicios-MBeans on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 22:56:55.542
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-02 22:56:55.932
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-02 23:06:49.595
+!MESSAGE 8 files modified in module Ejercicios-MBeans
+!SESSION 2014-03-03 08:36:34.789 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 08:38:57.271
+!MESSAGE 8 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 08:38:57.380
+!MESSAGE 2 files modified in module Ejercicios-Validacion1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 08:38:57.614
+!MESSAGE 5 files modified in module Ejercicios-MBeans
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 08:38:57.957
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-03 08:39:01.436
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-03 08:39:26.640
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-03 08:39:28.435
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+!SESSION 2014-03-03 09:00:50.314 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:20:45.990
+!MESSAGE 8 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:20:46.100
+!MESSAGE 2 files modified in module Ejercicios-Validacion1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:20:46.200
+!MESSAGE 5 files modified in module Ejercicios-MBeans
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:20:46.210
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-03 09:20:49.152
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-03 09:21:11.506
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:40:06.535
+!MESSAGE Module Notaneitorv0_0clase published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:44:54.932
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:45:40.658
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:47:25.991
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:48:33.272
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:55:37.131
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 09:56:23.943
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-03-03 10:08:15.184
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-03 10:08:15.451
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:14:46.054
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:15:33.075
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:15:51.728
+!MESSAGE 8 files modified in module Ejercicios-Properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:15:51.758
+!MESSAGE 2 files modified in module Ejercicios-Validacion1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:15:51.828
+!MESSAGE 5 files modified in module Ejercicios-MBeans
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:15:51.868
+!MESSAGE 3 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:16:03.847
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:16:45.141
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:17:06.123
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:17:34.891
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:18:57.857
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:19:08.740
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-03 10:19:36.756
+!MESSAGE Server processes have been terminated.
+!SESSION 2014-03-03 11:19:05.505 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 11:21:48.141
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 11:21:49.014
+!MESSAGE Module Ejercicios-Validacion1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 11:21:49.638
+!MESSAGE Module Ejercicios-MBeans published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 11:21:49.841
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 11:21:50.215
+!MESSAGE Module Notaneitorv0_0clase published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-03 11:21:54.162
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-03 11:22:21.736
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-03 11:22:26.098
+!MESSAGE Module Ejercicios-MBeans on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+!SESSION 2014-03-04 13:00:19.544 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 13:53:15.398
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 13:53:54.505
+!MESSAGE Module Ejercicios-Validacion1 published without error.
+!SESSION 2014-03-07 09:04:21.564 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:49:39.465
+!MESSAGE Module Ejercicios-Properties published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:49:39.999
+!MESSAGE Module Ejercicios-Validacion1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:49:40.389
+!MESSAGE Module Ejercicios-MBeans published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:49:40.522
+!MESSAGE Module Notaneitorv0_0b published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:49:40.663
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY unknown 0 0 2014-03-07 09:49:40.671
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-07 09:49:41.772
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-07 09:49:48.156
+!MESSAGE Server Startup Succeeded
+
+!ENTRY unknown 0 0 2014-03-07 10:24:59.662
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-07 10:24:59.678
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-07 10:24:59.740
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-07 10:24:59.787
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-07 10:24:59.865
+!MESSAGE OK
+!SESSION 2014-03-07 10:40:55.039 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 10:42:03.819
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-07 10:42:05.223
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-07 10:42:11.365
+!MESSAGE Server Startup Succeeded
+!SESSION 2014-03-09 08:37:30.618 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 09:26:46.608
+!MESSAGE Module Notaneitorv0_0_SOLUCION published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 09:26:47.778
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-09 09:26:52.614
+!MESSAGE Server Starting
+!SESSION 2014-03-09 09:31:13.294 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 09:33:17.770
+!MESSAGE 24 files modified in module Notaneitorv0_0_SOLUCION
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 09:33:18.925
+!MESSAGE 24 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-09 09:33:27.505
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-09 09:33:57.875
+!MESSAGE Server Startup Succeeded
+!SESSION 2014-03-09 10:30:44.891 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 11:29:51.220
+!MESSAGE 24 files modified in module Notaneitorv0_0_SOLUCION
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 11:29:52.032
+!MESSAGE 24 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 11:29:53.014
+!MESSAGE Module Notaneitorv2_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-09 11:29:56.104
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-09 11:30:27.181
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-09 11:30:27.649
+!MESSAGE Module Notaneitorv2_1 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 11:32:51.029
+!MESSAGE Module Notaneitorv1_0_SOLUCION published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-09 11:32:56.210
+!MESSAGE Module Notaneitorv1_0_SOLUCION on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-09 11:35:28.659
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-09 11:38:19.819
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-09 11:38:40.059
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-09 11:38:44.257
+!MESSAGE Module Notaneitorv2_1 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:10:47.453
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:15:50.249
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:16:46.702
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:17:49.581
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:18:15.788
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:18:27.378
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:18:42.805
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:19:29.141
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:19:43.100
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:20:00.213
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:20:21.058
+!MESSAGE 1 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:42:44.007
+!MESSAGE Module Notaneitorv2_2 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-09 19:42:44.334
+!MESSAGE Module Notaneitorv2_2 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:43:15.853
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:43:24.303
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 19:45:41.831
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:05:27.194
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:15:46.924
+!MESSAGE 1 files modified in module Notaneitorv0_0_SOLUCION
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:17:34.746
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:17:43.451
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:17:58.068
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:25:40.265
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:30:38.542
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:30:43.221
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:32:46.604
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:33:17.475
+!MESSAGE 1 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:47:31.960
+!MESSAGE Module Notaneitorv2_3 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-09 21:47:32.378
+!MESSAGE Module Notaneitorv2_3 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:49:50.539
+!MESSAGE 1 files modified in module Notaneitorv2_3
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:49:56.823
+!MESSAGE 1 files modified in module Notaneitorv2_3
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:50:03.567
+!MESSAGE 1 files modified in module Notaneitorv2_3
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 21:50:14.625
+!MESSAGE 1 files modified in module Notaneitorv2_3
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 22:17:15.671
+!MESSAGE Module Notaneitorv2_4 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-09 22:17:16.083
+!MESSAGE Module Notaneitorv2_4 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 22:52:52.302
+!MESSAGE 1 files modified in module Notaneitorv2_4
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 22:53:37.985
+!MESSAGE 1 files modified in module Notaneitorv2_4
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 23:05:33.677
+!MESSAGE Module Notaneitorv2_5 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-09 23:05:34.029
+!MESSAGE Module Notaneitorv2_5 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 23:06:12.915
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 23:13:01.578
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 23:13:57.260
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 23:16:00.459
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 23:20:30.278
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 23:28:23.843
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 23:28:31.062
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 23:28:57.377
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-09 23:30:45.358
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-09 23:30:58.526
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-09 23:31:36.336
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-09 23:31:51.498
+!MESSAGE Module Notaneitorv2_5 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+!SESSION 2014-03-10 09:02:23.307 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:11:31.387
+!MESSAGE Module Notaneitorv0_0_SOLUCION published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:11:32.150
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:11:33.210
+!MESSAGE Module Notaneitorv2_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:11:34.036
+!MESSAGE Module Notaneitorv1_0_SOLUCION published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:11:34.830
+!MESSAGE Module Notaneitorv2_2 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:11:35.641
+!MESSAGE Module Notaneitorv2_3 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:11:36.482
+!MESSAGE Module Notaneitorv2_4 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:11:38.040
+!MESSAGE Module Notaneitorv2_5 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-10 09:11:40.767
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-10 09:11:49.976
+!MESSAGE Server Startup Succeeded
+!SESSION 2014-03-10 09:14:22.310 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:15:27.145
+!MESSAGE Module Notaneitorv0_0_SOLUCION published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:15:27.550
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:15:28.080
+!MESSAGE Module Notaneitorv2_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:15:28.345
+!MESSAGE 25 files modified in module Notaneitorv1_0_SOLUCION
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:15:28.922
+!MESSAGE Module Notaneitorv2_2 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:15:29.436
+!MESSAGE Module Notaneitorv2_3 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:15:29.981
+!MESSAGE Module Notaneitorv2_4 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:15:30.573
+!MESSAGE Module Notaneitorv2_5 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-10 09:15:31.977
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-10 09:15:39.050
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:17:12.809
+!MESSAGE 1 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:17:48.336
+!MESSAGE 1 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 09:17:55.322
+!MESSAGE 1 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 10:32:09.715
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-10 10:32:10.089
+!MESSAGE Module Notaneitorv1_1 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 10:32:52.084
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 10:43:52.284
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 10:45:24.729
+!MESSAGE 28 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 10:48:04.129
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 11:00:11.832
+!MESSAGE 2 files modified in module Notaneitorv1_1
+!SESSION 2014-03-10 11:12:38.379 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 11:32:37.375
+!MESSAGE Module Notaneitorv0_0_SOLUCION published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 11:32:38.952
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 11:32:40.341
+!MESSAGE Module Notaneitorv2_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 11:32:41.450
+!MESSAGE Module Notaneitorv1_0_SOLUCION published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 11:32:42.777
+!MESSAGE Module Notaneitorv2_2 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 11:32:44.823
+!MESSAGE Module Notaneitorv2_3 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 11:32:45.900
+!MESSAGE Module Notaneitorv2_4 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 11:32:47.508
+!MESSAGE Module Notaneitorv2_5 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 11:32:48.523
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-10 11:32:51.615
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-10 11:33:16.703
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-10 11:33:20.408
+!MESSAGE Module Notaneitorv2_5 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 12:02:23.373
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-10 12:02:23.903
+!MESSAGE Module Ejercicios-Ajax on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+!SESSION 2014-03-10 17:43:13.595 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:44:56.122
+!MESSAGE Module Notaneitorv0_0_SOLUCION published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:44:57.604
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:44:59.397
+!MESSAGE Module Notaneitorv2_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:45:01.129
+!MESSAGE Module Notaneitorv1_0_SOLUCION published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:45:02.735
+!MESSAGE Module Notaneitorv2_2 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:45:04.311
+!MESSAGE Module Notaneitorv2_3 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:45:05.995
+!MESSAGE Module Notaneitorv2_4 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:45:08.179
+!MESSAGE Module Notaneitorv2_5 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:45:09.583
+!MESSAGE 25 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:45:10.456
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-10 17:45:14.855
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-10 17:45:51.926
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-10 17:45:52.846
+!MESSAGE Module Notaneitorv2_5 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:57:31.613
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:58:05.806
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:59:00.964
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 17:59:40.320
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 18:00:02.549
+!MESSAGE 1 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-10 18:01:50.449
+!MESSAGE 1 files modified in module Notaneitorv2_5
+!SESSION 2014-03-11 09:07:47.285 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 09:11:16.439
+!MESSAGE 24 files modified in module Notaneitorv0_0_SOLUCION
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 09:11:16.860
+!MESSAGE 24 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 09:11:17.265
+!MESSAGE 28 files modified in module Notaneitorv2_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 09:11:17.592
+!MESSAGE 25 files modified in module Notaneitorv1_0_SOLUCION
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 09:11:18.029
+!MESSAGE 29 files modified in module Notaneitorv2_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 09:11:18.356
+!MESSAGE 29 files modified in module Notaneitorv2_3
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 09:11:18.652
+!MESSAGE 29 files modified in module Notaneitorv2_4
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 09:11:19.026
+!MESSAGE 29 files modified in module Notaneitorv2_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 09:11:19.400
+!MESSAGE 25 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 09:11:19.587
+!MESSAGE 13 files modified in module Ejercicios-Ajax
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-11 09:11:22.237
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-11 09:11:34.733
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-11 09:11:35.419
+!MESSAGE Module Notaneitorv1_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY unknown 0 0 2014-03-11 09:20:35.211
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 10:33:11.449
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-11 10:33:11.636
+!MESSAGE Module Notaneitorv1_1 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 10:34:10.410
+!MESSAGE 2 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 10:35:15.842
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 10:36:17.766
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 10:38:44.454
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 10:39:23.408
+!MESSAGE 2 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-11 10:39:36.815
+!MESSAGE 1 files modified in module Notaneitorv1_1
+!SESSION 2014-03-12 08:51:18.749 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-12 09:12:57.248
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-12 09:13:12.218
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-12 09:13:12.669
+!MESSAGE Module Notaneitorv1_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:16:06.871
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:16:07.263
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY unknown 0 0 2014-03-12 10:16:07.367
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-12 10:16:07.447
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-12 10:16:07.547
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-12 10:16:07.650
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-12 10:16:07.807
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-12 10:16:07.940
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-12 10:16:08.028
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-12 10:16:08.116
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:17:29.160
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:31:07.773
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:32:01.992
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:33:26.864
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:33:59.205
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:37:31.869
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:38:44.787
+!MESSAGE 2 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:39:13.913
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:42:20.238
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:42:30.615
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-12 10:43:41.572
+!MESSAGE 1 files modified in module Notaneitorv1_1
+!SESSION 2014-03-13 08:50:28.611 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 09:20:40.082
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 09:20:41.081
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 09:20:41.455
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-13 09:20:44.622
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-13 09:20:56.639
+!MESSAGE Server Startup Succeeded
+
+!ENTRY unknown 0 0 2014-03-13 09:31:04.591
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 10:30:43.088
+!MESSAGE 1 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 10:42:18.008
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-13 10:42:18.211
+!MESSAGE Module Notaneitorv1_1 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 10:42:40.492
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 10:42:50.143
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 10:44:48.445
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 10:50:11.564
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 10:50:19.535
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 10:52:22.167
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-13 10:52:38.126
+!MESSAGE 1 files modified in module Notaneitorv1_1
+!SESSION 2014-03-14 09:12:04.046 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 09:20:17.016
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 09:20:18.281
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 09:20:19.234
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-14 09:20:22.732
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-14 09:20:31.372
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-14 09:20:31.794
+!MESSAGE Module Notaneitorv1_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 09:25:54.111
+!MESSAGE 1 files modified in module Notaneitorv1_0
+
+!ENTRY unknown 0 0 2014-03-14 09:35:51.303
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 10:43:48.853
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 10:44:07.730
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-14 10:44:07.979
+!MESSAGE Module Notaneitorv1_1 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 10:45:35.441
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 10:54:43.446
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 10:55:36.423
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 10:55:42.633
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 10:55:55.363
+!MESSAGE 1 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 11:02:50.167
+!MESSAGE 1 files modified in module Notaneitorv1_1
+!SESSION 2014-03-14 14:58:42.511 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:13:11.945
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:13:13.614
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:13:15.954
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:13:17.092
+!MESSAGE Module Notaneitorv3_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-14 15:13:21.663
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-14 15:13:58.086
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-14 15:13:58.742
+!MESSAGE Module Notaneitorv3_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:16:03.837
+!MESSAGE 2 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:17:03.364
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:17:28.460
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:17:35.401
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:17:46.569
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:18:01.170
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:18:55.298
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:19:06.658
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:20:39.645
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:22:40.814
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:25:09.982
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:26:34.137
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-14 15:52:59.993
+!MESSAGE 1 files modified in module Notaneitorv3_0
+!SESSION 2014-03-18 19:01:50.208 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-18 19:20:45.400
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-18 19:20:46.945
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-18 19:20:48.707
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-18 19:20:48.770
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-18 19:20:52.342
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-18 19:21:25.706
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-18 19:21:26.954
+!MESSAGE Module Notaneitorv3_0 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+!SESSION 2014-03-24 18:11:00.446 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 19:29:49.045
+!MESSAGE 13 files modified in module Ejercicios-Ajax
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 19:29:49.790
+!MESSAGE 24 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 19:29:50.507
+!MESSAGE 25 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 19:29:51.349
+!MESSAGE 27 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 19:29:52.348
+!MESSAGE Module Notaneitorv3_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-24 19:29:56.465
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-24 19:30:24.653
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-24 19:30:27.913
+!MESSAGE Module Notaneitorv3_1 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 19:41:16.353
+!MESSAGE Module Notaneitorv3_2 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-24 19:41:16.831
+!MESSAGE Module Notaneitorv3_2 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 19:59:13.062
+!MESSAGE 1 files modified in module Notaneitorv3_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 20:00:13.859
+!MESSAGE 1 files modified in module Notaneitorv3_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-24 20:00:18.738
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-24 20:00:34.513
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-24 20:00:57.152
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 20:21:49.355
+!MESSAGE Module Notaneitorv3_3 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-24 20:21:50.001
+!MESSAGE Module Notaneitorv3_3 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 20:35:37.175
+!MESSAGE 1 files modified in module Notaneitorv3_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 20:36:13.014
+!MESSAGE 1 files modified in module Notaneitorv3_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 21:03:55.818
+!MESSAGE Module Notaneitorv3_5 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-24 21:03:56.578
+!MESSAGE Module Notaneitorv3_5 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 21:06:20.079
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 21:08:15.152
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 21:08:24.962
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 21:27:00.064
+!MESSAGE 2 files modified in module Ejercicios-Ajax
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 21:53:29.375
+!MESSAGE Module Notaneitorv3_6 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-24 21:53:29.982
+!MESSAGE Module Notaneitorv3_6 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 21:55:11.034
+!MESSAGE 6 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 21:55:20.310
+!MESSAGE 4 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 21:56:11.870
+!MESSAGE 1 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 22:03:04.657
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 22:08:13.539
+!MESSAGE 1 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 22:08:19.325
+!MESSAGE 1 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 22:09:08.762
+!MESSAGE 1 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 22:09:35.031
+!MESSAGE 1 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 22:10:49.416
+!MESSAGE 1 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-03-24 22:11:27.512
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-24 22:11:29.762
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-24 22:11:48.758
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-24 22:12:22.029
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-24 22:12:25.637
+!MESSAGE Module Notaneitorv3_6 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 22:16:22.331
+!MESSAGE 1 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 22:18:45.753
+!MESSAGE 10 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 22:52:13.586
+!MESSAGE Module xx published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-24 22:52:14.837
+!MESSAGE Module xx on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-24 22:52:33.041
+!MESSAGE Module xx on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:00:19.386
+!MESSAGE 2 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:06:08.724
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:06:14.673
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:06:24.563
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:06:31.839
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:06:43.574
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:08:31.561
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:08:42.213
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:09:43.904
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:09:51.604
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:10:00.655
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:10:08.901
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:10:41.723
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:11:12.181
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:11:56.200
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:12:27.791
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:12:49.696
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:13:16.898
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:13:38.389
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:14:05.734
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:14:18.098
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:14:58.484
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:15:38.846
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:16:00.946
+!MESSAGE 1 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 23:17:11.776
+!MESSAGE 2 files modified in module xx
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-03-24 23:17:27.873
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-24 23:17:29.375
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-24 23:17:37.221
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-24 23:18:05.120
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-25 02:46:16.057
+!MESSAGE Module xx on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-25 02:46:33.936
+!MESSAGE Module xx on JBoss 7.1 Runtime Server (INTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY unknown 0 0 2014-03-25 03:10:19.435
+!MESSAGE OK
+!SESSION 2014-03-24 09:04:47.735 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:38:39.060
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:38:39.949
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:38:40.854
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:38:41.556
+!MESSAGE Module Notaneitorv3_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:38:43.241
+!MESSAGE Module Notaneitorv3_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:38:44.333
+!MESSAGE Module Notaneitorv3_2 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:38:45.440
+!MESSAGE Module Notaneitorv3_3 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:38:46.906
+!MESSAGE Module Notaneitorv3_5 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:38:48.263
+!MESSAGE Module Notaneitorv3_6 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-24 09:38:50.977
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-24 09:39:03.376
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:41:45.928
+!MESSAGE 2 files modified in module Notaneitorv3_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-24 09:45:26.654
+!MESSAGE Module Notaneitorv3_0_ORIGINAL published without error.
+
+!ENTRY unknown 0 0 2014-03-24 09:45:26.763
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-03-24 10:34:55.002
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-24 10:35:00.025
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-24 10:35:06.169
+!MESSAGE Server Startup Succeeded
+!SESSION 2014-03-25 08:57:38.598 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 09:47:03.025
+!MESSAGE Module Ejercicios-Ajax published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 09:47:03.868
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 09:47:04.491
+!MESSAGE Module Notaneitorv1_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 09:47:05.864
+!MESSAGE Module Notaneitorv3_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 09:47:06.597
+!MESSAGE Module Notaneitorv3_2 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 09:47:07.533
+!MESSAGE Module Notaneitorv3_3 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 09:47:08.672
+!MESSAGE Module Notaneitorv3_5 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 09:47:09.639
+!MESSAGE Module Notaneitorv3_6 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 09:47:10.544
+!MESSAGE Module Notaneitorv3_0_ORIGINAL published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-25 09:47:13.289
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-25 09:47:32.607
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-25 09:47:33.247
+!MESSAGE Module Notaneitorv3_2 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 10:11:00.666
+!MESSAGE 2 files modified in module Notaneitorv3_3
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 10:57:23.292
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-25 11:02:51.955
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:33.973
+!MESSAGE 32 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:38.606
+!MESSAGE 1 files modified in module Ejercicios-Ajax
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:38.700
+!MESSAGE 25 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:38.840
+!MESSAGE 26 files modified in module Notaneitorv1_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:38.856
+!MESSAGE 3 files modified in module Notaneitorv3_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:38.871
+!MESSAGE 1 files modified in module Notaneitorv3_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:38.871
+!MESSAGE 1 files modified in module Notaneitorv3_3
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:38.887
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:38.887
+!MESSAGE 1 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:38.902
+!MESSAGE 1 files modified in module Notaneitorv3_0_ORIGINAL
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:46.468
+!MESSAGE 31 files modified in module Notaneitorv3_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:46.562
+!MESSAGE 27 files modified in module Notaneitorv3_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:46.671
+!MESSAGE 28 files modified in module Notaneitorv3_3
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:46.827
+!MESSAGE 32 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:46.842
+!MESSAGE 16 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:46.936
+!MESSAGE 27 files modified in module Notaneitorv3_0_ORIGINAL
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:48.792
+!MESSAGE 49 files modified in module Notaneitorv3_6
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:39:53.270
+!MESSAGE 34 files modified in module Notaneitorv3_0_ORIGINAL
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:40:01.350
+!MESSAGE 32 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-26 09:40:05.547
+!MESSAGE 3 files modified in module Notaneitorv1_0
+!SESSION 2014-03-27 19:08:09.532 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY unknown 0 0 2014-03-27 19:09:55.546
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-27 19:09:55.563
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-27 19:09:55.575
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-27 19:09:55.604
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-27 19:09:55.630
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-27 19:09:55.640
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-27 19:09:55.650
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-27 19:09:55.660
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-27 19:09:55.676
+!MESSAGE OK
+!SESSION 2014-03-28 09:02:49.147 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-03-28 09:07:02.581
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-03-28 09:07:19.899
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 09:54:23.117
+!MESSAGE Module Notaneitorv3_1 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-28 09:54:23.522
+!MESSAGE Module Notaneitorv3_1 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 09:57:32.205
+!MESSAGE 2 files modified in module Notaneitorv3_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 09:57:37.525
+!MESSAGE 1 files modified in module Notaneitorv3_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 09:57:47.619
+!MESSAGE 1 files modified in module Notaneitorv3_1
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 09:58:34.217
+!MESSAGE Module Notaneitorv3_2 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-28 09:58:34.467
+!MESSAGE Module Notaneitorv3_2 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:06:15.274
+!MESSAGE 1 files modified in module Notaneitorv3_2
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:06:42.483
+!MESSAGE Module Notaneitorv3_2 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:13:14.351
+!MESSAGE Module Notaneitorv3_3 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-28 10:13:14.742
+!MESSAGE Module Notaneitorv3_3 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:17:39.664
+!MESSAGE Module Notaneitorv3_5 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-28 10:17:39.992
+!MESSAGE Module Notaneitorv3_5 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:24:56.155
+!MESSAGE 2 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:26:09.102
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:30:02.869
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:31:44.207
+!MESSAGE 10 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:34:50.021
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:35:53.850
+!MESSAGE 1 files modified in module Notaneitorv3_5
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:51:36.727
+!MESSAGE Module Notaneitorv3_6 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-28 10:51:37.101
+!MESSAGE Module Notaneitorv3_6 on JBoss 7.1 Runtime Server (INTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-28 10:53:14.249
+!MESSAGE 10 files modified in module Notaneitorv3_6
+!SESSION 2014-07-01 13:01:10.466 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-07-01 13:11:10.496
+!MESSAGE Module TrabajoSDI published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-07-01 13:11:10.756
+!MESSAGE Module TrabajoSDI.EJB published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-07-01 13:11:10.846
+!MESSAGE Module TrabajoSDI.Web published without error.
+
+!ENTRY unknown 0 0 2014-07-01 13:11:10.846
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-07-01 13:11:10.856
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-07-01 13:11:10.856
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-07-01 13:11:10.866
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-07-01 13:11:10.866
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-07-01 13:11:10.946
+!MESSAGE Server processes have been terminated.
+!SESSION 2014-07-02 14:26:22.545 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-07-02 14:42:20.828
+!MESSAGE Module Notaneitorv3_0 published without error.
+
+!ENTRY unknown 0 0 2014-07-02 14:42:20.878
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-07-02 14:42:20.908
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-07-02 14:42:20.958
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-07-02 14:43:04.013
+!MESSAGE Module Notaneitorv3_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-07-02 14:43:04.033
+!MESSAGE Server processes have been terminated.
+!SESSION 2014-07-08 11:52:18.819 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY unknown 0 0 2014-07-08 11:58:27.321
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-07-08 11:58:27.419
+!MESSAGE Server processes have been terminated.

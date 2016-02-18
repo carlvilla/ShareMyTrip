@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+<title>#{msgs.tituloHead}</title> 
+</h:head>
+<h:body>
+<center>
+<h1>#{msgs.tituloAplicacion1}</h1>
+<br/>
+<h2>#{msgs.tituloAplicacion2}</h2>
+</center>
+<h:form>
+  <h:commandLink value="#{msgs.enlaceListado}" action="#{controller.listado}"/> 
+  <br></br>
+  <h:commandLink value="#{msgs.enlaceAlta}" action="altaForm" actionListener="#{controller.iniciaAlumno}"/>
+ <br/>
+ <br/>
+</h:form>
+</h:body>
+</html>

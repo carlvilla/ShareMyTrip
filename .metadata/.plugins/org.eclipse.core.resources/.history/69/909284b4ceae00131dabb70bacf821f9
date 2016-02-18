@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+<title>#{msgs.tituloHead}</title> 
+</h:head>
+<h:body>
+<center>
+<h1>#{msgs.tituloAplicacion1}</h1>
+<br/>
+<h2>#{msgs.tituloAplicacion2}</h2>
+<br/>
+<h3>#{msgs.tituloOperacionListado}</h3>
+<br/>
+</center>
+<h:form>
+<h:dataTable var="alumno" 
+             value="#{controller.alumnos}"
+             border="1">
+  <h:column><f:facet name="header">#{msgs.tablaNombre}</f:facet>#{alumno.nombre}</h:column>
+  <h:column><f:facet name="header">#{msgs.tablaApellidos}</f:facet>#{alumno.apellidos}</h:column>
+  <h:column><f:facet name="header">#{msgs.tablaIdUser}</f:facet>#{alumno.iduser}</h:column>
+  <h:column><f:facet name="header">#{msgs.tablaCorreo}</f:facet>#{alumno.email}</h:column>
+  <h:column><f:facet name="header">#{msgs.tablaBaja}</f:facet>
+  <h:commandLink action="#{controller.baja}" type="submit" value="#{msgs.enlaceBaja}" immediate="true">
+     <f:setPropertyActionListener target="#{controller.alumno}" value="#{alumno}"/>
+  </h:commandLink>
+  </h:column>
+  <h:column><f:facet name="header">#{msgs.tablaEditar}</f:facet>
+  <h:commandLink action="editForm" type="submit" value="#{msgs.enlaceEditar}" immediate="true">
+     <f:setPropertyActionListener target="#{controller.alumno}" value="#{alumno}"/>
+  </h:commandLink>
+  </h:column>
+</h:dataTable>
+</h:form>
+</h:body>
+</html>

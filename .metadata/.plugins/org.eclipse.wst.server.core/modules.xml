@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv2_0" serverId="JBoss 7.1 Runtime Server (EXTERNO)"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv2_0b" serverId="JBoss 7.1 Runtime Server (EXTERNO)"/>
+  <module moduleId="org.eclipse.jst.jee.server:xx" serverId="WildFly 8.0 Runtime Server1395710536699"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitor_v4.0Web" serverId="WildFly 8.0 Runtime Server1420723746107"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv0_0" serverId="JBoss 7.1 Runtime Server1389866510592"/>
+  <module moduleId="org.eclipse.jst.jee.server:JSFwithHTML5" serverId="WildFly 8.0 Runtime Server1395710536699"/>
+  <module moduleId="org.eclipse.jst.jee.server:Ejercicios-Ajax" serverId="JBoss 7.1 Runtime Server1389866510592"/>
+  <module moduleId="org.eclipse.jst.jee.server:Ejercicios-Properties" serverId="JBoss 7.1 Runtime Server1389866510592"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitor_v4.0" serverId="WildFly 8.0 Runtime Server1420723746107"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv0_0clase" serverId="JBoss 7.1 Runtime Server (EXTERNO)"/>
+  <module moduleId="org.eclipse.jst.jee.server:prueba"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitor3EJB"/>
+  <module moduleId="org.eclipse.jst.jee.server:Ejercicios-MBeans" serverId="JBoss 7.1 Runtime Server1389866510592"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv1_0" serverId="JBoss 7.1 Runtime Server1389866510592"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv1_1" serverId="JBoss 7.1 Runtime Server1389866510592"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv2_2" serverId="JBoss 7.1 Runtime Server1389866510592"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitor_v4.0EJB" serverId="WildFly 8.0 Runtime Server1420723746107"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv3_7" serverId="WildFly 8.0 Runtime Server1395710536699"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv2_5" serverId="JBoss 7.1 Runtime Server1389866510592"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv3_1" serverId="JBoss 7.1 Runtime Server1389866510592"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv3_0" serverId="WildFly 8.0 Runtime Server1395710536699"/>
+  <module moduleId="org.eclipse.jst.jee.server:Notaneitorv2_0anotacion" serverId="JBoss 7.1 Runtime Server (EXTERNO)"/>
+</modules>

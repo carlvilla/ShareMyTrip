@@ -1,0 +1,5 @@
+package com.sdi.model;
+
+public class Alumno {
+
+}

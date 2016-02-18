@@ -1,0 +1,51 @@
+package impl.sdi.persistence;
+
+import java.util.List;
+
+import com.sdi.model.Alumno;
+import com.sdi.persistence.AlumnoDao;
+import com.sdi.persistence.exception.AlreadyPersistedException;
+import com.sdi.persistence.exception.NotPersistedException;
+
+public class AlumnoJdbcDAO implements AlumnoDao {
+	
+	private AlumnoJdbc jdbcAlumno = null; 
+	
+	public AlumnoJdbc getJdbcAlumno() {
+		return jdbcAlumno;
+	}
+	public void setJdbcAlumno(AlumnoJdbc jdbcAlumno) {
+		this.jdbcAlumno = jdbcAlumno;
+	}
+	
+	public AlumnoJdbcDAO() {
+		setJdbcAlumno(new AlumnoJdbc());
+	}
+	public List<Alumno> getAlumnos() {
+		return new AlumnoJdbc().getAlumnos();
+	}
+
+	@Override
+	public void save(Alumno a) throws AlreadyPersistedException {
+		jdbcAlumno.save(a);		
+	}
+
+	@Override
+	public void update(Alumno a) throws NotPersistedException {
+		jdbcAlumno.update(a);
+		
+	}
+
+	@Override
+	public void delete(Long id) throws NotPersistedException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Alumno findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

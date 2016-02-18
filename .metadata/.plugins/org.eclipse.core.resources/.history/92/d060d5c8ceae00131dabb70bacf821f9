@@ -1,0 +1,27 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    template="/templates/template-general.xhtml">
+<ui:define name="titulo">
+    #{msgs.tituloOperacionAlta}
+</ui:define>
+
+<ui:define name="cuerpo">
+<h:form id="form-principal">
+<ui:include src="/snippets/form-alumno.xhtml"/>
+
+     <h:commandButton value="#{msgs.botonSalvar}" 
+                   action="#{controller.salva}">  
+     <!-- Ojo que aquí render tiene que incluir todo el formulario 
+     ya que los mensajes de error pueden ser renderizados también por Ajax de form implícita -->              
+     <f:ajax execute="@form" render="@form :form-pie"/>                   
+  </h:commandButton>                  
+</h:form>
+</ui:define>
+
+<ui:define name="pie">
+   <ui:include src="/snippets/pie-idiomas-casa.xhtml"/>
+</ui:define>
+  
+</ui:composition>

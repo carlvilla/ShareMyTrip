@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.sdi.persistence.AlumnosDAO&apos; to &apos;AlumnosJdbcDao&apos;&#x0D;&#x0A;- Original project: &apos;Notaneitorv0_0clase&apos;&#x0D;&#x0A;- Original element: &apos;com.sdi.persistence.AlumnosDAO&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sdi.persistence.AlumnosJdbcDao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AlumnosDAO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.sdi.persistence{AlumnosDAO.java[AlumnosDAO" matchStrategy="1" name="AlumnosJdbcDao" qualified="false" references="true" similarDeclarations="false" stamp="1393839029504" textual="false" version="1.0"/>
+</session>

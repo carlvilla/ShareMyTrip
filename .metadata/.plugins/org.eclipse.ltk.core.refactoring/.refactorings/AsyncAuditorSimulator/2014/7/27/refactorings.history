@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.academic.simulator.Main.AsynsListener&apos; to &apos;AsyncListener&apos;&#x0D;&#x0A;- Original project: &apos;AsyncAuditorSimulator&apos;&#x0D;&#x0A;- Original element: &apos;com.academic.simulator.Main.AsynsListener&apos;&#x0D;&#x0A;- Renamed element: &apos;com.academic.simulator.Main.AsyncListener&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AsynsListener&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.academic.simulator{Main.java[Main[AsynsListener" matchStrategy="1" name="AsyncListener" qualified="false" references="true" similarDeclarations="false" stamp="1404393314051" textual="false" version="1.0"/>
+</session>

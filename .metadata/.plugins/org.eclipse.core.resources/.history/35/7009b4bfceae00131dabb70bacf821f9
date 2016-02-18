@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<!-- Si que si quisiera tomar el idioma del navegador -->      
+<!-- <f:view locale="#{facesContext.externalContext.requestLocale}">  -->
+<!-- Para tomar el idioma del bean de configuración beanSettings  -->
+<f:view locale="#{settings.locale}">
+<h:head>
+<title>#{msgs.tituloHead}</title> 
+</h:head>
+<h:body>
+<h:form id="form-cabecera">   
+<center>
+<h1>#{msgs.tituloAplicacion1}</h1>
+<br/>
+<br/>
+<h2>#{msgs.tituloAplicacion2}</h2>
+</center>
+<br/>
+<br/>
+<table border="5" align="center">
+<tr>
+ <th class="title">
+   <ui:insert name="titulo">#{msgs.tituloDefectoCabecera}</ui:insert>  
+</th>
+</tr></table>
+</h:form> 
+
+<ui:insert name="cuerpo">#{msgs.tituloDefectoCuerpo}</ui:insert>
+
+<ui:insert name="pie">#{msgs.tituloPie}</ui:insert>
+
+</h:body>
+</f:view>
+</html>

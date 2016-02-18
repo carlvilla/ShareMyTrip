@@ -1,0 +1,12 @@
+package com.sdi.business;
+
+import java.util.Set;
+
+import com.sdi.model.Alumno;
+
+public class AlumnosService {
+	public Set<Alumno> getAlumnos() throws Exception {
+		return new AlumnosListado().getAlumnos();
+	}
+	}
+}

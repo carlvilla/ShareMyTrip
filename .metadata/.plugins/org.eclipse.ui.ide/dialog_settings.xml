@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="185" key="DIALOG_Y_ORIGIN"/>
+		<item value="210" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Trabajo1SDI\work\Test_Sesion4MVCCasero_con_JWebUnit"/>
+			<item value="D:\Trabajo1SDI\work\sesion4.MVCCasero"/>
+			<item value="C:\Users\Carlos\Desktop\Test_Sesion1CGIs_con_JWebUnit"/>
+			<item value="\\vmware-host\Shared Folders\Documentos\SDI1415\PL-SDI-Sesión 6\Notaneitorv1_0_SOLUCION"/>
+			<item value="\\vmware-host\Shared Folders\Documentos\SDI1415\PL-SDI-Sesión 6\Notaneitorv1_0"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item value="662" key="DIALOG_WIDTH"/>
+		<item value="215" key="DIALOG_Y_ORIGIN"/>
+		<item value="476" key="DIALOG_X_ORIGIN"/>
+		<item value="423" key="DIALOG_HEIGHT"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

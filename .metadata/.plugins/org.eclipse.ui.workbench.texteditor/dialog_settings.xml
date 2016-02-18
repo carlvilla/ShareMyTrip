@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="305" key="DIALOG_WIDTH"/>
+		<item value="119" key="DIALOG_Y_ORIGIN"/>
+		<item value="392" key="DIALOG_X_ORIGIN"/>
+		<item value="444" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.wst.html.ui.internal.preferences.ui.HTMLTemplatePreferencePage$HTMLEditTemplateDialog_dialogBounds">
+		<item value="611" key="DIALOG_WIDTH"/>
+		<item value="74" key="DIALOG_Y_ORIGIN"/>
+		<item value="435" key="DIALOG_HEIGHT"/>
+		<item value="138" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="á" key="selection"/>
+		<list key="findhistory">
+			<item value="Ã¡"/>
+			<item value="Ã­"/>
+			<item value="Ã³"/>
+			<item value="ï¿½ï¿½"/>
+			<item value="    &lt;param-name&gt;javax.faces.PROJECT_STAGE&lt;/param-name&gt;"/>
+			<item value="ect value) throws ValidatorException { "/>
+			<item value="&lt;ui:composition xmlns=&quot;http://www.w3.org/1999/xhtml&quot;"/>
+			<item value="Listado"/>
+		</list>
+		<list key="replacehistory">
+			<item value="á"/>
+			<item value="í"/>
+			<item value="ó"/>
+		</list>
+	</section>
+</section>

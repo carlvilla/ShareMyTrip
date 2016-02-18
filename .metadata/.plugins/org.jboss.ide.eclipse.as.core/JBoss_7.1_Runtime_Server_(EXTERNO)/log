@@ -1,0 +1,748 @@
+!SESSION 2014-01-16 11:53:53.144 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data ../work
+
+!ENTRY org.jboss.ide.eclipse.as.jmx.integration 4 0 2014-01-16 11:58:03.869
+!MESSAGE Error connecting to jmx for server JBoss 7.1 Runtime Server (EXTERNO)
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:100)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:154)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	... 6 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2014-01-16 11:58:03.885
+!MESSAGE Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+!STACK 0
+java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:154)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.jboss.ide.eclipse.as.jmx.integration 4 0 2014-01-16 11:58:24.851
+!MESSAGE Error connecting to jmx for server JBoss 7.1 Runtime Server (EXTERNO)
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:100)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:154)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	... 6 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2014-01-16 11:58:24.851
+!MESSAGE Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+!STACK 0
+java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:154)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-01-16 12:05:59.312 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-01-16 12:14:35.565
+!MESSAGE Module prueba published without error.
+!SESSION 2014-03-03 09:00:50.314 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:19:25.673
+!MESSAGE Module Notaneitorv0_0clase published without error.
+
+!ENTRY unknown 0 0 2014-03-03 10:19:25.704
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:28:07.567
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:29:08.280
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:29:31.695
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:29:37.748
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:30:30.783
+!MESSAGE 3 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:30:59.533
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:31:22.882
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:31:51.002
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:32:24.238
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-03 10:33:10.578
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+!SESSION 2014-03-04 09:02:33.436 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 09:19:36.278
+!MESSAGE Module Notaneitorv0_0clase published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 09:19:36.434
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 10:21:08.896
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 10:23:12.650
+!MESSAGE 1 files modified in module Notaneitorv0_0
+!SESSION 2014-03-04 13:00:19.544 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 13:34:26.511
+!MESSAGE Module Notaneitorv0_0clase published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 13:34:26.730
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 13:34:28.430
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-04 13:34:36.651
+!MESSAGE Module Notaneitorv1_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.jmx.integration 4 0 2014-03-04 13:34:39.911
+!MESSAGE Error connecting to jmx for server JBoss 7.1 Runtime Server (EXTERNO)
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:100)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:154)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	... 6 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2014-03-04 13:34:39.911
+!MESSAGE Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+!STACK 0
+java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:154)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-04 13:34:52.796
+!MESSAGE Module Notaneitorv1_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY unknown 0 0 2014-03-04 13:35:32.480
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-04 13:35:32.714
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-04 13:35:33.057
+!MESSAGE OK
+!SESSION 2014-03-04 14:40:44.814 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 14:43:51.799
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 14:46:33.485
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-04 14:46:34.077
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 14:47:00.097
+!MESSAGE Module Notaneitorv2_0b published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-04 14:47:00.643
+!MESSAGE Module Notaneitorv2_0b on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 14:47:34.464
+!MESSAGE Module Notaneitorv2_0a published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-04 14:47:34.854
+!MESSAGE Module Notaneitorv2_0a on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY unknown 0 0 2014-03-04 14:48:27.546
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 14:50:33.949
+!MESSAGE 25 files modified in module Notaneitorv2_0b
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 14:54:50.570
+!MESSAGE 4 files modified in module Notaneitorv2_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 14:55:53.684
+!MESSAGE 1 files modified in module Notaneitorv2_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-04 14:57:42.786
+!MESSAGE 26 files modified in module Notaneitorv2_0
+!SESSION 2014-03-05 09:02:06.102 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 09:31:39.859
+!MESSAGE 24 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 09:31:40.202
+!MESSAGE 25 files modified in module Notaneitorv2_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 09:31:40.436
+!MESSAGE 24 files modified in module Notaneitorv2_0b
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 09:31:40.545
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 09:38:22.971
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 09:38:44.920
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 09:38:58.564
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 09:39:20.202
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY unknown 0 0 2014-03-05 09:39:41.743
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-05 09:39:41.750
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-05 09:39:41.768
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-05 09:39:41.775
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 09:39:49.990
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 09:39:50.325
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 09:59:48.663
+!MESSAGE Module Notaneitorv0_0clase published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 09:59:48.944
+!MESSAGE Module Notaneitorv0_0clase on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 10:00:56.798
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 10:01:53.805
+!MESSAGE 1 files modified in module Notaneitorv0_0clase
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 10:32:47.773
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 10:32:48.116
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 10:33:28.940
+!MESSAGE Module Notaneitorv2_0b published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 10:33:29.219
+!MESSAGE Module Notaneitorv2_0b on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 10:36:23.952
+!MESSAGE 1 files modified in module Notaneitorv2_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 10:52:01.891
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 10:52:02.219
+!MESSAGE Module Notaneitorv1_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+!SESSION 2014-03-05 13:57:01.927 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:01:45.030
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:01:45.420
+!MESSAGE Module Notaneitorv0_0clase published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:01:47.058
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:01:48.821
+!MESSAGE Module Notaneitorv2_0b published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:01:49.991
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:02:43.744
+!MESSAGE 1 files modified in module Notaneitorv2_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:03:10.340
+!MESSAGE 1 files modified in module Notaneitorv2_0
+
+!ENTRY unknown 0 0 2014-03-05 14:03:32.054
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:03:39.495
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 14:03:40.057
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 14:04:00.983
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:04:23.913
+!MESSAGE 1 files modified in module Notaneitorv2_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:04:34.474
+!MESSAGE 1 files modified in module Notaneitorv2_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 14:04:37.172
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 14:04:57.544
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 14:07:18.587
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 14:07:40.551
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 14:08:13.684
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 14:08:38.020
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY unknown 0 0 2014-03-05 14:08:43.478
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:08:49.775
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 14:08:55.270
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 14:09:11.357
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY unknown 0 0 2014-03-05 14:13:11.945
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-05 14:13:12.413
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-05 14:13:13.271
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-05 14:13:13.474
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-05 14:13:13.989
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:13:35.897
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 14:13:37.301
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:15:20.806
+!MESSAGE 1 files modified in module Notaneitorv2_0
+
+!ENTRY unknown 0 0 2014-03-05 14:16:07.805
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 14:16:13.934
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 14:16:19.627
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 14:19:25.619
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 14:19:47.204
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 14:22:10.704
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 14:22:27.190
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 14:23:07.876
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 14:23:23.943
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+!SESSION 2014-03-05 15:07:53.737 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 15:10:31.082
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 15:10:38.858
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.jmx.integration 4 0 2014-03-05 15:10:46.493
+!MESSAGE Error connecting to jmx for server JBoss 7.1 Runtime Server (EXTERNO)
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:100)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:154)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	... 6 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2014-03-05 15:10:46.493
+!MESSAGE Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+!STACK 0
+java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:154)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-05 15:10:55.286
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 15:21:02.571
+!MESSAGE 1 files modified in module Notaneitorv2_0
+!SESSION 2014-03-05 18:41:18.785 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 18:49:38.353
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 18:51:50.261
+!MESSAGE 28 files modified in module Notaneitorv2_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 19:00:03.327
+!MESSAGE Module Notaneitorv2_0anotacion published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 19:00:04.419
+!MESSAGE Module Notaneitorv2_0anotacion on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 19:00:50.554
+!MESSAGE 1 files modified in module Notaneitorv2_0anotacion
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 19:00:53.181
+!MESSAGE 1 files modified in module Notaneitorv2_0anotacion
+
+!ENTRY unknown 0 0 2014-03-05 19:02:51.267
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 19:03:05.058
+!MESSAGE Module Notaneitorv2_0anotacion published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-05 19:03:05.916
+!MESSAGE Module Notaneitorv2_0anotacion on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 21:01:47.978
+!MESSAGE Module Notaneitorv2_0SinAnotacion published without error.
+
+!ENTRY unknown 0 0 2014-03-05 21:01:48.400
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 21:03:29.905
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY unknown 0 0 2014-03-05 21:03:30.232
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 21:03:51.228
+!MESSAGE 25 files modified in module Notaneitorv2_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-05 21:07:11.259
+!MESSAGE 25 files modified in module Notaneitorv2_0
+!SESSION 2014-03-06 09:00:29.675 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:25:14.858
+!MESSAGE 25 files modified in module Notaneitorv2_0SinAnotacion
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:25:15.154
+!MESSAGE 25 files modified in module Notaneitorv2_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:25:15.279
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:48:49.671
+!MESSAGE 0 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:49:47.795
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:50:16.265
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:51:20.318
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:51:31.190
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:52:11.733
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:52:26.100
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:52:54.132
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:53:39.106
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-06 09:55:18.224
+!MESSAGE 1 files modified in module Notaneitorv0_0
+!SESSION 2014-03-07 09:04:21.564 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:41:44.026
+!MESSAGE Module Notaneitorv2_0SinAnotacion published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:41:44.744
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:41:44.884
+!MESSAGE Module Notaneitorv0_0b published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:41:45.056
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-07 09:44:08.356
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY unknown 0 0 2014-03-07 09:44:26.983
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-07 09:44:26.983
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-07 09:44:26.983
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2014-03-07 09:44:27.014
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-07 09:44:30.025
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:44:34.332
+!MESSAGE Module Notaneitorv0_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-07 09:44:34.612
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-07 09:46:49.352
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:46:50.194
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-07 09:47:11.036
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-07 09:47:35.372
+!MESSAGE 1 files modified in module Notaneitorv0_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-07 09:47:39.803
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-07 09:48:01.424
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-07 09:48:38.359
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-07 09:48:59.992
+!MESSAGE Module Notaneitorv0_0 on JBoss 7.1 Runtime Server (EXTERNO) still not ready to be shown in browser. Aborting delay.
+
+!ENTRY unknown 0 0 2014-03-07 10:25:04.173
+!MESSAGE OK
+!SESSION 2014-03-09 10:30:44.891 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-03-09 11:32:00.284
+!MESSAGE Module Notaneitorv2_0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2014-03-09 11:32:02.865
+!MESSAGE Module Notaneitorv2_0 on JBoss 7.1 Runtime Server (EXTERNO) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-03-09 11:32:10.994
+!MESSAGE Error occurred while waiting for Notaneitorv2_0 to start on server JBoss 7.1 Runtime Server (EXTERNO)
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: JBAS012144: No se pudo conectar a remote://localhost:9999. La conexión falló
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.execute(AS71Manager.java:336)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.getDeploymentNames(AS71Manager.java:389)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.hasDeployment(AS71Manager.java:383)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.getDeploymentStateSafe(AS71Manager.java:207)
+	at org.jboss.ide.eclipse.as.internal.management.as71.JBoss71ManagerService.getDeploymentState(JBoss71ManagerService.java:132)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.getDeploymentState(JBoss7ManagerServiceProxy.java:67)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.getRootModuleState(JBoss7ModuleStateVerifier.java:95)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.isRootModuleStarted(JBoss7ModuleStateVerifier.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.waitModuleStarted(JBoss7ModuleStateVerifier.java:115)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.waitModuleStarted(JBoss7ModuleStateVerifier.java:49)
+	at org.jboss.ide.eclipse.as.ui.launch.JBTWebLaunchableClient.wait(JBTWebLaunchableClient.java:88)
+	at org.jboss.ide.eclipse.as.ui.launch.JBTWebLaunchableClient.launch2(JBTWebLaunchableClient.java:60)
+	at org.jboss.ide.eclipse.as.ui.launch.JBTWebLaunchableClient$1.run(JBTWebLaunchableClient.java:52)
+Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: No se pudo conectar a remote://localhost:9999. La conexión falló
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:129)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:71)
+	at org.jboss.ide.eclipse.as.internal.management.as71.AS71Manager.execute(AS71Manager.java:325)
+	... 12 more
+Caused by: java.net.ConnectException: JBAS012144: No se pudo conectar a remote://localhost:9999. La conexión falló
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:131)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:176)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:144)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:115)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:236)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:141)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:127)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.jmx.integration 4 0 2014-03-09 23:31:07.346
+!MESSAGE Error connecting to jmx for server JBoss 7.1 Runtime Server (EXTERNO)
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:100)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:154)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	... 6 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2014-03-09 23:31:07.373
+!MESSAGE Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+!STACK 0
+java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:154)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

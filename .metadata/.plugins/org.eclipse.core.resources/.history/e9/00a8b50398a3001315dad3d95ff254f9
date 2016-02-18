@@ -1,0 +1,13 @@
+package impl.sdi.persistence;
+
+import java.util.List;
+
+import com.sdi.model.Alumno;
+import com.sdi.persistence.AlumnoDao;
+
+public class AlumnoJdbcDAO implements AlumnoDao {
+	
+	public List<Alumno> getAlumnos() {
+		return new AlumnoJdbc().getAlumnos();
+	}
+}

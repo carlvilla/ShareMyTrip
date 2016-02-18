@@ -1,0 +1,182 @@
+!SESSION 2015-01-08 14:47:18.828 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-01-08 14:49:05.328
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-01-08 14:49:12.028
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 14:49:40.668
+!MESSAGE Module Notaneitor_v4.0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 14:49:40.908
+!MESSAGE Module Notaneitor_v4.0EJB published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 14:49:41.088
+!MESSAGE Module Notaneitor_v4.0Web published without error.
+
+!ENTRY unknown 0 0 2015-01-08 14:51:56.656
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2015-01-08 14:51:56.678
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2015-01-08 14:51:56.684
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 14:52:22.666
+!MESSAGE Module Notaneitor_v4.0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 14:52:22.767
+!MESSAGE Module Notaneitor_v4.0EJB published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 14:52:22.817
+!MESSAGE Module Notaneitor_v4.0Web published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-01-08 14:52:23.140
+!MESSAGE Module Notaneitor_v4.0 on WildFly 8.0 Runtime Server 2015 (interno) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-01-08 14:56:27.238
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-01-08 14:56:27.578
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-01-08 15:00:25.817
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-01-08 15:05:18.153
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-01-08 15:05:25.435
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-01-08 15:06:38.791
+!MESSAGE Server processes have been terminated.
+!SESSION 2015-01-21 20:56:06.915 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-21 22:43:54.885
+!MESSAGE Module Notaneitorv1_0 published without error.
+
+!ENTRY unknown 0 0 2015-01-21 22:43:54.900
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2015-01-21 22:43:54.917
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2015-01-21 22:43:54.929
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-01-21 22:43:56.718
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-01-21 22:44:50.599
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-21 22:50:24.150
+!MESSAGE 1 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-21 22:51:37.451
+!MESSAGE 1 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-21 22:55:22.785
+!MESSAGE 4 files modified in module Notaneitorv1_0
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-01-21 22:55:39.159
+!MESSAGE Incremental publish failed for module Notaneitorv1_0
+!SUBENTRY 1 org.eclipse.wst.server.core 4 1644298251 2015-01-21 22:55:39.159
+!MESSAGE Could not delete /WEB-INF/classes/com/sdi/business/impl/WEB-INF. May be locked by another process.
+
+!ENTRY unknown 0 0 2015-01-21 23:02:19.823
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-21 23:08:45.761
+!MESSAGE Module Notaneitorv3_0 published without error.
+!SESSION 2015-01-21 23:30:39.114 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-21 23:38:58.445
+!MESSAGE Module Prueba published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-01-21 23:39:02.087
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-01-21 23:40:43.181
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-21 23:45:30.963
+!MESSAGE 2 files modified in module Prueba
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-21 23:46:11.626
+!MESSAGE 38 files modified in module Prueba
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-21 23:48:31.317
+!MESSAGE 1 files modified in module Prueba
+
+!ENTRY org.eclipse.wst.server.core 4 1644298249 2015-01-21 23:49:35.639
+!MESSAGE Error renaming S:\wildfly\standalone\tmp\tmp7198219884876881300.class to S:\wildfly\standalone\deployments\Prueba.war\WEB-INF\classes\com\sdi\business\exception\BusinessException.class. 
+
+This may be caused by your server's temporary deploy directory being on a different filesystem than the final destination.
+
+You may adjust these settings in the server editor.
+
+!ENTRY org.eclipse.wst.server.core 4 1644298249 2015-01-21 23:50:21.278
+!MESSAGE Error renaming S:\wildfly\standalone\tmp\tmp3957359829035570423.MF to S:\wildfly\standalone\deployments\Prueba.war\META-INF\MANIFEST.MF. 
+
+This may be caused by your server's temporary deploy directory being on a different filesystem than the final destination.
+
+You may adjust these settings in the server editor.
+
+!ENTRY unknown 0 0 2015-01-21 23:50:35.595
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2015-01-21 23:50:41.947
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-21 23:51:47.159
+!MESSAGE Module Prueba published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-01-21 23:51:48.048
+!MESSAGE Module Prueba on WildFly 8.0 Runtime Server 2015 (interno) not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-01-22 00:08:24.644
+!MESSAGE Server processes have been terminated.
+!SESSION 2016-02-18 11:57:15.027 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-18 12:00:53.982
+!MESSAGE Module sesion4.MVCCasero published without error.
+
+!ENTRY unknown 0 0 2016-02-18 12:00:53.982
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-02-18 12:00:55.435
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-02-18 12:01:03.190
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2016-02-18 15:53:43.883
+!MESSAGE Server processes have been terminated.

@@ -1,0 +1,8 @@
+package impl.sdi.persistence;
+
+import com.sdi.persistence.AlumnoDao;
+
+public class AlumnoDAO implements AlumnoDao {
+	
+
+}

@@ -1,0 +1,57 @@
+<%@ page 
+	contentType="text/html"
+	pageEncoding="utf-8" 
+	language="java"
+	import="java.util.Vector,java.sql.*,java.util.Set,com.sdi.model.Alumno,com.sdi.business.AlumnosListado" 
+%>
+<html>
+<head>
+<title>Piloto de SDI</title>
+</head>
+<body>
+<h1>Notaneitor!</h1>
+<br>
+<h2>Aplicación de gestión de alumnos</h2>
+<br>
+<br>
+Listado de alumnos:
+<br>
+<table>
+	<tr>
+		<td><b>Nombre</b></td>
+		<td><b>Apellidos</b></td>
+		<td><b>Identificador de usuario</b></td>
+		<td><b>EMail</b></td>
+	</tr>
+
+	<%
+	Set<Alumno> alumnos = new AlumnosListado().getAlumnos();
+	if (alumnos != null) {
+	for (Alumno alumno: alumnos ) {
+	%>
+	<tr>
+	<td><%=alumno.getNombre()%></td>
+	<td><%=alumno.getApellidos()%></td>
+	<td><%=alumno.getIdUser()%></td>
+	<td><%=alumno.getEmail()%></td>
+	</tr>
+	<%
+	} // del for
+	} // del if
+				
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw (e);
+		} finally {
+			try {
+				ps.close();
+				con.close();
+			} catch (Exception e) {
+			}
+		} // del try
+	%>
+</table>
+<br>
+<br>
+</body>
+</html>

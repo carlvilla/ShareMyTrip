@@ -1,0 +1,48 @@
+package com.sdi.persistence;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.HashSet;
+import java.util.Set;
+
+import com.sdi.model.Alumno;
+
+public class AlumnosDAO {
+public Set<Alumno> getAlumnos() throws Exception {
+PreparedStatement ps = null;
+ResultSet rs = null;
+Connection con = null;
+Set<Alumno> alumnos = new HashSet<Alumno>();
+try {
+String SQL_DRV = "org.hsqldb.jdbcDriver";
+String SQL_URL = "jdbc:hsqldb:hsql://localhost/database";
+// Obtenemos la conexión a la base de datos.
+Class.forName(SQL_DRV);
+con = DriverManager.getConnection(SQL_URL, "sa", "");
+ps = con.prepareStatement("select * from alumno");
+rs = ps.executeQuery();
+while (rs.next()) {
+Alumno alumno = new Alumno();
+alumno.setNombre(rs.getString("NOMBRE"));
+alumno.setApellidos(rs.getString("APELLIDOS"));
+alumno.setEmail(rs.getString("EMAIL"));
+alumno.setIdUser(rs.getString("IDUSER"));
+alumnos.add(alumno);
+}
+}
+finally {
+if (rs != null) {
+try{ rs.close(); } catch (Exception ex){}
+};
+if (ps != null) {
+try{ ps.close(); } catch (Exception ex){}
+};
+if (con != null) {
+try{ con.close(); } catch (Exception ex){}
+};
+}
+return alumnos;
+}
+}

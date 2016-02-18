@@ -1,0 +1,109 @@
+!SESSION 2015-01-08 14:47:18.828 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 15:01:09.665
+!MESSAGE Module Notaneitor_v4.0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 15:01:09.875
+!MESSAGE Module Notaneitor_v4.0EJB published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 15:01:10.045
+!MESSAGE Module Notaneitor_v4.0Web published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.jmx.integration 4 0 2015-01-08 15:02:01.028
+!MESSAGE Error connecting to jmx for server WildFly 8.0 Runtime Server
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:100)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.internalRemotingConnect(RemotingConnector.java:240)
+	at org.jboss.remotingjmx.RemotingConnector.internalConnect(RemotingConnector.java:151)
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:102)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	... 6 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2015-01-08 15:02:01.028
+!MESSAGE Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+!STACK 0
+java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.internalRemotingConnect(RemotingConnector.java:240)
+	at org.jboss.remotingjmx.RemotingConnector.internalConnect(RemotingConnector.java:151)
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:102)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 15:02:32.660
+!MESSAGE Module Notaneitor_v4.0 published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 15:02:32.760
+!MESSAGE Module Notaneitor_v4.0EJB published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-01-08 15:02:32.810
+!MESSAGE Module Notaneitor_v4.0Web published without error.
+!SESSION 2015-01-21 20:56:06.915 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY unknown 0 0 2015-01-21 21:58:47.690
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2015-01-21 21:58:47.721
+!MESSAGE OK
+
+!ENTRY unknown 0 0 2015-01-21 21:58:47.739
+!MESSAGE OK
+
+!ENTRY org.jboss.ide.eclipse.as.jmx.integration 4 0 2015-01-21 21:58:58.630
+!MESSAGE Error connecting to jmx for server WildFly 8.0 Runtime Server 2015 (externo)
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:100)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.internalRemotingConnect(RemotingConnector.java:240)
+	at org.jboss.remotingjmx.RemotingConnector.internalConnect(RemotingConnector.java:151)
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:102)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	... 6 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2015-01-21 21:58:58.631
+!MESSAGE Unable to reach JBoss instance. Please ensure your server is up and exposes its management ports via the -Djboss.bind.address.management=yourwebsite.com system property
+!STACK 0
+java.lang.RuntimeException: Operation failed with status WAITING
+	at org.jboss.remotingjmx.RemotingConnector.internalRemotingConnect(RemotingConnector.java:240)
+	at org.jboss.remotingjmx.RemotingConnector.internalConnect(RemotingConnector.java:151)
+	at org.jboss.remotingjmx.RemotingConnector.connect(RemotingConnector.java:102)
+	at javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:268)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBoss71ServerConnection.createConnection(JBoss71ServerConnection.java:84)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:175)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:144)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.run(JBossServerConnection.java:118)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection.connectToStartedServer(JBossServerConnection.java:271)
+	at org.jboss.ide.eclipse.as.jmx.integration.JBossServerConnection$1.run(JBossServerConnection.java:263)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

@@ -1,0 +1,17 @@
+package com.sdi.business;
+
+import java.util.Set;
+
+import com.sdi.model.Alumno;
+import com.sdi.persistence.AlumnosDAO;
+
+public class AlumnosListado {
+public Set<Alumno> getAlumnos() throws Exception {
+// Aquí iría lógica de negocio que ejecutase algún proceso ...
+//... el ejemplo es tan sencillo que no hay nada que hacer
+// Acceso a la capa de persistencia a través de su fachada
+AlumnosDAO dao = new AlumnosDAO();
+
+return dao.getAlumnos();
+}
+}
