@@ -180,3 +180,22 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2016-02-18 15:53:43.883
 !MESSAGE Server processes have been terminated.
+!SESSION 2016-02-18 16:11:51.611 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data S:\work
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-18 16:16:22.974
+!MESSAGE 42 files modified in module sesion4.MVCCasero
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-02-18 16:16:24.343
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-02-18 16:16:32.459
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-18 16:17:16.656
+!MESSAGE 1 files modified in module sesion4.MVCCasero
