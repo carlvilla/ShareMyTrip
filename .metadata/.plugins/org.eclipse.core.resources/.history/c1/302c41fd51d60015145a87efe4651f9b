@@ -23,7 +23,6 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 	public void init() throws ServletException {  
 		crearMapaAcciones();
 		crearMapaDeJSP();
-		
     }
 	
 
