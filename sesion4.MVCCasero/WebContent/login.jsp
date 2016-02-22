@@ -8,14 +8,20 @@
  	<hr><br>
  	<table align="center">
     	<tr> 
-    		<td align="right">Su identificador de usuario</td>
+    		<td align="right">Identificador de usuario</td>
 	    	<td><input type="text" name="nombreUsuario" align="left" size="15"></td>
       	</tr>
+      	<tr> 
+    		<td align="right">Contraseña</td>
+	    	<td><input type="password" name="passwordUsuario" align="left" size="15"></td>
+      	</tr>
       	<tr>
-    	    <td><input type="submit" value="Enviar"/></td>
+    	    <td><input type="submit"  value="Enviar"/></td>
       	</tr>
       </table>
    </form>
+   <a id="registrarse" href="registrarse.jsp">Registrarse</a>
+   <br>
    <a id="listarViajes" href="listarViajes">Lista de viajes</a>
 </body>
 </html>
