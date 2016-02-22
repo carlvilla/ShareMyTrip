@@ -17,15 +17,24 @@ public class ValidarseAction implements Accion {
 		
 		String resultado="EXITO";
 		String nombreUsuario=request.getParameter("nombreUsuario");
+		String contraseñaUsuario = request.getParameter("passwordUsuario");
+		
 		HttpSession session=request.getSession();
 		if (session.getAttribute("user")==null) {
 			UserDao dao = PersistenceFactory.newUserDao();
 			User userByLogin = dao.findByLogin(nombreUsuario);
 			if (userByLogin!=null) {
-				session.setAttribute("user", userByLogin);
-				int contador=Integer.parseInt((String)request.getServletContext().getAttribute("contador"));
-				request.getServletContext().setAttribute("contador", String.valueOf(contador+1));
-				Log.info("El usuario [%s] ha iniciado sesión",nombreUsuario);
+				if(userByLogin.getPassword().compareTo(contraseñaUsuario)==0){
+					session.setAttribute("user", userByLogin);
+					int contador=Integer.parseInt((String)request.getServletContext().getAttribute("contador"));
+					request.getServletContext().setAttribute("contador", String.valueOf(contador+1));
+					Log.info("El usuario [%s] ha iniciado sesión",nombreUsuario);
+				}
+				else{
+					session.invalidate();
+					Log.info("La contraseña introducida no cuerda con la del usuario [%s]",nombreUsuario);
+					resultado="FRACASO";
+				}
 			}
 			else {
 				session.invalidate();
