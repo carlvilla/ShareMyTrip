@@ -1,0 +1,50 @@
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ include file="comprobarNavegacion.jsp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>ShareMyTrip - Modificar datos de usuario</title>
+</head>
+<body>
+	<jsp:useBean id="user" class="uo.sdi.model.User" scope="session" />
+	
+	<form action="modificarDatos" method="POST">
+					
+	
+	<table>
+		<tr>
+			<td>Login:</td><td id="login"><input type="text" name="email" size="15"
+						value="<jsp:getProperty property="nombre" name="user"/>"> 
+						</td>
+		</tr>
+		<tr>
+			<td>Nombre:</td><td id="name">
+			<input type="text" name="email" size="15"
+						value="<jsp:getProperty property="nombre" name="user"/>"> 
+						</td>
+		</tr>
+		<tr>
+			<td>Apellidos:</td><td id="surname">
+			<input type="text" name="email" size="15"
+						value="<jsp:getProperty property="apellidos" name="user"/>">
+		
+			</td> 
+
+			
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<input type="text" name="email" size="15"
+						value="<jsp:getProperty property="email" name="user"/>"> 
+					
+			
+		</tr>
+		
+		<input type="submit" value="Modificar">
+		
+	</table>
+
+	</form>
+
+</body>
+</html>
