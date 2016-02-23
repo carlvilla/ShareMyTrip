@@ -33,12 +33,14 @@ public class ValidarseAction implements Accion {
 				else{
 					session.invalidate();
 					Log.info("La contraseña introducida no cuerda con la del usuario [%s]",nombreUsuario);
+					request.setAttribute("error", "No se puede iniciar sesion: Contraseña incorrecta");
 					resultado="FRACASO";
 				}
 			}
 			else {
 				session.invalidate();
 				Log.info("El usuario [%s] no está registrado",nombreUsuario);
+				request.setAttribute("error", "No se puede iniciar sesion: usuario no registrado");
 				resultado="FRACASO";
 			}
 		}
@@ -46,6 +48,7 @@ public class ValidarseAction implements Accion {
 			if (!nombreUsuario.equals(session.getAttribute("user"))) {
 				Log.info("Se ha intentado iniciar sesión como [%s] teniendo la sesión iniciada como [%s]",nombreUsuario,((User)session.getAttribute("user")).getLogin());
 				session.invalidate();
+				request.setAttribute("error", "No se puede iniciar sesion: ya hay una sesion iniciada");
 				resultado="FRACASO";
 			}
 		return resultado;

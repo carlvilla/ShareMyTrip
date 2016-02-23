@@ -122,13 +122,12 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		resJSP=new HashMap<String, String>();
 		resJSP.put("EXITO","/listaViajes.jsp");
 		opcionResJSP.put("listarViajes", resJSP);
-		/*
+		
 		//Registrarse
 		resJSP=new HashMap<String, String>();
-		resJSP.put("EXITO","/principal.jsp");
 		resJSP.put("FRACASO","/registrarse.jsp");
 		opcionResJSP.put("registrarse", resJSP);
-		*/
+		
 		mapaDeNavegacion.put("PUBLICO",opcionResJSP);
 		
 		// Crear mapas auxiliares vacíos
@@ -143,7 +142,6 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		//Registrarse
 		resJSP=new HashMap<String, String>();
 		resJSP.put("EXITO","/principal.jsp");
-		resJSP.put("FRACASO","/registrarse.jsp");
 		opcionResJSP.put("registrarse", resJSP);
 		
 		//Modificar datos
