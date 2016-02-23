@@ -28,12 +28,14 @@ public class RegistrarseAction implements Accion {
 		
 		if (comprobarCamposVacios(loginUsuario, nombreUsuario,
 				apellidosUsuario, email, contraseña, confirmContraseña) == false){
+			request.setAttribute("error", "Error al registrarse: campos vacios");
 			return "FRACASO";
 		}
 		else{
 			UserDao dao = PersistenceFactory.newUserDao();
-			User userByLogin = dao.findByLogin(nombreUsuario);
+			User userByLogin = dao.findByLogin(loginUsuario);
 			if(userByLogin!=null){
+				request.setAttribute("error", "Error al registrarse: nombre de usuario en uso");
 				return "FRACASO";
 			}
 			else{
@@ -52,6 +54,7 @@ public class RegistrarseAction implements Accion {
 					return "EXITO";
 				}
 				else{
+					request.setAttribute("error", "Error al registrarse: las contraseñas no coinciden");
 					return "FRACASO";
 				}
 			}
