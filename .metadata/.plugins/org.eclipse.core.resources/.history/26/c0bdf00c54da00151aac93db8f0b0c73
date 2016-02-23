@@ -65,12 +65,6 @@ public class ModificarDatosAction implements Accion {
 						return "FRACASO";
 					}
 					
-					else if(nuevaContraseña.isEmpty() 
-							&& nuevaContraseñaVerificacion.isEmpty()){
-						request.setAttribute("error", "Debe especificar la nueva contraseña");
-						return "FRACASO";
-					}
-					
 					else{
 						request.setAttribute("error", "Las contraseñas no coinciden");
 						return "FRACASO";

@@ -46,9 +46,8 @@ public class ModificarDatosAction implements Accion {
 			else{
 				
 				if(usuario.getPassword().equals(antiguaContraseña) 
-						&& !nuevaContraseña.isEmpty() 
-						&& !nuevaContraseñaVerificacion.isEmpty()
-						&& nuevaContraseña.equals(nuevaContraseñaVerificacion)){
+						&& nuevaContraseña!=null 
+						&&nuevaContraseña.equals(nuevaContraseñaVerificacion)){
 					
 					usuario.setEmail(nuevoEmail);
 					usuario.setName(nuevoNombre);
@@ -62,12 +61,6 @@ public class ModificarDatosAction implements Accion {
 					
 					if(!usuario.getPassword().equals(antiguaContraseña)){
 						request.setAttribute("error", "La contraseña actual es incorrecta");
-						return "FRACASO";
-					}
-					
-					else if(nuevaContraseña.isEmpty() 
-							&& nuevaContraseñaVerificacion.isEmpty()){
-						request.setAttribute("error", "Debe especificar la nueva contraseña");
 						return "FRACASO";
 					}
 					

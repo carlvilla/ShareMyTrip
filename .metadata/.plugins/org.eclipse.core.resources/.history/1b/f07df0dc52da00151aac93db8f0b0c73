@@ -146,7 +146,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		
 		//Modificar datos
 		resJSP=new HashMap<String, String>();
-		resJSP.put("EXITO","/principal.jsp");
+		resJSP.put("EXITO","/modificarDatos.jsp");
 		resJSP.put("FRACASO","/modificarDatos.jsp");
 		opcionResJSP.put("modificarDatos", resJSP);
 		
