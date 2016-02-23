@@ -8,6 +8,9 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+#Folders
+sesion4.MVCCasero/data
+
 # Windows Installer files
 *.cab
 *.msi
