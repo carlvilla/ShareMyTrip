@@ -26,8 +26,12 @@
 	
 	<br/>	
 	
-	 <a id="mostrarDatos" href="mostrarDatos">Modificar datos</a>
+	 <a id="modificarDatos" href="modificarDatos.jsp">Modificar datos</a>
 	 
+	<form action="modificarDatos" method="post">
+	 <input type="submit"  value="Modificar Datos"/>
+	  </form>
+	  
 	  
 	 <br/>
 	  

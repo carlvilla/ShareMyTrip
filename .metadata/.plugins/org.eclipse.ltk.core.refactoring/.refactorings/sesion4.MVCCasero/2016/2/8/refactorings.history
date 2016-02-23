@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ModificarDatosAction.java&apos; to &apos;sesion4.MVCCasero/src/uo.sdi.acciones&apos;&#x0D;&#x0A;- Original project: &apos;sesion4.MVCCasero&apos;&#x0D;&#x0A;- Destination element: &apos;sesion4.MVCCasero/src/uo.sdi.acciones&apos;&#x0D;&#x0A;- Original element: &apos;uo.sdi.acciones.ModificarDatosAction.java&apos;" description="Copy compilation unit" destination="/src&lt;uo.sdi.acciones" element1="/src&lt;uo.sdi.acciones{ModificarDatosAction.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1456252649388" units="1" version="1.0"/>
+</session>
