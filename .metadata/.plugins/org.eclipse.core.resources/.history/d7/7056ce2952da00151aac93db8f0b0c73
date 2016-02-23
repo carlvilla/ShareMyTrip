@@ -40,7 +40,7 @@
 		
 		<tr>
 			<td>Contraseña anterior:</td>
-			<td><input type="password" name="pass" size="15"
+			<td><input type="password" name="contraseña" size="15"
 						value="" />
 						</td>
 					
@@ -49,7 +49,7 @@
 		
 		<tr>
 			<td>Nueva Contraseña:</td>
-			<td><input type="password" name="newPass" size="15"
+			<td><input type="password" name="newContraseña" size="15"
 						value="" />
 						</td>
 					
@@ -59,7 +59,7 @@
 		
 			<tr>
 			<td>Confirmar Contraseña:</td>
-			<td><input type="password" name="verPass" size="15"
+			<td><input type="password" name="verContraseña" size="15"
 						value="" />
 						</td>
 					

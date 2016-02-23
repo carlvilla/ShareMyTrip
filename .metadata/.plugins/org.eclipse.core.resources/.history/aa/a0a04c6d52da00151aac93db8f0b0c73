@@ -123,7 +123,7 @@ public class ModificarDatosAction implements Accion {
 	
 	public boolean comprobarNoModificaContraseñas(String antiguaContraseña,String nuevaContraseña,String contraseñaVerificacion){
 		
-		if(antiguaContraseña.isEmpty() && nuevaContraseña.isEmpty() && contraseñaVerificacion.isEmpty()){
+		if(antiguaContraseña==null && nuevaContraseña==null && contraseñaVerificacion==null){
 			return true;
 		}
 		

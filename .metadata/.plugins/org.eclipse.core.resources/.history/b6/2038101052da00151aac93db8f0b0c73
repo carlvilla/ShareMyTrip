@@ -19,9 +19,9 @@ public class ModificarDatosAction implements Accion {
 		String nuevoNombre=request.getParameter("nombre");
 		String nuevosApellidos=request.getParameter("apellidos");
 		
-		String antiguaContraseña = request.getParameter("pass");
-		String nuevaContraseña = request.getParameter("newPass");
-		String nuevaContraseñaVerificacion = request.getParameter("verPass");
+		String antiguaContraseña = request.getParameter("contraseña");
+		String nuevaContraseña = request.getParameter("newContraseña");
+		String nuevaContraseñaVerificacion = request.getParameter("verContraseña");
 		
 		HttpSession session=request.getSession();
 		User usuario=((User)session.getAttribute("user"));
@@ -123,7 +123,7 @@ public class ModificarDatosAction implements Accion {
 	
 	public boolean comprobarNoModificaContraseñas(String antiguaContraseña,String nuevaContraseña,String contraseñaVerificacion){
 		
-		if(antiguaContraseña.isEmpty() && nuevaContraseña.isEmpty() && contraseñaVerificacion.isEmpty()){
+		if(antiguaContraseña==null && nuevaContraseña==null && contraseñaVerificacion==null){
 			return true;
 		}
 		
