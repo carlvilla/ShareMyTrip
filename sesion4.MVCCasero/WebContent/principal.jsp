@@ -34,6 +34,10 @@
 	  
 	 <a id="listarViajes" href="listarViajes">Lista de viajes</a>
 	 
+	  <br/>
+	  
+	 <a id="registrarViaje" href="registrarViaje.jsp">Registrar Viaje</a>
+	 
 	 <br/>	
 	 
 	  <a id="cerrarSesion" href="cerrarSesion">Cerrar sesión</a>
