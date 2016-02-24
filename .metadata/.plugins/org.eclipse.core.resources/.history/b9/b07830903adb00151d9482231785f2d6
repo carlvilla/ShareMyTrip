@@ -62,7 +62,7 @@
 
 	</form>
 	
-	<form action="principal.jsp" method="POST">
+	<form action="validarse">
     		<input type="submit" value="Menú principal">
 		</form>
 	

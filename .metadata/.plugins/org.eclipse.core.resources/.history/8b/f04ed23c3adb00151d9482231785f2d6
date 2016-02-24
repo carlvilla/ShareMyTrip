@@ -55,16 +55,10 @@
 			</td>					
 		</tr>
 	</table>
-	
-		
-		
+
 		<input type="submit" value="Modificar"/>
 
 	</form>
-	
-	<form action="principal.jsp" method="POST">
-    		<input type="submit" value="Menú principal">
-		</form>
 	
 	<br/>
 	

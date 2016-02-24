@@ -12,9 +12,7 @@
 <body>
 	<form action="registrarse" method="post">
 
-	<left><a href="login.jsp">Login</a></left>
  	<center><h1>Registrarse</h1></center>
- 	
  	<hr><br>
  	<table align="center">
     	<tr> 
@@ -41,19 +39,5 @@
 <c:if test="${error != null}">
    		<p align="center"><c:out value="${error}"/></p>
    </c:if>
-   
-   <br/>
-   
-   
-   <p>
-   	¡Registrate hoy y disfruta de todas las ventajas! 
-   </p>
-   
-   <ul>
-   	<li>Acceso a toda la información de los viajes</li>
-   	<li>Alquilar plazas en viajes</li>
-   
-   </ul>
-   
 </body>
 </html>
