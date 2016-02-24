@@ -5,6 +5,9 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+#Files
+sesion4.MVCCasero/data/test.script
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
@@ -48,3 +51,5 @@ sesion4.MVCCasero/data
 Network Trash Folder
 Temporary Items
 .apdisk
+*.script
+sesion4.MVCCasero/data/test.script

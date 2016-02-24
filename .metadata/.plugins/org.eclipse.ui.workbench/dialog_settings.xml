@@ -18,11 +18,14 @@
 		<item value="13" key="DIALOG_Y_ORIGIN"/>
 		<item value="13" key="DIALOG_X_ORIGIN"/>
 	</section>
-	<section name="NewWizardAction">
-		<item value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
-		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.jdt.ui.java"/>
-		</list>
+	<section name="InstallationDialogSettings">
+		<item value="934" key="DIALOG_WIDTH"/>
+		<item value="-144" key="DIALOG_Y_ORIGIN"/>
+		<item value="768" key="DIALOG_HEIGHT"/>
+		<item value="-170" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="ZipFileImportWizard">
 	</section>
 	<section name="ZipFileExportWizard">
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
@@ -32,14 +35,11 @@
 			<item value="C:\Users\alb\Desktop\tmp\notaneitor_v2.0(2).zip"/>
 		</list>
 	</section>
-	<section name="ZipFileImportWizard">
-	</section>
-	<section name="InstallationDialogSettings">
-		<item value="934" key="DIALOG_WIDTH"/>
-		<item value="-144" key="DIALOG_Y_ORIGIN"/>
-		<item value="-170" key="DIALOG_X_ORIGIN"/>
-		<item value="768" key="DIALOG_HEIGHT"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
 	</section>
 	<section name="FileSystemExportWizard">
 		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID"/>

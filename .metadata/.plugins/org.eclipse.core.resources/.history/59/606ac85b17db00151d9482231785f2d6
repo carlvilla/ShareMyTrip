@@ -20,12 +20,10 @@ public class MostrarDatosViajeAction implements Accion {
 		User promotor;
 		
 		try {
-			
-			viaje=PersistenceFactory.newTripDao().findById(Long.valueOf(request.getParameter("id")));
+			viaje=PersistenceFactory.newTripDao().findById((Long) request.getAttribute("id"));
 			request.setAttribute("viaje", viaje);
 			
 			promotor = PersistenceFactory.newUserDao().findById(viaje.getPromoterId());
-			request.setAttribute("promotor", promotor);
 			
 			Log.debug("Obtenido viaje con id [%d]", viaje.getId());
 		}

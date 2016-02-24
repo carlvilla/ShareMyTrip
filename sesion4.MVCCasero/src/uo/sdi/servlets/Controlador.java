@@ -100,7 +100,6 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		mapaPublico.put("validarse", new ValidarseAction());
 		mapaPublico.put("listarViajes", new ListarViajesAction());
 		mapaPublico.put("registrarse", new RegistrarseAction());
-		mapaPublico.put("mostrarViaje", new RegistrarseAction()); //Publico intenta ver los datos del viaje
 		mapaDeAcciones.put("PUBLICO", mapaPublico);
 		
 		Map<String,Accion> mapaRegistrado=new HashMap<String,Accion>();
@@ -131,10 +130,6 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		resJSP.put("FRACASO","/registrarse.jsp");
 		opcionResJSP.put("registrarse", resJSP);
 		
-		//Pulsa id viaje y le lleva a registrarse (si es público no puede ver los datos)
-		resJSP=new HashMap<String, String>();
-		resJSP.put("EXITO","/registrarse.jsp");
-		opcionResJSP.put("mostrarViaje", resJSP);
 		
 		mapaDeNavegacion.put("PUBLICO",opcionResJSP);
 		

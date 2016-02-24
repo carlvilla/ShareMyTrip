@@ -15,8 +15,6 @@
 	
 	<h2>Datos del promotor</h2>
 	
-	<h3>Información de contacto</h3>
-	
 		<table>
 
 		<tr>
@@ -39,11 +37,6 @@
 		</tr>
 				
 	</table>
-	
-	<h3>Puntuación y comentarios del promotor</h3>
-	
-	
-	
 		
 </body>
 </html>
