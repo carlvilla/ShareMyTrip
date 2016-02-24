@@ -1,0 +1,32 @@
+package uo.sdi.acciones;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import uo.sdi.model.Rating;
+import uo.sdi.model.User;
+import uo.sdi.persistence.PersistenceFactory;
+import alb.util.log.Log;
+
+public class CerrarSesionAction implements Accion {
+
+	@Override
+	public String execute(HttpServletRequest request,
+			HttpServletResponse response) {
+
+		HttpSession sesion = request.getSession();
+		
+		sesion.invalidate();
+			
+		return "EXITO";
+	}
+	
+	@Override
+	public String toString() {
+		return getClass().getName();
+	}
+	
+}

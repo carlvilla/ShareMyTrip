@@ -1066,3 +1066,45 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-02-24 20:11:11.693
 !MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-24 21:22:17.836
+!MESSAGE 1 files modified in module sesion4.MVCCasero
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-24 21:23:14.818
+!MESSAGE 1 files modified in module sesion4.MVCCasero
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-24 21:24:30.003
+!MESSAGE 1 files modified in module sesion4.MVCCasero
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-24 21:25:17.079
+!MESSAGE 1 files modified in module sesion4.MVCCasero
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-24 21:26:06.451
+!MESSAGE 1 files modified in module sesion4.MVCCasero
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-24 21:26:43.791
+!MESSAGE 1 files modified in module sesion4.MVCCasero
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-24 21:27:11.665
+!MESSAGE 1 files modified in module sesion4.MVCCasero
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2016-02-24 21:30:24.776
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-02-24 21:30:38.745
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-02-24 21:30:44.330
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2016-02-24 21:33:22.973
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-24 21:37:03.855
+!MESSAGE 2 files modified in module sesion4.MVCCasero
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-02-24 21:37:04.735
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-02-24 21:37:10.411
+!MESSAGE Server Startup Succeeded

@@ -35,7 +35,7 @@
 	 
 	 <br/>	
 	 
-	  <a id="cerrarSesion" href="cerrarSesion">Cerrar sesión</a>
+	  <a id="cerrarSesion" href="login.jsp">Cerrar sesión</a>
 	
 	Es Vd el usuario número: ${contador}
 </body>
