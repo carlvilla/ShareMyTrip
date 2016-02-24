@@ -26,7 +26,12 @@
 	
 	<br/>	
 	
-	 <a id="modificarDatos" href="modificarDatos.jsp">Modificar datos</a>
+	 <a id="mostrarDatos" href="mostrarDatos">Modificar datos</a>
+	 
+	  
+	 <br/>
+	  
+	 <a id="listarViajes" href="listarViajes">Lista de viajes</a>
 	 
 	 <br/>	
 	

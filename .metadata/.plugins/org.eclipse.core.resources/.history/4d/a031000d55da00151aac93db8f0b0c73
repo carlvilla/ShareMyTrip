@@ -19,15 +19,17 @@
 		</tr>
 		<tr>
 			<td>Email:</td>
-			<td id="email"><form action="modificarDatos" method="POST">
-					<input type="text" name="email" size="15"
-						value="<jsp:getProperty property="email" name="user"/>"> 
-					<input type="submit" value="Modificar">
-				</form>
+			<td id="email"><jsp:getProperty property="email" name="user" />
 			</td>
 		</tr>
 	</table>
+	
 	<br/>	
+	
+	 <a id="modificarDatos" href="modificarDatos.jsp">Modificar datos</a>
+	 
+	 <br/>	
+	
 	Es Vd el usuario número: ${contador}
 </body>
 </html>

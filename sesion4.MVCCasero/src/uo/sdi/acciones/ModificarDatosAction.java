@@ -19,55 +19,92 @@ public class ModificarDatosAction implements Accion {
 		String nuevoNombre=request.getParameter("nombre");
 		String nuevosApellidos=request.getParameter("apellidos");
 		
-		String antiguaContraseña = request.getParameter("apellidos");
-		String nuevaContraseña = request.getParameter("apellidos");
-		String nuevaContraseñaVerificacion = request.getParameter("apellidos");
+		String antiguaContraseña = request.getParameter("pass");
+		String nuevaContraseña = request.getParameter("newPass");
+		String nuevaContraseñaVerificacion = request.getParameter("verPass");
 		
 		HttpSession session=request.getSession();
 		User usuario=((User)session.getAttribute("user"));
 	
+	//	request.setAttribute("error", null);
 		
-		//Solo se modificaran los datos si las contraseña antigua es correcta 
-		//y la nueva y de verificación también (si estas están vacias la
-		//contraseña no se modifica)
-		if(usuario.getPassword().equals(antiguaContraseña) 
-				&& nuevaContraseña.equals(nuevaContraseñaVerificacion)){
+		//Puede querer modificar solo la información personal y
+		//no la contraseña, por ello se comprueba que no modifica los campos de las
+		//contraseñas. 
+		if(comprobarDatos(nuevoNombre,nuevosApellidos,nuevoEmail)){
 			
-			
-			usuario.setEmail(nuevoEmail);
-			usuario.setName(nuevoNombre);
-			usuario.setSurname(nuevosApellidos);
-			
-			if(nuevaContraseña!=""){
-			
-				usuario.setPassword(nuevaContraseña);
-			
-			}
-			
-			
-		}
-		
-		else{
-			
-			if(!usuario.getPassword().equals(antiguaContraseña)){
-				request.setAttribute("error", "La contraseña actual es incorrecta");
+			if(comprobarNoModificaContraseñas(antiguaContraseña,nuevaContraseña
+					,nuevaContraseñaVerificacion)){
+				
+				usuario.setEmail(nuevoEmail);
+				usuario.setName(nuevoNombre);
+				usuario.setSurname(nuevosApellidos);
+				
+				
 			}
 			
 			else{
-				request.setAttribute("error","Las contraseñas no coinciden");
+				
+				if(usuario.getPassword().equals(antiguaContraseña) 
+						&& !nuevaContraseña.isEmpty() 
+						&& !nuevaContraseñaVerificacion.isEmpty()
+						&& nuevaContraseña.equals(nuevaContraseñaVerificacion)){
+					
+					usuario.setEmail(nuevoEmail);
+					usuario.setName(nuevoNombre);
+					usuario.setSurname(nuevosApellidos);
+					usuario.setPassword(nuevaContraseña);
+					
+					
+				}
+				
+				else{
+					
+					if(!usuario.getPassword().equals(antiguaContraseña)){
+						request.setAttribute("error", "La contraseña actual es incorrecta");
+						return "FRACASO";
+					}
+					
+					else if(nuevaContraseña.isEmpty() 
+							&& nuevaContraseñaVerificacion.isEmpty()){
+						request.setAttribute("error", "Debe especificar la nueva contraseña");
+						return "FRACASO";
+					}
+					
+					else{
+						request.setAttribute("error", "Las contraseñas no coinciden");
+						return "FRACASO";
+					}
+					
+					
+				}
+					
+				
 			}
-			
-			
 		}
+		
+		
+		else{
+			
+			if(comprobarNoModificaContraseñas(antiguaContraseña,nuevaContraseña
+					,nuevaContraseñaVerificacion)){
+				
+				request.setAttribute("error", "No puede haber campos vacios");
+				return "FRACASO";
+			}
+
+	
+		
+	}
 		
 		
 		try {
 			UserDao dao = PersistenceFactory.newUserDao();
 			dao.update(usuario);
-			Log.debug("Modificado email de [%s] con el valor [%s]", usuario.getLogin(), nuevoEmail);
+
 		}
 		catch (Exception e) {
-			Log.error("Algo ha ocurrido actualizando el email de [%s]", usuario.getLogin());
+			Log.error("Algo ha ocurrido actualizando los datos de [%s]", usuario.getLogin());
 		}
 		return "EXITO";
 	}
@@ -76,5 +113,34 @@ public class ModificarDatosAction implements Accion {
 	public String toString() {
 		return getClass().getName();
 	}
+	
+	
+	public boolean comprobarDatos(String nombre,String apellidos,String email){
+		
+		if(nombre.isEmpty() || apellidos.isEmpty() || email.isEmpty()){
+			return false;
+		}
+		
+		return true;
+		
+		
+		
+	}
+	
+	
+	
+	public boolean comprobarNoModificaContraseñas(String antiguaContraseña,String nuevaContraseña,String contraseñaVerificacion){
+		
+		if(antiguaContraseña.isEmpty() && nuevaContraseña.isEmpty() && contraseñaVerificacion.isEmpty()){
+			return true;
+		}
+		
+
+		return false;
+		
+		
+		
+	}
+	
 	
 }

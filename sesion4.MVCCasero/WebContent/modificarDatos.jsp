@@ -1,4 +1,5 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ include file="comprobarNavegacion.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -23,7 +24,7 @@
 		</tr>
 		<tr>
 			<td>Apellidos:</td><td id="surname">
-			<input type="text" name="email" size="15"
+			<input type="text" name="apellidos" size="15"
 						value="<jsp:getProperty property="surname" name="user"/>">
 		
 			</td> 
@@ -39,6 +40,35 @@
 			
 		</tr>
 		
+		<tr>
+			<td>Contraseña anterior:</td>
+			<td><input type="password" name="pass" size="15"
+						value="" />
+						</td>
+					
+			
+		</tr>
+		
+		<tr>
+			<td>Nueva Contraseña:</td>
+			<td><input type="password" name="newPass" size="15"
+						value="" />
+						</td>
+					
+			
+		</tr>
+		
+		
+			<tr>
+			<td>Confirmar Contraseña:</td>
+			<td><input type="password" name="verPass" size="15"
+						value="" />
+						</td>
+					
+			
+		</tr>
+		
+		
 		
 		
 	</table>
@@ -46,6 +76,12 @@
 		<input type="submit" value="Modificar"/>
 
 	</form>
+	
+	<br/>
+	
+	<c:if test="${error != null}" >
+		<p align="left"><c:out value="${error}"/></p>
+   </c:if>
 
 </body>
 </html>
