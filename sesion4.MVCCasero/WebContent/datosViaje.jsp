@@ -13,37 +13,45 @@
 	<jsp:useBean id="viaje" class="uo.sdi.model.Trip" scope="request" />
 	<jsp:useBean id="promotor" class="uo.sdi.model.User" scope="request" />
 	
-	<h2>Datos del promotor</h2>
-	
-	<h3>Información de contacto</h3>
-	
-		<table>
+	<table>
 
 		<tr>
-			<td>Nombre:</td><td id="name">
-			<input type="text" name="nombre" size="15"
-						value="<jsp:getProperty property="name" name="promotor"/>"> 
-						</td>
+			<td>Origen:</td><td>${viaje.departure.city}</td>
 		</tr>
 		<tr>
-			<td>Apellidos:</td><td id="surname">
-			<input type="text" name="apellidos" size="15"
-						value="<jsp:getProperty property="surname" name="promotor"/>">
-			</td> 
+			<td>Destino:</td><td>${viaje.destination.city}</td>
 		</tr>
 		<tr>
-			<td>Email:</td>
-			<td><input type="text" name="email" size="15"
-						value="<jsp:getProperty property="email" name="promotor"/>" />
-						</td>		
+			<td>Fecha salida:</td>
+			<td><jsp:getProperty property="departureDate" name="viaje"/></td>		
+		</tr>
+		
+		<tr>
+			<td>Fecha llegada:</td>
+			<td><jsp:getProperty property="arrivalDate" name="viaje"/></td>		
+		</tr>
+		
+		
+		<tr>
+			<td>Precio estimado:</td>
+			<td><jsp:getProperty property="estimatedCost" name="viaje"/> €</td>		
+		</tr>
+		
+		<tr>
+			<td>Comentario:</td>
+			<td><jsp:getProperty property="comments" name="viaje"/></td>		
 		</tr>
 				
-	</table>
-	
-	<h3>Puntuación y comentarios del promotor</h3>
+		</table>
 	
 	
+	<a href="informacionPromotor?id=${promotor.id}">Datos del promotor</a>	
+
+
 	
+			
+	
+
 		
 </body>
 </html>

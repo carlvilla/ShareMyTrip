@@ -5,6 +5,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import uo.sdi.model.Rating;
 import uo.sdi.model.Trip;
 import uo.sdi.model.User;
 import uo.sdi.persistence.PersistenceFactory;
@@ -19,6 +20,7 @@ public class MostrarDatosViajeAction implements Accion {
 		Trip viaje;
 		User promotor;
 		
+		
 		try {
 			
 			viaje=PersistenceFactory.newTripDao().findById(Long.valueOf(request.getParameter("id")));
@@ -26,6 +28,8 @@ public class MostrarDatosViajeAction implements Accion {
 			
 			promotor = PersistenceFactory.newUserDao().findById(viaje.getPromoterId());
 			request.setAttribute("promotor", promotor);
+			
+
 			
 			Log.debug("Obtenido viaje con id [%d]", viaje.getId());
 		}
