@@ -12,7 +12,7 @@
 <body>
 	<form action="registrarse" method="post">
 
-	<p>¿Ya tienes una cuenta?</p><a href="login.jsp">Iniciar sesión</a>
+	<right><p>¿Ya tienes una cuenta?</p><a href="login.jsp">Iniciar sesión</a></right>
  	<center><h1>Registrarse</h1></center>
  	
  	<hr><br>
