@@ -100,11 +100,13 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		mapaPublico.put("validarse", new ValidarseAction());
 		mapaPublico.put("listarViajes", new ListarViajesAction());
 		mapaPublico.put("registrarse", new RegistrarseAction());
+		mapaPublico.put("mostrarViaje", new RegistrarseAction()); //Publico intenta ver los datos del viaje
 		mapaDeAcciones.put("PUBLICO", mapaPublico);
 		
 		Map<String,Accion> mapaRegistrado=new HashMap<String,Accion>();
 		mapaRegistrado.put("modificarDatos", new ModificarDatosAction());
-		mapaRegistrado.put("mostrarDatos", new MostrarDatosAction());
+		mapaRegistrado.put("listarViajes", new ListarViajesAction());
+		mapaRegistrado.put("mostrarViaje", new MostrarDatosViajeAction());
 		mapaDeAcciones.put("REGISTRADO", mapaRegistrado);
 	}
 	
@@ -129,7 +131,13 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		resJSP.put("FRACASO","/registrarse.jsp");
 		opcionResJSP.put("registrarse", resJSP);
 		
+		//Pulsa id viaje y le lleva a registrarse (si es público no puede ver los datos)
+		resJSP=new HashMap<String, String>();
+		resJSP.put("EXITO","/registrarse.jsp");
+		opcionResJSP.put("mostrarViaje", resJSP);
+		
 		mapaDeNavegacion.put("PUBLICO",opcionResJSP);
+		
 		
 		// Crear mapas auxiliares vacíos
 		opcionResJSP=new HashMap<String, Map<String, String>>();
@@ -139,23 +147,27 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		resJSP.put("EXITO","/principal.jsp");
 		opcionResJSP.put("validarse", resJSP);
 		
-		
 		//Registrarse
 		resJSP=new HashMap<String, String>();
 		resJSP.put("EXITO","/principal.jsp");
 		opcionResJSP.put("registrarse", resJSP);
 	
-		//Mostrar datos
-		resJSP=new HashMap<String, String>();
-		resJSP.put("EXITO","/modificarDatos.jsp");
-		opcionResJSP.put("mostrarDatos", resJSP);
-		
 		//Modificar datos
 		resJSP=new HashMap<String, String>();
 		resJSP.put("EXITO","/principal.jsp");
 		resJSP.put("FRACASO","/modificarDatos.jsp");
 		opcionResJSP.put("modificarDatos", resJSP);
 		
+		//Listar viajes
+		resJSP=new HashMap<String, String>();
+		resJSP.put("EXITO","/listaViajes.jsp");
+		opcionResJSP.put("listarViajes", resJSP);
+		
+		//Datos viaje
+		resJSP=new HashMap<String, String>();
+		resJSP.put("EXITO","/datosViaje.jsp");
+		opcionResJSP.put("mostrarViaje", resJSP);
+				
 		
 		
 		mapaDeNavegacion.put("REGISTRADO",opcionResJSP);

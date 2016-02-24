@@ -26,7 +26,7 @@
 	
 	<br/>	
 	
-	 <a id="mostrarDatos" href="mostrarDatos">Modificar datos</a>
+	 <a id="mostrarDatos" href="modificarDatos.jsp">Modificar datos</a>
 	 
 	  
 	 <br/>
