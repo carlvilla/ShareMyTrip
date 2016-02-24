@@ -1,6 +1,7 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ include file="comprobarUsuario.jsp" %>
+<%@ include file="barraNavegacion.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -9,6 +10,8 @@
 <body>
 	
 	<jsp:useBean id="user" class="uo.sdi.model.User" scope="session" />
+	
+
 	
 	<form action="modificarDatos" method="POST">				
 	
@@ -61,11 +64,7 @@
 		<input type="submit" value="Modificar"/>
 
 	</form>
-	
-	<form action="principal.jsp" method="POST">
-    		<input type="submit" value="Menú principal">
-		</form>
-	
+		
 	<br/>
 	
 	<c:if test="${error != null}" >
