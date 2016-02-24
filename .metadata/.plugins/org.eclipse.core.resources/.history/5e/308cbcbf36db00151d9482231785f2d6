@@ -37,8 +37,6 @@
 	 
 	  <a id="cerrarSesion" href="cerrarSesion">Cerrar sesión</a>
 	
-	<br/>
-	
 	Es Vd el usuario número: ${contador}
 </body>
 </html>

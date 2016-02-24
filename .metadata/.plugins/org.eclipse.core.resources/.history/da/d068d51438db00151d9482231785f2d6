@@ -54,14 +54,11 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 			
 			Log.error("Se ha producido alguna excepción no manejada [%s]",e);
 			
-			if(opcion!=null && opcion.equals("mostrarViaje")){
+			if(opcion.equals("mostrarViaje")){
 				jspSiguiente="/registrarse.jsp";
 			}
 			
-			else{
 			jspSiguiente="/login.jsp";
-		
-			}
 		}
 			
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(jspSiguiente); 
