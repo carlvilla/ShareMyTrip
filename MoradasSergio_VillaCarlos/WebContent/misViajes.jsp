@@ -14,7 +14,7 @@
 <script>
 $(document).ready(function() {
 
-    $('#example tr').click(function() {
+    $('#tabla tr').click(function() {
         var href = $(this).find("a").attr("href");
         if(href) {
             window.location = href;
@@ -32,7 +32,7 @@ $(document).ready(function() {
 	<div class="container">
 		<h2>Viajes en los que ha tenido implicación</h2>
 
-		<table id="example" class="table table-hover" data-link="row">
+		<table id="tabla" class="table table-hover" data-link="row">
 			<thead>
 				<tr>
 					<th>Origen</th>

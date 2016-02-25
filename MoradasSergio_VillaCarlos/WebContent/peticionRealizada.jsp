@@ -11,8 +11,8 @@
 <body>
 	
 	<h2>Su petición ha sido aceptada!</h2>
-	
-	<p>En breve conocera si ha sido aceptado para el viaje de  a  el día   </p>
+
+	En breve conocera si ha sido aceptado para el viaje de <b>${viaje.departure.city}</b> a <b>${viaje.destination.city}</b> el día <b>${viaje.departureDate}</b> 
 
 </body>
 </html>

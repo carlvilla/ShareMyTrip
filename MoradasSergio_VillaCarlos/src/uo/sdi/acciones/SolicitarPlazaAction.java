@@ -60,6 +60,8 @@ public class SolicitarPlazaAction implements Accion {
 			
 			dao.update(viaje);*/
 			
+			request.setAttribute("viaje", viaje);
+			
 			return "EXITO";
 			
 		}
