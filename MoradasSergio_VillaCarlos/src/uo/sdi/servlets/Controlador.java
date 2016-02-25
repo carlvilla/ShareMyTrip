@@ -54,6 +54,8 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 			
 			Log.error("Se ha producido alguna excepción no manejada [%s]",e);
 			
+			//Si selecciona un viaje para ver su información y es un 
+			//usuario "PUBLICO" se le redirige a la JSP para registrarse
 			if(opcion!=null && opcion.equals("mostrarViaje")){
 				jspSiguiente="/registrarse.jsp";
 			}
@@ -118,6 +120,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		mapaRegistrado.put("registrarViaje", new RegistrarViajeAction());
 		mapaRegistrado.put("misViajes", new ListarMisViajesAction());
 		mapaRegistrado.put("solicitarPlaza", new SolicitarPlazaAction());
+		mapaRegistrado.put("administracionViaje", new AdministracionViajeAction());
 		mapaDeAcciones.put("REGISTRADO", mapaRegistrado);
 	}
 	
