@@ -17,7 +17,7 @@
 	<div class="container">
 		<h2>Viajes en los que ha tenido implicación</h2>
 
-		<table class="table table-hover">
+		<table class="table table-hover" data-link="row">
 			<thead>
 				<tr>
 					<th>Origen</th>
@@ -36,7 +36,7 @@
 					<c:forEach var="viaje" items="${entry.value}">
 
 						<tr id="item_${i.index}">
-							<td>${viaje.departure.city}</td>
+							<td><a href="principal.jsp">${viaje.departure.city}</a></td>
 							<td>${viaje.destination.city}</td>
 							<td>${viaje.departureDate}</td>
 							<td>${viaje.arrivalDate}</td>
