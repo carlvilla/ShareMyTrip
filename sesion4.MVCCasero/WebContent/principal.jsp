@@ -26,22 +26,9 @@
 	</table>
 	
 	<br/>	
-	
-	 <a id="modificarDatos" href="modificarDatos.jsp">Modificar datos</a>
-	 
-	  
-	 <br/>
-	  
-	 <a id="listarViajes" href="listarViajes">Lista de viajes</a>
-	 
-	  <br/>
-	  
+		  
 	 <a id="registrarViaje" href="registrarViaje.jsp">Registrar Viaje</a>
 	 
-	 <br/>	
-	 
-	  <a id="cerrarSesion" href="cerrarSesion">Cerrar sesión</a>
-	
 	<br/>
 	
 	Es Vd el usuario número: ${contador}

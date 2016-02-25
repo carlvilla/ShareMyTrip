@@ -1,0 +1,49 @@
+<head>
+	<style>
+		nav {
+			height: 45px;
+			left : 0;
+			width : 100%;
+			background : url(resources/nav_background.png);
+ 		    margin-bottom: 15px;
+ 		    margin-top: -16;
+			
+			}
+			nav ul {
+			margin : 0 auto;
+			width : 800px;
+			list-style : none;
+			}
+			nav ul li {
+			float : left;
+			}
+			nav ul li a {
+			display : block;
+			margin-right : 20px;
+			width : 140px;
+			font-size : 14px;
+			line-height : 44px;
+			text-align : center;
+			text-decoration : none;
+			color : #ccc;
+			}
+			nav ul li a:hover {
+			color : #fff;
+			}
+			nav ul li.selected a {
+			color : #fff;
+			}
+			
+	
+	</style>
+</head>
+<nav>
+
+        <ul class="menu">  
+            <li><a href="registrarViaje.jsp">Registrar Viaje</a></li>  
+            <li><a href="modificarDatos.jsp">Modificar Viaje</a></li>  
+            <li><a href="listarViajes">Eliminar Viaje</a></li>
+        </ul>    
+        
+        
+</nav>
