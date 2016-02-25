@@ -74,7 +74,7 @@ $(document).ready(function() {
 							<td>
   <ul>
   <c:choose>
-    <c:when test="${entry.key=='PENDIENTE'}">
+    <c:when test="${entry.key=='PROMOTOR'}">
         <li><a href="#">Listado Solicitudes</a></li>
          <li><a href="#">Cancelar viaje</a></li>
           <li><a href="#">Modificar viaje</a></li>
