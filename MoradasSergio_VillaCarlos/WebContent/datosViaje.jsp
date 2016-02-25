@@ -14,7 +14,7 @@
 	<jsp:useBean id="viaje" class="uo.sdi.model.Trip" scope="request" />
 	<jsp:useBean id="promotor" class="uo.sdi.model.User" scope="request" />
 	
-	<form action="#" >
+	<form action="solicitarPlaza" >
 	
 		<input type="hidden" name="idViaje" value="${viaje.id}">
 	
