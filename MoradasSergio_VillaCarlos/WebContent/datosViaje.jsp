@@ -21,29 +21,40 @@
 	<table>
 
 		<tr>
-			<td>Origen:</td><td>${viaje.departure.city}</td>
+			<td>Origen: </td><td>${viaje.departure.city}</td>
 		</tr>
 		<tr>
-			<td>Destino:</td><td>${viaje.destination.city}</td>
+			<td>Destino: </td><td>${viaje.destination.city}</td>
 		</tr>
 		<tr>
-			<td>Fecha salida:</td>
+			<td>Fecha salida: </td>
 			<td><jsp:getProperty property="departureDate" name="viaje"/></td>		
 		</tr>
 		
 		<tr>
-			<td>Fecha llegada:</td>
+			<td>Fecha llegada: </td>
 			<td><jsp:getProperty property="arrivalDate" name="viaje"/></td>		
 		</tr>
 		
 		
 		<tr>
-			<td>Precio estimado:</td>
+			<td>Precio estimado: </td>
 			<td><jsp:getProperty property="estimatedCost" name="viaje"/> €</td>		
 		</tr>
 		
 		<tr>
-			<td>Comentario:</td>
+			<td>Asientos del vehiculo: </td>
+			<td><jsp:getProperty property="maxPax" name="viaje"/></td>		
+		</tr>
+				
+		<tr>
+			<td>Asientos libres: </td>
+			<td><jsp:getProperty property="availablePax" name="viaje"/></td>		
+		</tr>
+				
+		
+		<tr>
+			<td>Comentario: </td>
 			<td><jsp:getProperty property="comments" name="viaje"/></td>		
 		</tr>
 				

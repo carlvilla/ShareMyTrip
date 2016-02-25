@@ -53,11 +53,11 @@ public class SolicitarPlazaAction implements Accion {
 			}
 			
 			
-			TripDao dao = PersistenceFactory.newTripDao();
+			/*TripDao dao = PersistenceFactory.newTripDao();
 			
 			viaje.setAvailablePax(viaje.getAvailablePax()-1);
 			
-			dao.update(viaje);
+			dao.update(viaje);*/
 			
 			return "EXITO";
 			
