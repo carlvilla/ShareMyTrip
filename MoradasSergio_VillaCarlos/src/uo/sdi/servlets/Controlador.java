@@ -198,9 +198,6 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		//Solicitar plaza
 		resJSP=new HashMap<String, String>();
 		resJSP.put("FRACASO","/sinPlazas.jsp");
-		opcionResJSP.put("solicitarPlaza", resJSP);		
-	
-		resJSP=new HashMap<String, String>();
 		resJSP.put("EXITO","/peticionRealizada.jsp");
 		opcionResJSP.put("solicitarPlaza", resJSP);		
 		
