@@ -66,37 +66,38 @@
 	<table>
 	<caption>Otros datos del viaje</caption>
 		<tr>
-			<td>Fecha Salida:</td>
-			<td><input type="text" name="fechaSalida" align="left" size="15"></td>
+			<td>Fecha y Hora Salida:</td>
+			<td><input type="text" name="fechaHoraSalida" placeholder="dd/MM/yyyy-HH:mm:ss" align="left" size="18"></td>
 		</tr>
 		<tr>
-			<td>Hora:</td>
-			<td><input type="text" name="horaSalida" align="left" size="15"></td>
+			<td>Fecha y Hora LLegada:</td>
+			<td><input type="text" name="fechaHoraLLegada" placeholder="dd/MM/yyyy-HH:mm:ss" align="left" size="18"></td>
 		</tr>
 		<tr>
 			<td>Fecha limite para apuntarse:</td>
-			<td><input type="text" name="fechaLimite" align="left" size="15"></td>
+			<td><input type="text" name="fechaLimite"  placeholder="dd/MM/yyyy-HH:mm:ss" align="left" size="18"></td>
 		</tr>
 		<tr>
 			<td>Coste Viaje:</td>
-			<td><input type="text" name="costeViaje"align="left" size="15"></td>		
+			<td><input type="text" name="costeViaje"align="left" size="18"></td>		
 		</tr>	
 		<tr>
 			<td>Descripción del Viaje</td>		
-			<td><input type="text" name="descripcionViaje"align="left" size="15" ></td>			
+			<td><input type="text" name="descripcionViaje"align="left" size="18" ></td>			
 		</tr>	
 		<tr>
 			<td>Nº maximo de plazas</td>		
-			<td><input type="text" name="numeroMaxPlazas"align="left" size="15" ></td>			
+			<td><input type="text" name="numeroMaxPlazas"align="left" size="18" ></td>			
 		</tr>	
 		<tr>
 			<td>Nº plazas disponibles</td>		
-			<td><input type="text" name="numeroDispPlazas"align="left" size="15" ></td>			
+			<td><input type="text" name="numeroDispPlazas"align="left" size="18" ></td>			
 		</tr>	
 			
 	</table>
 		
 		<input type="submit" value="Registrar Viaje"/>
+
 
 	</form>
 		
