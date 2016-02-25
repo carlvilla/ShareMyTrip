@@ -14,7 +14,7 @@
 			}
 			nav ul {
 			margin : 0 auto;
-			width : 800px;
+			width : 840px;
 			list-style : none;
 			}
 			nav ul li {

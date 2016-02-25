@@ -4,9 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-
 <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-
 <title>ShareMyTrip - Página principal del usuario</title>
 </head>
 <body>

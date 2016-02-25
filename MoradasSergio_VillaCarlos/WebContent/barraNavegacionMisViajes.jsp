@@ -11,7 +11,7 @@
 			}
 			#navMisViajes ul {
 			margin : 0 auto;
-			width : 482px;
+			width : 520px;
 			list-style : none;
 			}
 			#navMisViajes ul li {
