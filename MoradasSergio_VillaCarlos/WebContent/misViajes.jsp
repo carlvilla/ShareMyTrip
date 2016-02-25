@@ -1,6 +1,6 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ include file="comprobarUsuario.jsp" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ include file="comprobarUsuario.jsp"%>
 <%@ include file="barraNavegacion.jsp"%>
 <%@ include file="barraNavegacionMisViajes.jsp"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -13,42 +13,51 @@
 <body>
 
 	<h1>Mis viajes</h1>
-		
+
 	<div class="container">
-  <h2>Hover Rows</h2>
-  <p>The .table-hover class enables a hover state on table rows:</p>            
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-	
-	
+		<h2>Viajes en los que ha tenido implicación</h2>
 
-	
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Origen</th>
+					<th>Destino</th>
+					<th>Fecha salida</th>
+					<th>Fecha llegada</th>
+					<th>Fecha límite inscripción</th>
+					<th>Implicación con el viaje</th>
+				</tr>
+			</thead>
+			<tbody>
 
-		
+				<c:forEach var="entry" items="${viajes}" varStatus="i">
+
+
+					<c:forEach var="viaje" items="${entry.value}">
+
+						<tr id="item_${i.index}">
+							<td>${viaje.departure.city}</td>
+							<td>${viaje.destination.city}</td>
+							<td>${viaje.departureDate}</td>
+							<td>${viaje.arrivalDate}</td>
+							<td>${viaje.closingDate}</td>
+							<td>${entry.key}</td>
+
+						</tr>
+
+
+					</c:forEach>
+
+				</c:forEach>
+
+			</tbody>
+		</table>
+	</div>
+
+
+
+
+
+
 </body>
 </html>

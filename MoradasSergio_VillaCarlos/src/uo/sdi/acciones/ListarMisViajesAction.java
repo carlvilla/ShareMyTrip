@@ -1,7 +1,9 @@
 package uo.sdi.acciones;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -43,13 +45,15 @@ public class ListarMisViajesAction implements Accion {
 			viajesInteresado.add(PersistenceFactory.newTripDao().findById(app.getTripId()));
 		}
 		
-		
-		
 		viajesPromotor = PersistenceFactory.newTripDao().findByPromoterId(idUsuario);
 		
-		request.setAttribute("viajesParticipante", viajesParticipante);
-		request.setAttribute("viajesInteresado", interesadosAux);
-		request.setAttribute("viajesPromotor", viajesPromotor);
+		Map<String,List<Trip>> viajes = new HashMap<String,List<Trip>>();
+		viajes.put("PARTICIPANTE", viajesParticipante);
+		viajes.put("PROMOTOR", viajesPromotor);
+		viajes.put("INTERESADO", viajesInteresado);
+		
+		request.setAttribute("viajes", viajes);
+	
 		
 				
 		return "EXITO";
