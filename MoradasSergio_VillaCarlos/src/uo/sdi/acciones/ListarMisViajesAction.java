@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import uo.sdi.model.Application;
 import uo.sdi.model.Seat;
+import uo.sdi.model.SeatStatus;
 import uo.sdi.model.Trip;
 import uo.sdi.model.User;
 import uo.sdi.persistence.PersistenceFactory;
@@ -26,31 +27,48 @@ public class ListarMisViajesAction implements Accion {
 
 		List<Trip> viajesParticipante = new LinkedList<Trip>(); //Tabla TSeats
 		List<Trip> viajesInteresado = new LinkedList<Trip>(); //Tabla TApplications
+		List<Trip> viajesExcluido = new LinkedList<Trip>(); //Tabla TApplications
+		List<Trip> viajesSinPlaza = new LinkedList<Trip>(); //Tabla TApplications
 		List<Trip> viajesPromotor; //Tabla TTrip
 		
 		HttpSession session = request.getSession();
 		
 		Long idUsuario = (Long)((User) session.getAttribute("user")).getId();
 	
-		
 		List<Seat> participanteAux = PersistenceFactory.newSeatDao().findByUser(idUsuario);
 		
 		for(Seat seat:participanteAux){
-			viajesParticipante.add(PersistenceFactory.newTripDao().findById(seat.getTripId()));
+			
+			Trip viajeSeat = PersistenceFactory.newTripDao().findById(seat.getTripId());
+			
+			if(seat.getStatus().equals(SeatStatus.ACCEPTED))
+				viajesParticipante.add(viajeSeat);
+			else
+				viajesExcluido.add(viajeSeat);
+			
 		}
 		
 		List<Application> interesadosAux = PersistenceFactory.newApplicationDao().findByUserId(idUsuario); 
 			
 		for(Application app: interesadosAux){
-			viajesInteresado.add(PersistenceFactory.newTripDao().findById(app.getTripId()));
+			Trip viajeApp = PersistenceFactory.newTripDao().findById(app.getTripId());
+			
+			if(viajeApp.getAvailablePax()>0)
+				viajesInteresado.add(viajeApp);
+			else
+				viajesSinPlaza.add(viajeApp);
+			
 		}
 		
 		viajesPromotor = PersistenceFactory.newTripDao().findByPromoterId(idUsuario);
 		
 		Map<String,List<Trip>> viajes = new HashMap<String,List<Trip>>();
-		viajes.put("PARTICIPANTE", viajesParticipante);
+		viajes.put("ADMITIDO", viajesParticipante);
 		viajes.put("PROMOTOR", viajesPromotor);
-		viajes.put("INTERESADO", viajesInteresado);
+		viajes.put("PENDIENTE", viajesInteresado);
+		viajes.put("SIN PLAZA", viajesSinPlaza);
+		viajes.put("EXCLUIDO", viajesExcluido);
+		
 		
 		request.setAttribute("viajes", viajes);
 	

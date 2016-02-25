@@ -47,6 +47,7 @@ public class SolicitarPlazaAction implements Accion {
 			catch(PersistenceException e){
 				
 				//Ya está apuntado a ese viaje
+				Log.debug("Ya tiene una solicitud para este viaje [%d]", idViaje);
 				
 				return "FRACASO";
 				

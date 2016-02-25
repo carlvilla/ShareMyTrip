@@ -12,7 +12,7 @@
 </head>
 <body>
 
-	<h1>Mis viajes</h1>
+	<center><h1>Mis viajes</h1></center>
 
 	<div class="container">
 		<h2>Viajes en los que ha tenido implicación</h2>
