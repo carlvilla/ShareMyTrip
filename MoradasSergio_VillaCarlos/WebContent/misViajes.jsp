@@ -58,14 +58,9 @@ $(document).ready(function() {
 							<td>${viaje.arrivalDate}</td>
 							<td>${viaje.closingDate}</td>
 							<td>${entry.key}</td>
-
 						</tr>
-
-
 					</c:forEach>
-
 				</c:forEach>
-
 			</tbody>
 		</table>
 	</div>

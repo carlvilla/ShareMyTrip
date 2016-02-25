@@ -52,6 +52,8 @@ public class RegistrarViajeAction implements Accion {
 
 		HttpSession session = request.getSession();
 		
+		//String resultado ="EXITO";
+		
 		//Comprobamos que no hay caso vacios a excepcion de la longitud y latitud
 		if (comprobarCamposVacios(calleSalida, ciudadSalida, provinciaSalida,
 				paisSalida, postalSalida, longitudSalida, latitudSalida,
@@ -89,11 +91,27 @@ public class RegistrarViajeAction implements Accion {
 				newTrip.setDepartureDate(formatoDeFecha.parse(fechaHoraLLegada));
 				newTrip.setClosingDate(formatoDeFecha.parse(fechaLimite));
 
+				//Comprobamos fechas
+				if(formatoDeFecha.parse(fechaHoraSalida)
+						.after(formatoDeFecha.parse(fechaHoraLLegada))||
+						formatoDeFecha.parse(fechaLimite).after(formatoDeFecha.parse(fechaHoraSalida))){
+					request.setAttribute("error", "Error al registrarse: FECHAS INCORRECTAS");
+					return "FRACASO";
+				}
+				
 				newTrip.setEstimatedCost(Double.parseDouble(costeViaje));
 				newTrip.setComments(descripcionViaje);
 				newTrip.setMaxPax(Integer.parseInt(nMaxPlazas));
 				newTrip.setAvailablePax(Integer.parseInt(nDispoPlazas));
 				newTrip.setStatus(TripStatus.OPEN);
+				
+				//Comprobamos numeros negativos o concordancia de plazas
+				if(Double.parseDouble(costeViaje)<=0||Integer.parseInt(nMaxPlazas)<=0||
+						Integer.parseInt(nDispoPlazas)<=0 
+						|| Integer.parseInt(nMaxPlazas)<Integer.parseInt(nDispoPlazas)){
+					request.setAttribute("error", "Error al registrarse: DATOS INCORRECTOS");
+					return "FRACASO";
+				}
 				
 				//Obtenemos el id del promotor 
 				User usuario = ((User) session.getAttribute("user"));
@@ -106,8 +124,10 @@ public class RegistrarViajeAction implements Accion {
 				Trip tripMismaFecha = tdao
 						.findByPromoterIdAndArrivalDate(userByLogin.getId(), 
 								formatoDeFecha.parse(fechaHoraSalida));
-				if(tripMismaFecha!=null)
+				if(tripMismaFecha!=null){
+					request.setAttribute("error", "Error al registrarse: YA HAS CREADO UN VIAJE EN ESA MISMA FECHA");
 					return "FRACASO";
+				}
 				
 				//Añadimos el viaje a la BD
 				TripDao trip = PersistenceFactory.newTripDao();

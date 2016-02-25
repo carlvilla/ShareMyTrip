@@ -39,7 +39,7 @@
       	</tr>
       </table>
    </form>
-<c:if test="${error != null}">
+	<c:if test="${error != null}">
    		<p align="center"><c:out value="${error}"/></p>
    </c:if>
    
