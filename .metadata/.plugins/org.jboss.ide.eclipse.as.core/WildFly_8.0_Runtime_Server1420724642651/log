@@ -1441,3 +1441,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-25 01:14:40.100
 !MESSAGE 1 files modified in module sesion4.MVCCasero
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2016-02-25 01:17:11.913
+!MESSAGE 1 files modified in module sesion4.MVCCasero
