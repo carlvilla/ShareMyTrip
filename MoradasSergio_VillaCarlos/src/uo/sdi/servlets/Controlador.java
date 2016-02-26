@@ -240,7 +240,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		
 		//Listar solicitantes
 		resJSP=new HashMap<String, String>();
-		resJSP.put("EXITO","/listarSolicitantes.jsp");
+		resJSP.put("EXITO","/listarSolicitudes");
 		opcionResJSP.put("administrarSolicitud", resJSP);	
 				
 		
