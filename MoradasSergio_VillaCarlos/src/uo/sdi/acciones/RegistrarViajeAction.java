@@ -66,18 +66,27 @@ public class RegistrarViajeAction implements Accion {
 				
 				Trip newTrip = new Trip();
 
+				Waypoint wSalida = new Waypoint(null,null);
 				//Creamos AdreesPoint de la Salida
-				Waypoint wSalida = new Waypoint(
-						Double.parseDouble(latitudSalida),
-						Double.parseDouble(longitudSalida));
+				if(latitudSalida.compareTo("")!=0&&longitudSalida.compareTo("")!=0){
+					wSalida = new Waypoint(
+							Double.parseDouble(latitudSalida),
+							Double.parseDouble(longitudSalida));
+				}
+			
 				AddressPoint addresSalida = new AddressPoint(calleSalida,
 						ciudadSalida, provinciaSalida, paisSalida,
 						postalSalida, wSalida);
 				
 				//Creamos AdreesPoint del Destino
-				Waypoint wDestino = new Waypoint(
-						Double.parseDouble(latitudDestino),
-						Double.parseDouble(longitudDestino));
+				Waypoint wDestino = new Waypoint(null,null);
+				//Creamos AdreesPoint de la Salida
+				if(latitudSalida.compareTo("")!=0&&longitudSalida.compareTo("")!=0){
+					wDestino = new Waypoint(
+							Double.parseDouble(latitudDestino),
+							Double.parseDouble(longitudDestino));
+				}
+				
 				AddressPoint addresDestino = new AddressPoint(calleDestino,
 						ciudadDestino, provinciaDestino, paisDestino,
 						postalDestino, wDestino);

@@ -3,6 +3,7 @@
 <%@ include file="comprobarUsuario.jsp" %>
 <%@ include file="barraNavegacion.jsp"%>
 <%@ include file="barraNavegacionMisViajes.jsp"%>
+<%@ taglib uri="http://www.uniovi.es/sdi" prefix="fh" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -13,7 +14,7 @@
 
 	<h1 align="center">Datos del viaje</h1>
 		
-<form action="modificarViaje" method="POST">				
+<form action="modificarViaje?viajeID=${viajeModificar.id}" method="POST">				
 	<div class="col-sm-4">
 	<table>
 	<caption style="text-align: center;font-size: 2rem">Lugar de Salida</caption>
@@ -88,17 +89,17 @@
 		<tr>
 			<td><p>Fecha y Hora Salida:</p></td>
 			<td><input class="form-control form-control-sm" type="text" name="fechaHoraSalida" 
-				value="${viajeModificar.departureDate}" align="left" size="18"></td>
+				value=<fh:fechaHora idViaje="${viajeModificar.id}" date="departureDate"/> align="left" size="18"></td>
 		</tr>
 		<tr>
 			<td>Fecha y Hora LLegada:</td>
 			<td><input class="form-control form-control-sm" type="text" name="fechaHoraLLegada" 
-				value="${viajeModificar.arrivalDate}" align="left" size="18"></td>
+				value=<fh:fechaHora idViaje="${viajeModificar.id}" date="arrivalDate"/> align="left" size="18"></td>
 		</tr>
 		<tr>
 			<td>Fecha limite para apuntarse:</td>
 			<td><input  class="form-control form-control-sm" type="text" name="fechaLimite"  
-				value="${viajeModificar.closingDate}" align="left" size="18"></td>
+				value=<fh:fechaHora idViaje="${viajeModificar.id}" date="closingDate"/> align="left" size="18"></td>
 		</tr>
 		<tr>
 			<td>Coste Viaje:</td>
