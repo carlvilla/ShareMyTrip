@@ -141,7 +141,7 @@ public class RegistrarViajeAction implements Accion {
 
 			return "EXITO";
 		} else {
-			request.setAttribute("error", "Error al registrarse: CAMPOS VACIOS");
+			request.setAttribute("error", "Error al registrarse:CAMPOS VACIOS");
 			return "FRACASO";
 		}
 	}
