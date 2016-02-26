@@ -2,17 +2,20 @@ package uo.sdi.acciones;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import uo.sdi.model.AddressPoint;
+import uo.sdi.model.Seat;
 import uo.sdi.model.Trip;
 import uo.sdi.model.TripStatus;
 import uo.sdi.model.User;
 import uo.sdi.model.Waypoint;
 import uo.sdi.persistence.PersistenceFactory;
+import uo.sdi.persistence.SeatDao;
 import uo.sdi.persistence.TripDao;
 import uo.sdi.persistence.UserDao;
 import alb.util.log.Log;
@@ -50,6 +53,8 @@ public class ModificarViajeAction implements Accion{
 	String nMaxPlazas = request.getParameter("numeroMaxPlazas");
 	String nDispoPlazas = request.getParameter("numeroDispPlazas");
 
+	
+	Long idViaje = Long.valueOf(request.getParameter("viajeID"));
 	HttpSession session = request.getSession();
 	
 	//String resultado ="EXITO";
@@ -110,6 +115,14 @@ public class ModificarViajeAction implements Accion{
 			
 			newTrip.setEstimatedCost(Double.parseDouble(costeViaje));
 			newTrip.setComments(descripcionViaje);
+			
+			SeatDao daoSeat = PersistenceFactory.newSeatDao();
+			int seatsConfirmados = daoSeat.findByTrip(idViaje).size();
+			if(Integer.parseInt(nMaxPlazas)<seatsConfirmados){
+				request.setAttribute("error", "Error al registrarse: NUMERO MAX DE PLAZAS NO ADMITIDO");
+				return "FRACASO";
+			}
+			
 			newTrip.setMaxPax(Integer.parseInt(nMaxPlazas));
 			newTrip.setAvailablePax(Integer.parseInt(nDispoPlazas));
 			newTrip.setStatus(TripStatus.OPEN);
@@ -129,7 +142,7 @@ public class ModificarViajeAction implements Accion{
 
 			newTrip.setPromoterId(userByLogin.getId());
 			
-			Long idViaje = Long.valueOf(request.getParameter("viajeID"));
+			
 			newTrip.setId(idViaje);
 			
 			//Añadimos el viaje a la BD
