@@ -22,6 +22,9 @@
 	    	<td><input type="password" id="inputPassword" class="form-control" name="passwordUsuario" align="left" size="15"></td>
       	</tr>
       	<tr>
+		<td></br></td>
+		</tr>
+      	<tr>
     	    <td colspan="2"><input class="btn btn-lg btn-primary btn-block" type="submit"  value="Enviar" /></td>
       	</tr>
       </table>
