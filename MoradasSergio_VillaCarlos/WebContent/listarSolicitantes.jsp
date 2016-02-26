@@ -10,6 +10,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
+<style>
+	
+	#id{
+		color:red;
+	}
+
+
+</style>
 
 </head>
 
@@ -18,6 +26,7 @@
 	<center><h2>Solicitantes de plaza</h2></center>
 	
 	<br/>
+	
 	
 	<div class="container">
 		<table id="tabla" class="table table-hover">
@@ -33,12 +42,24 @@
 					<td>${user.name}</td>
 					<td>${user.surname}</td>
 					<td>${user.email}</td>
+					
+					
+					<c:choose>
+					<c:when test="${viaje.availablePax > 0}">
 					<td>
 						<ul>
 							<li><a href="administrarSolicitud?decision=aceptada&idViaje=${param.idViaje}&idUsuario=${user.id}">Aceptar solicitud</a></li>
 							<li><a href="administrarSolicitud?decision=cancelada&idViaje=${param.idViaje}&idUsuario=${user.id}">Cancelar solicitud</a></li>			
 						</ul>
 					</td>
+					</c:when>
+					<c:otherwise>
+					
+					<td id="sinPlaza">
+						No se puede administrar la solicitud porque no quedan plazas
+					</td>
+					</c:otherwise>
+					</c:choose>
 				</tr>
 			</c:forEach>
 		</table>

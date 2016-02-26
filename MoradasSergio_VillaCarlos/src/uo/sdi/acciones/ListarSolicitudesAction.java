@@ -9,8 +9,10 @@ import javax.servlet.http.HttpServletResponse;
 import uo.sdi.model.Application;
 import uo.sdi.model.Seat;
 import uo.sdi.model.SeatStatus;
+import uo.sdi.model.Trip;
 import uo.sdi.model.User;
 import uo.sdi.persistence.PersistenceFactory;
+import uo.sdi.persistence.TripDao;
 import uo.sdi.persistence.UserDao;
 import alb.util.log.Log;
 
@@ -26,6 +28,16 @@ public class ListarSolicitudesAction implements Accion {
 		List<User> usuariosConfirmados = new LinkedList<User>();
 		
 		Long idViaje = Long.valueOf(request.getParameter("idViaje"));
+		
+		TripDao daoViaje = PersistenceFactory.newTripDao();
+		Trip viaje = daoViaje.findById(idViaje);
+		
+		//El viaje es necesario en el jsp de listar solicitudes, porque si
+		//ya están todas las plazas ocupadas las solicitudes que queden
+		//no se podrán administrar. De modo que si alguien cancela la 
+		//participación se podrán aceptar la solicitud de estos
+		request.setAttribute("viaje", viaje);
+		
 		
 		solicitudes = PersistenceFactory.newApplicationDao()
 				.findByTripId(idViaje);

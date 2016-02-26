@@ -26,13 +26,14 @@ public class AdministrarSolicitudAction implements Accion {
 		Long idUsuario = Long.valueOf(request.getParameter("idUsuario"));
 		Long idViaje = Long.valueOf(request.getParameter("idViaje"));
 		
+		TripDao daoViaje = PersistenceFactory.newTripDao();
+		Trip viaje = daoViaje.findById(idViaje);
+		
 		Long[] ids = {idUsuario,idViaje};
 		daoApp.delete(ids);
 		
 		String decision = request.getParameter("decision");
 		
-		TripDao daoViaje = PersistenceFactory.newTripDao();
-		Trip viaje = daoViaje.findById(idViaje);
 		
 		Seat seat = new Seat();
 		seat.setUserId(idUsuario);
