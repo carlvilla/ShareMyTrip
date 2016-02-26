@@ -36,7 +36,7 @@
 					<td>
 						<ul>
 							<li><a href="administrarSolicitud?decision=aceptada&idViaje=${param.idViaje}&idUsuario=${user.id}">Aceptar solicitud</a></li>
-							<li><a href="administrarSolicitud?decision=cancelada&idViaje=${viaje.id}&idUsuario=${user.id}">Cancelar solicitud</a></li>			
+							<li><a href="administrarSolicitud?decision=cancelada&idViaje=${param.idViaje}&idUsuario=${user.id}">Cancelar solicitud</a></li>			
 						</ul>
 					</td>
 				</tr>

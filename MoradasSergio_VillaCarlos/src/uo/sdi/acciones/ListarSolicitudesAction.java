@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import uo.sdi.model.Application;
 import uo.sdi.model.Seat;
+import uo.sdi.model.SeatStatus;
 import uo.sdi.model.User;
 import uo.sdi.persistence.PersistenceFactory;
 import uo.sdi.persistence.UserDao;
@@ -43,7 +44,8 @@ public class ListarSolicitudesAction implements Accion {
 		confirmados = PersistenceFactory.newSeatDao().findByTrip(idViaje);
 		
 		for(Seat seat: confirmados){
-			usuariosConfirmados.add(dao.findById(seat.getUserId()));
+			if(seat.getStatus().equals(SeatStatus.ACCEPTED))
+				usuariosConfirmados.add(dao.findById(seat.getUserId()));
 				
 		}
 		

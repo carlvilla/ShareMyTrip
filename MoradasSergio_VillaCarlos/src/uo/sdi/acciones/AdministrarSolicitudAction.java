@@ -48,6 +48,7 @@ public class AdministrarSolicitudAction implements Accion {
 		}
 		
 		else{
+			
 			seat.setStatus(SeatStatus.EXCLUDED);
 		}
 		
