@@ -1,18 +1,14 @@
 package uo.sdi.acciones;
 
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import uo.sdi.model.Application;
-import uo.sdi.model.Rating;
 import uo.sdi.model.Trip;
 import uo.sdi.model.User;
 import uo.sdi.persistence.PersistenceException;
 import uo.sdi.persistence.PersistenceFactory;
-import uo.sdi.persistence.TripDao;
 import alb.util.log.Log;
 
 public class SolicitarPlazaAction implements Accion {
@@ -52,14 +48,7 @@ public class SolicitarPlazaAction implements Accion {
 				return "FRACASO";
 				
 			}
-			
-			
-			/*TripDao dao = PersistenceFactory.newTripDao();
-			
-			viaje.setAvailablePax(viaje.getAvailablePax()-1);
-			
-			dao.update(viaje);*/
-			
+					
 			request.setAttribute("viaje", viaje);
 			
 			return "EXITO";

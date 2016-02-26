@@ -10,37 +10,40 @@
 
 <title>ShareMyTrip - Mis viajes</title>
 <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 <script>
-$(document).ready(function() {
+	$(document).ready(function() {
 
-    $('#tabla tr').click(function() {
-        var href = $(this).find("a").attr("href");
-        if(href) {
-            window.location = href;
-        }
-    });
+		$('#tabla tr').click(function() {
+			var href = $(this).find("a").attr("href");
+			if (href) {
+				window.location = href;
+			}
+		});
 
-});
-
-
-
+	});
 </script>
 
+<style>
+h1 {
+	text-align: center;
+}
+</style>
 
 
 </head>
 <body>
 
-	<center><h1>Mis viajes</h1></center>
+	<h1>Mis viajes</h1>
 
- 
+
 
 	<div class="container">
 		<h2>Viajes en los que ha tenido implicación</h2>
 
-		<table id="tabla" class="table table-hover" >
+		<table id="tabla" class="table table-hover">
 			<thead>
 				<tr>
 					<th>ID</th>
@@ -51,8 +54,8 @@ $(document).ready(function() {
 					<th>Fecha límite inscripción</th>
 					<th>Implicación con el viaje</th>
 					<th>Administracion</th>
-	
-					
+
+
 				</tr>
 			</thead>
 			<tbody>
@@ -70,35 +73,37 @@ $(document).ready(function() {
 							<td>${viaje.arrivalDate}</td>
 							<td>${viaje.closingDate}</td>
 							<td>${entry.key}</td>
-							
+
 							<td>
-  <ul>
-  <c:choose>
-    <c:when test="${entry.key=='PROMOTOR'}">
-        <li><a href="#">Listado Solicitudes</a></li>
-         <li><a href="#">Cancelar viaje</a></li>
-          <li><a href="#">Modificar viaje</a></li>
-    </c:when>    
-    <c:otherwise>
-        <li><a href="#">Cancelar plaza</a></li>
-    </c:otherwise>
-</c:choose>
+								<ul>
+									<c:choose>
+										<c:when test="${entry.key=='PROMOTOR'}">
+											<li><a href="#">Listado Solicitudes</a></li>
+											<li><a href="#">Cancelar viaje</a></li>
+											<li><a href="#">Modificar viaje</a></li>
+										</c:when>
+										<c:otherwise>
+											<c:if test="${entry.key!='SIN PLAZA' && entry.key!='EXCLUIDO'}">
+											<li><a href="cancelarPlaza?
+											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar plaza</a></li>
+											</c:if>
+										</c:otherwise>
+									</c:choose>
+								</ul>
+							</td>
+						</tr>
 
-    </ul>
-</td>
-</tr>
+					</c:forEach>
 
-</c:forEach>
+				</c:forEach>
 
-</c:forEach>
-
-</tbody>
+			</tbody>
 
 
-</table>
+		</table>
 
 
-</div>
+	</div>
 
 
 
