@@ -31,7 +31,6 @@
 	 <a id="registrarViaje" href="registrarViaje.jsp">Registrar Viaje</a>
 	 
 	<br/>
-	
-	Es Vd el usuario número: ${contador}
+
 </body>
 </html>

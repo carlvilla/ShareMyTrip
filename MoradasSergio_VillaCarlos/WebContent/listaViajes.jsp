@@ -34,7 +34,6 @@ $(document).ready(function() {
 	<div class="container">
 		<table id="tabla" class="table table-hover">
 			<tr>
-				
 				<th>ID viaje</th>
 				<th>Origen</th>
 				<th>Destino</th>
