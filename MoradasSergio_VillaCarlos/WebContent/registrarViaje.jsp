@@ -112,7 +112,8 @@
 		</tr>	
 		<tr>
 		<c:if test="${error != null}">
-   			<td colspan="2"><p ><c:out value="${error}"/></p></td>
+			<td><img src="resources/error.png" align="right"></td>
+   			<td><p align="center"><c:out value="${error}"/></p></td>
    		</c:if>	
    		</tr>
 	</table>

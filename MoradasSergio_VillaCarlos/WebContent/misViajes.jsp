@@ -46,13 +46,14 @@ h1 {
 		<table id="tabla" class="table table-hover">
 			<thead>
 				<tr>
-					<th>ID</th>
+					<%--<th>ID</th>--%>
 					<th>Origen</th>
 					<th>Destino</th>
 					<th>Fecha salida</th>
 					<th>Fecha llegada</th>
 					<th>Fecha límite inscripción</th>
 					<th>Implicación con el viaje</th>
+					<th>Estado</th>
 					<th>Administracion</th>
 
 
@@ -66,21 +67,23 @@ h1 {
 					<c:forEach var="viaje" items="${entry.value}">
 
 						<tr id="item_${i.index}">
-							<td></td>
+							<%--<td></td>--%>
 							<td>${viaje.departure.city}</td>
 							<td>${viaje.destination.city}</td>
 							<td>${viaje.departureDate}</td>
 							<td>${viaje.arrivalDate}</td>
 							<td>${viaje.closingDate}</td>
 							<td>${entry.key}</td>
+							<td>${viaje.status}</td>
 
 							<td>
 								<ul>
 									<c:choose>
 										<c:when test="${entry.key=='PROMOTOR'}">
 											<li><a href="#">Listado Solicitudes</a></li>
-											<li><a href="#">Cancelar viaje</a></li>
-											<li><a href="#">Modificar viaje</a></li>
+											<li><a href="cancelarViaje?
+											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar viaje</a></li>
+											<li><a href="mostrarDatosViaje?idViaje=${viaje.id}">Modificar viaje</a></li>
 										</c:when>
 										<c:otherwise>
 											<c:if test="${entry.key!='SIN PLAZA' && entry.key!='EXCLUIDO'}">
