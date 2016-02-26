@@ -47,8 +47,8 @@ $(document).ready(function() {
 					<td>${user.email}</td>
 					<td>
 						<ul>
-							<li><a href="#">Aceptar solicitud</a></li>
-							<li><a href="#">Cancelar solicitud</a></li>			
+							<li><a href="administrarSolicitud?decision=aceptada&idViaje=${viaje.id}&idUsuario=${user.id}">Aceptar solicitud</a></li>
+							<li><a href="administrarSolicitud?decision=cancelada&idViaje=${viaje.id}&idUsuario=${user.id}">Cancelar solicitud</a></li>			
 						</ul>
 					</td>
 				</tr>

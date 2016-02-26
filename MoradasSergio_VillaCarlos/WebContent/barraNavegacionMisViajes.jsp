@@ -11,7 +11,7 @@
 			}
 			#navMisViajes ul {
 			margin : 0 auto;
-			width : 680px;
+			width : 362px;
 			list-style : none;
 			}
 			#navMisViajes ul li {
@@ -41,9 +41,8 @@
 
         <ul class="menu">  
             <li><a href="registrarViaje.jsp">Registrar Viaje</a></li>  
-            <li><a href="">Modificar Viaje</a></li>  
-            <li><a href="">Eliminar Viaje</a></li>
-            <li><a href="">Cancelar Plaza Viaje</a></li>
+            <li><a href="#">Historial de Viajes</a></li>  
+
         </ul>    
         
         
