@@ -21,7 +21,7 @@ public class AdministrarSolicitudAction implements Accion {
 		SeatDao daoSeat = PersistenceFactory.newSeatDao();
 		
 		Long idUsuario = Long.valueOf(request.getParameter("idUsuario"));
-		Long idViaje = Long.valueOf(request.getParameter("idviaje"));
+		Long idViaje = Long.valueOf(request.getParameter("idViaje"));
 		
 		Long[] ids = {idUsuario,idViaje};
 		daoApp.delete(ids);

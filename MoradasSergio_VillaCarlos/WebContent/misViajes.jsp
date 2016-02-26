@@ -13,18 +13,6 @@
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
-<script>
-	$(document).ready(function() {
-
-		$('#tabla tr').click(function() {
-			var href = $(this).find("a").attr("href");
-			if (href) {
-				window.location = href;
-			}
-		});
-
-	});
-</script>
 
 <style>
 h1 {

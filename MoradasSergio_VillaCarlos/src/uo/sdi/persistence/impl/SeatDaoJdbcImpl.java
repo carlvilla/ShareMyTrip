@@ -87,4 +87,11 @@ public class SeatDaoJdbcImpl implements SeatDao {
 
 	}
 
+	@Override
+	public List<Seat> findByTrip(Long idViaje) {
+		return jdbcTemplate.queryForList("SEAT_FIND_BY_TRIP",
+				new SeatMapper(),
+				idViaje);
+	}
+
 }

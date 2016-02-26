@@ -9,18 +9,6 @@
 <title>ShareMyTrip - Listado de solicitantes</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-
-    $('#tabla tr').click(function() {
-        var href = $(this).find("a").attr("href");
-        if(href) {
-            window.location = href;
-        }
-    });
-
-});
-</script>
 
 
 </head>
@@ -47,7 +35,7 @@ $(document).ready(function() {
 					<td>${user.email}</td>
 					<td>
 						<ul>
-							<li><a href="administrarSolicitud?decision=aceptada&idViaje=${viaje.id}&idUsuario=${user.id}">Aceptar solicitud</a></li>
+							<li><a href="administrarSolicitud?decision=aceptada&idViaje=${param.idViaje}&idUsuario=${user.id}">Aceptar solicitud</a></li>
 							<li><a href="administrarSolicitud?decision=cancelada&idViaje=${viaje.id}&idUsuario=${user.id}">Cancelar solicitud</a></li>			
 						</ul>
 					</td>
@@ -55,5 +43,30 @@ $(document).ready(function() {
 			</c:forEach>
 		</table>
 	</div>
+	
+	
+	<center><h2>Pasajeros confirmados</h2></center>
+	
+	<br/>
+	
+	<div class="container">
+		<table id="tabla" class="table table-hover">
+			<tr>
+				<th>Nombre</th>
+				<th>Apellidos</th>
+				<th>Email</th>
+				
+			</tr>
+			<c:forEach var="user" items="${confirmados}" varStatus="i">
+				<tr id="item_${i.index}">
+					<td>${user.name}</td>
+					<td>${user.surname}</td>
+					<td>${user.email}</td>
+				</tr>
+			</c:forEach>
+		</table>
+	</div>
+	
+	
 </body>
 </html>
