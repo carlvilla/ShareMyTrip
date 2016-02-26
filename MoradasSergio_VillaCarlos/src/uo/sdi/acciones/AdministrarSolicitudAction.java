@@ -1,8 +1,11 @@
 package uo.sdi.acciones;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import uo.sdi.model.Application;
 import uo.sdi.model.Seat;
 import uo.sdi.model.SeatStatus;
 import uo.sdi.model.Trip;
@@ -44,6 +47,7 @@ public class AdministrarSolicitudAction implements Accion {
 		
 		//Añadir usuario a tabla TSEATS (Usuarios aceptados)
 		seat.setStatus(SeatStatus.ACCEPTED);
+		
 		
 		}
 		

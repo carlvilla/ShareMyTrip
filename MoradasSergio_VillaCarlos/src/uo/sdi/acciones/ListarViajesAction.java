@@ -24,7 +24,7 @@ public class ListarViajesAction implements Accion {
 			viajesAux=PersistenceFactory.newTripDao().findAll();
 			
 			for(Trip viaje:viajesAux){
-				if(viaje.getStatus().equals(TripStatus.OPEN))
+				if(viaje.getStatus().equals(TripStatus.OPEN) && viaje.getAvailablePax()>0)
 					viajes.add(viaje);
 				
 			}
