@@ -6,7 +6,7 @@
 <html>
 <head>
 <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-<title>ShareMyTrip - Listado de viajes</title>
+<title>ShareMyTrip - Listado de solicitantes</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
@@ -27,25 +27,30 @@ $(document).ready(function() {
 
 <body>
 
-	<center><h2>Viajes disponibles</h2></center>
+	<center><h2>Solicitantes de plaza</h2></center>
 	
 	<br/>
 	
 	<div class="container">
 		<table id="tabla" class="table table-hover">
 			<tr>
+				<th>Nombre</th>
+				<th>Apellidos</th>
+				<th>Email</th>
+				<th>Administrar</th>
 				
-				<th>ID viaje</th>
-				<th>Origen</th>
-				<th>Destino</th>
-				<th>Plazas libres</th>
 			</tr>
-			<c:forEach var="entry" items="${listaViajes}" varStatus="i">
+			<c:forEach var="user" items="${solicitantes}" varStatus="i">
 				<tr id="item_${i.index}">
-					<td><a href="mostrarViaje?id=${entry.id}">${entry.id}</a></td>
-					<td>${entry.departure.city}</td>
-					<td>${entry.destination.city}</td>
-					<td>${entry.availablePax}</td>
+					<td>${user.name}</td>
+					<td>${user.surname}</td>
+					<td>${user.email}</td>
+					<td>
+						<ul>
+							<li><a href="administrarSolicitud?decision=aceptada&idViaje=${viaje.id}&idUsuario=${user.id}">Aceptar solicitud</a></li>
+							<li><a href="administrarSolicitud?decision=cancelada&idViaje=${viaje.id}&idUsuario=${user.id}">Cancelar solicitud</a></li>			
+						</ul>
+					</td>
 				</tr>
 			</c:forEach>
 		</table>

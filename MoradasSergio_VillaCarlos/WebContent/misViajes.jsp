@@ -79,14 +79,14 @@ h1 {
 							<td>
 								<ul>
 									<c:choose>
-										<c:when test="${entry.key=='PROMOTOR'}">
-											<li><a href="#">Listado Solicitudes</a></li>
+										<c:when test="${entry.key=='PROMOTOR' && viaje.status=='OPEN'}">
+											<li><a href="listarSolicitudes?idViaje=${viaje.id}">Listado Solicitudes</a></li>
 											<li><a href="cancelarViaje?
 											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar viaje</a></li>
 											<li><a href="mostrarDatosViaje?idViaje=${viaje.id}">Modificar viaje</a></li>
 										</c:when>
 										<c:otherwise>
-											<c:if test="${entry.key!='SIN PLAZA' && entry.key!='EXCLUIDO'}">
+											<c:if test="${entry.key!='PROMOTOR' && entry.key!='SIN PLAZA' && entry.key!='EXCLUIDO'}">
 											<li><a href="cancelarPlaza?
 											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar plaza</a></li>
 											</c:if>
@@ -95,23 +95,11 @@ h1 {
 								</ul>
 							</td>
 						</tr>
-
 					</c:forEach>
-
 				</c:forEach>
-
 			</tbody>
-
-
 		</table>
-
-
 	</div>
-
-
-
-
-
 
 
 </body>
