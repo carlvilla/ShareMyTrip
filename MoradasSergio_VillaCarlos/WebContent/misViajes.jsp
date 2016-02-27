@@ -85,6 +85,7 @@ h1 {
 												<li>La fecha de cierre ha pasado</li>
 											
 											</c:if>
+				
 										</c:otherwise>
 									</c:choose>
 								</ul>
