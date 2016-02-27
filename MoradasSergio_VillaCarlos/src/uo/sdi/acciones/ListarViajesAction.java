@@ -5,9 +5,11 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import uo.sdi.model.Trip;
 import uo.sdi.model.TripStatus;
+import uo.sdi.model.User;
 import uo.sdi.persistence.PersistenceFactory;
 import alb.util.log.Log;
 
@@ -20,11 +22,15 @@ public class ListarViajesAction implements Accion {
 		List<Trip> viajesAux;
 		List<Trip> viajes = new LinkedList<Trip>();
 		
+		HttpSession sesion = request.getSession();
+		User usuario = (User) sesion.getAttribute("user");
+		
 		try {
 			viajesAux=PersistenceFactory.newTripDao().findAll();
 			
 			for(Trip viaje:viajesAux){
-				if(viaje.getStatus().equals(TripStatus.OPEN) && viaje.getAvailablePax()>0)
+				if(viaje.getStatus().equals(TripStatus.OPEN) && viaje.getAvailablePax()>0
+						&& viaje.getPromoterId()!=usuario.getId())
 					viajes.add(viaje);
 				
 			}
