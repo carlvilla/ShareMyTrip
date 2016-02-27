@@ -9,11 +9,14 @@ import javax.servlet.http.HttpSession;
 
 import alb.util.log.Log;
 import uo.sdi.model.AddressPoint;
+import uo.sdi.model.Seat;
+import uo.sdi.model.SeatStatus;
 import uo.sdi.model.Trip;
 import uo.sdi.model.TripStatus;
 import uo.sdi.model.User;
 import uo.sdi.model.Waypoint;
 import uo.sdi.persistence.PersistenceFactory;
+import uo.sdi.persistence.SeatDao;
 import uo.sdi.persistence.TripDao;
 import uo.sdi.persistence.UserDao;
 
@@ -141,6 +144,16 @@ public class RegistrarViajeAction implements Accion {
 				//Añadimos el viaje a la BD
 				TripDao trip = PersistenceFactory.newTripDao();
 				trip.save(newTrip);
+				
+				SeatDao daoSeat = PersistenceFactory.newSeatDao();
+				Seat asiento = new Seat();
+				asiento.setStatus(SeatStatus.ACCEPTED);
+				asiento.setUserId(usuario.getId());
+				
+				TripDao tripDao = PersistenceFactory.newTripDao();
+				Trip viaje = tripDao.findByPromoterIdAndArrivalDate(usuario.getId(), newTrip.getArrivalDate());
+				asiento.setTripId(viaje.getId());
+				daoSeat.save(asiento);
 
 			} catch (ParseException e) {
 				Log.error("Error en el formato de un dato");

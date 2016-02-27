@@ -14,13 +14,16 @@
 </head>
 <body>
 	<h1>Valorar Compañeros</h1>
-	
+	<form id="usrform" action="valorarCompañeros?idViaje=${param.idViaje}" method="POST">
+	<table id="tabla" class="table table-hover">
 	<c:forEach var="entry" items="${compañeros}" varStatus="i">
 				<tr id="item_${i.index}">
-					<td>${entry.name}</td>
-					<td>${entry.surname}</td>
-				
+					<td>${entry.name} ${entry.surname} (${entry.email})</td>
+					<td><textarea rows="4" cols="50" name="${entry.id}" form="usrform">Introduzca su comentario...</textarea></td>
 				</tr>
 	</c:forEach>
+	</table>
+		<input type="submit" value="Valorar"/>
+	</form>		
 </body>
 </html>
