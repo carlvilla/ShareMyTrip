@@ -58,6 +58,11 @@
 			<td>Comentario: </td>
 			<td><jsp:getProperty property="comments" name="viaje"/></td>		
 		</tr>
+		
+		<tr>
+			<td>Fecha cierre inscripción: </td>
+			<td><jsp:getProperty property="closingDate" name="viaje"/></td>		
+		</tr>
 				
 		</table>
 	

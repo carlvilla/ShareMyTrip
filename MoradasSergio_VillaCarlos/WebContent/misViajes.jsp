@@ -74,9 +74,16 @@ h1 {
 											<li><a href="mostrarDatosViaje?idViaje=${viaje.id}">Modificar viaje</a></li>
 										</c:when>
 										<c:otherwise>
-											<c:if test="${entry.key!='PROMOTOR' && entry.key!='SIN PLAZA' && entry.key!='EXCLUIDO'}">
+											<c:if test="${entry.key!='PROMOTOR' && entry.key!='SIN PLAZA' && entry.key!='EXCLUIDO'
+											&& !viaje.fechaCierrePasada()}">
 											<li><a href="cancelarPlaza?
 											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar plaza</a></li>
+											</c:if>
+											
+											<c:if test="${viaje.fechaCierrePasada() && viaje.status=='OPEN'}">
+											
+												<li>La fecha de cierre ha pasado</li>
+											
 											</c:if>
 										</c:otherwise>
 									</c:choose>

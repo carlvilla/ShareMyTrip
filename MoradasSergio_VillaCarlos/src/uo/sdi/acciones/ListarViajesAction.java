@@ -1,5 +1,6 @@
 package uo.sdi.acciones;
 
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -25,13 +26,22 @@ public class ListarViajesAction implements Accion {
 		HttpSession sesion = request.getSession();
 		User usuario = (User) sesion.getAttribute("user");
 		
+
+		
 		try {
 			viajesAux=PersistenceFactory.newTripDao().findAll();
 			
 			for(Trip viaje:viajesAux){
-				if(viaje.getStatus().equals(TripStatus.OPEN) && viaje.getAvailablePax()>0
-						&& viaje.getPromoterId()!=usuario.getId())
-					viajes.add(viaje);
+
+				if(viaje.getStatus().equals(TripStatus.OPEN) 
+						&& viaje.getAvailablePax()>0
+						&& viaje.getPromoterId()!=usuario.getId() 
+						&& viaje.getClosingDate().after(new Date())){
+							
+							viajes.add(viaje);
+				
+				}
+
 			}
 		
 			request.setAttribute("listaViajes", viajes);
