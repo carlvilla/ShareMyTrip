@@ -49,7 +49,13 @@ public class RegistrarseAction implements Accion {
 					user.setPassword(contraseña);
 					user.setStatus(UserStatus.ACTIVE);
 					dao.save(user);
+					
+					//Como el id se auto genera hay que obtener el usuario
+					//de la base para saber que id fue el adjudicado
+					user.setId(dao.findByLogin(loginUsuario).getId());
+							
 					session.setAttribute("user", user);
+						
 					Log.info("Nombre de usuario [%s] ", loginUsuario);
 					return "EXITO";
 				}
