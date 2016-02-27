@@ -100,5 +100,13 @@ public class RatingDaoJdbcImpl implements RatingDao {
 				new RatingMapper(), 
 				aboutUserId);
 	}
+	
+	@Override
+	public List<Rating> findByFrom(Long fromUserId,Long fromTripId) {
+		return jdbcTemplate.queryForList(
+				"RATING_FIND_FROM", 
+				new RatingMapper(), 
+				fromUserId,fromTripId);
+	}
 
 }
