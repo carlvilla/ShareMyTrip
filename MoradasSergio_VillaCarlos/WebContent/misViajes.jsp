@@ -67,7 +67,7 @@ h1 {
 							<td>
 								<ul>
 									<c:choose>
-										<c:when test="${entry.key=='PROMOTOR' && viaje.status=='OPEN'}">
+										<c:when test="${entry.key=='PROMOTOR' && viaje.status=='OPEN' && !viaje.fechaCierrePasada()}">
 											<li><a href="listarSolicitudes?idViaje=${viaje.id}">Listado Solicitudes</a></li>
 											<li><a href="cancelarViaje?
 											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar viaje</a></li>

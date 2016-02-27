@@ -8,10 +8,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import uo.sdi.model.Application;
+import uo.sdi.model.Seat;
 import uo.sdi.model.Trip;
 import uo.sdi.model.TripStatus;
 import uo.sdi.model.User;
+import uo.sdi.persistence.ApplicationDao;
 import uo.sdi.persistence.PersistenceFactory;
+import uo.sdi.persistence.SeatDao;
 import alb.util.log.Log;
 
 public class ListarViajesAction implements Accion {
@@ -19,43 +23,61 @@ public class ListarViajesAction implements Accion {
 	@Override
 	public String execute(HttpServletRequest request,
 			HttpServletResponse response) {
-		
+
 		List<Trip> viajesAux;
 		List<Trip> viajes = new LinkedList<Trip>();
-		
+
 		HttpSession sesion = request.getSession();
 		User usuario = (User) sesion.getAttribute("user");
-		
 
-		
 		try {
-			viajesAux=PersistenceFactory.newTripDao().findAll();
-			
-			for(Trip viaje:viajesAux){
+			viajesAux = PersistenceFactory.newTripDao().findAll();
 
-				if(viaje.getStatus().equals(TripStatus.OPEN) 
-						&& viaje.getAvailablePax()>0
-						&& viaje.getPromoterId()!=usuario.getId() 
-						&& viaje.getClosingDate().after(new Date())){
-							
-							viajes.add(viaje);
-				
+			for (Trip viaje : viajesAux) {
+
+				if (viaje.getStatus().equals(TripStatus.OPEN)
+						&& viaje.getAvailablePax() > 0
+						&& !viaje.getPromoterId().equals(usuario.getId())
+						&& viaje.getClosingDate().after(new Date())
+						&& comprobarRelacionViajeUsuario(usuario.getId(),
+								viaje.getId())) {
+
+					viajes.add(viaje);
+
 				}
 
 			}
-		
+
 			request.setAttribute("listaViajes", viajes);
-			Log.debug("Obtenida lista de viajes conteniendo [%d] viajes", viajes.size());
-		}
-		catch (Exception e) {
+			Log.debug("Obtenida lista de viajes conteniendo [%d] viajes",
+					viajes.size());
+		} catch (Exception e) {
 			Log.error("Algo ha ocurrido obteniendo lista de viajes");
 		}
 		return "EXITO";
 	}
-	
+
+	private boolean comprobarRelacionViajeUsuario(Long idUsuario, Long idViaje) {
+
+		SeatDao seatDao = PersistenceFactory.newSeatDao();
+		ApplicationDao appDao = PersistenceFactory.newApplicationDao();
+
+		Seat seat = seatDao.findByUserAndTrip(idUsuario, idViaje);
+
+		Long[] ids = { idUsuario, idViaje };
+		Application app = appDao.findById(ids);
+
+		if (seat == null && app == null) {
+			return true;
+		}
+
+		return false;
+
+	}
+
 	@Override
 	public String toString() {
 		return getClass().getName();
 	}
-	
+
 }
