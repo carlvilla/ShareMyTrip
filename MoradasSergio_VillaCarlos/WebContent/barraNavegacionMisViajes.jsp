@@ -40,8 +40,8 @@
 <nav id="navMisViajes">
 
         <ul class="menu">  
-            <li><a href="registrarViaje.jsp">Registrar Viaje</a></li>  
-            <li><a href="historialViajes">Historial de Viajes</a></li>  
+            <li><a id="registrarViaje" href="registrarViaje.jsp">Registrar Viaje</a></li>  
+            <li><a id="historialViajes" href="historialViajes">Historial de Viajes</a></li>  
 
         </ul>    
         
