@@ -139,5 +139,13 @@ public class Trip {
 				+ ", promoterId=" + promoterId 
 			+ "]";
 	}
+	
+	public boolean fechaCierrePasada(){
+		if(closingDate.before(new Date())){
+			return true;
+		}
+		
+		return false;
+	}
 
 }
