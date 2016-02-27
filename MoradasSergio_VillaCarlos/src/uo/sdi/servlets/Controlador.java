@@ -126,6 +126,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		mapaRegistrado.put("cancelarPlaza", new CancelarPlazaAction());
 		mapaRegistrado.put("listarSolicitudes", new ListarSolicitudesAction());
 		mapaRegistrado.put("administrarSolicitud", new AdministrarSolicitudAction());
+		mapaRegistrado.put("historialViajes", new MostrarHistorialViajesAction());
 		mapaDeAcciones.put("REGISTRADO", mapaRegistrado);
 	}
 	
@@ -208,7 +209,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		//ModificarViaje
 		resJSP=new HashMap<String, String>();
 		resJSP.put("EXITO","/misViajes");
-		resJSP.put("FRACASO","/modificarViaje.jsp");
+		resJSP.put("FRACASO","/mostraDatos");
 		opcionResJSP.put("modificarViaje", resJSP);
 		
 		//Cancelar Viaje
@@ -242,7 +243,11 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		resJSP=new HashMap<String, String>();
 		resJSP.put("EXITO","/listarSolicitudes");
 		opcionResJSP.put("administrarSolicitud", resJSP);	
-				
+		
+		//Historial Viajes
+		resJSP=new HashMap<String, String>();
+		resJSP.put("EXITO","/historialViajes.jsp");
+		opcionResJSP.put("historialViajes", resJSP);
 		
 		mapaDeNavegacion.put("REGISTRADO",opcionResJSP);
 	}

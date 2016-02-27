@@ -26,8 +26,6 @@ public class MostrarDatosViajeAction implements Accion {
 			promotor = PersistenceFactory.newUserDao().findById(viaje.getPromoterId());
 			request.setAttribute("promotor", promotor);
 			
-
-			
 			Log.debug("Obtenido viaje con id [%d]", viaje.getId());
 		}
 		catch (Exception e) {

@@ -67,8 +67,8 @@ public class ModificarViajeAction implements Accion{
 			
 			Trip newTrip = new Trip();
 
-			Waypoint wSalida = new Waypoint(null,null);
 			//Creamos AdreesPoint de la Salida
+			Waypoint wSalida = new Waypoint(null,null);
 			if(latitudSalida.compareTo("")!=0&&longitudSalida.compareTo("")!=0){
 				wSalida = new Waypoint(
 						Double.parseDouble(latitudSalida),
@@ -81,7 +81,6 @@ public class ModificarViajeAction implements Accion{
 			
 			//Creamos AdreesPoint del Destino
 			Waypoint wDestino = new Waypoint(null,null);
-			//Creamos AdreesPoint de la Salida
 			if(latitudSalida.compareTo("")!=0&&longitudSalida.compareTo("")!=0){
 				wDestino = new Waypoint(
 						Double.parseDouble(latitudDestino),
@@ -95,6 +94,7 @@ public class ModificarViajeAction implements Accion{
 			newTrip.setDeparture(addresSalida);
 			newTrip.setDestination(addresDestino);
 			
+			//Añadimos las fechas al viaje
 			SimpleDateFormat formatoDeFecha = new SimpleDateFormat(
 					"dd/MM/yyyy-HH:mm:ss");
 			newTrip.setArrivalDate(formatoDeFecha.parse(fechaHoraSalida));
@@ -105,7 +105,7 @@ public class ModificarViajeAction implements Accion{
 			if(formatoDeFecha.parse(fechaHoraSalida)
 					.after(formatoDeFecha.parse(fechaHoraLLegada))||
 					formatoDeFecha.parse(fechaLimite).after(formatoDeFecha.parse(fechaHoraSalida))){
-				request.setAttribute("error", "Error al registrarse: FECHAS INCORRECTAS");
+				request.setAttribute("error", "Error al modificar: FECHAS INCORRECTAS");
 				return "FRACASO";
 			}
 			
@@ -115,7 +115,7 @@ public class ModificarViajeAction implements Accion{
 			SeatDao daoSeat = PersistenceFactory.newSeatDao();
 			int seatsConfirmados = daoSeat.findByTrip(idViaje).size();
 			if(Integer.parseInt(nMaxPlazas)<seatsConfirmados){
-				request.setAttribute("error", "Error al registrarse: NUMERO MAX DE PLAZAS NO ADMITIDO");
+				request.setAttribute("error", "Error al modificar: NUMERO MAX DE PLAZAS NO ADMITIDO");
 				return "FRACASO";
 			}
 			
@@ -127,7 +127,7 @@ public class ModificarViajeAction implements Accion{
 			if(Double.parseDouble(costeViaje)<=0||Integer.parseInt(nMaxPlazas)<=0||
 					Integer.parseInt(nDispoPlazas)<=0 
 					|| Integer.parseInt(nMaxPlazas)<Integer.parseInt(nDispoPlazas)){
-				request.setAttribute("error", "Error al registrarse: DATOS INCORRECTOS");
+				request.setAttribute("error", "Error al modificar: DATOS INCORRECTOS");
 				return "FRACASO";
 			}
 			
@@ -137,9 +137,16 @@ public class ModificarViajeAction implements Accion{
 			User userByLogin = dao.findByLogin(usuario.getLogin());
 
 			newTrip.setPromoterId(userByLogin.getId());
-			
-			
 			newTrip.setId(idViaje);
+			
+			TripDao tdao = PersistenceFactory.newTripDao();
+			Trip tripMismaFecha = tdao
+					.findByPromoterIdAndArrivalDate(userByLogin.getId(), 
+							formatoDeFecha.parse(fechaHoraSalida));
+			if(tripMismaFecha!=null){
+				request.setAttribute("error", "Error al modificar: YA HAS CREADO UN VIAJE EN ESA MISMA FECHA");
+				return "FRACASO";
+			}
 			
 			//Añadimos el viaje a la BD
 			TripDao trip = PersistenceFactory.newTripDao();
@@ -147,13 +154,13 @@ public class ModificarViajeAction implements Accion{
 
 		} catch (ParseException e) {
 			Log.error("Error en el formato de un dato");
-			request.setAttribute("error", "Error al registrarse: FORMATO DE DATOS INCORRECTO");
+			request.setAttribute("error", "Error al modificar: FORMATO DE DATOS INCORRECTO");
 			return "FRACASO";
 		}
 
 		return "EXITO";
 	} else {
-		request.setAttribute("error", "Error al registrarse:CAMPOS VACIOS");
+		request.setAttribute("error", "Error al modificar:CAMPOS VACIOS");
 		return "FRACASO";
 	}
 }
