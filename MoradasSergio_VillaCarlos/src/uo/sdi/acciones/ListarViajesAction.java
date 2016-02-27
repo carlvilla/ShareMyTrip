@@ -35,11 +35,11 @@ public class ListarViajesAction implements Accion {
 
 				if(viaje.getStatus().equals(TripStatus.OPEN) 
 						&& viaje.getAvailablePax()>0
-						&& viaje.getPromoterId()!=usuario.getId() 
+						&& !viaje.getPromoterId().equals(usuario.getId())
 						&& viaje.getClosingDate().after(new Date())){
 							
 							viajes.add(viaje);
-				
+							
 				}
 
 			}
