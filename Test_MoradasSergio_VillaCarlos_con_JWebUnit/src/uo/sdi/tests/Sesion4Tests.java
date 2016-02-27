@@ -228,8 +228,18 @@ public class Sesion4Tests {
 
 		submit();
 		
-		
+		//Aparece un mensaje diciendo que se ha añadido correctamente 
+		//el viaje
+		assertElementPresent("exitoRegistroViaje");
 
+		
+		//Si cambiamos de pestaña y volvemos a la principal, el mensaje
+		//de alerta habrá desaparecido
+		clickLink("misViajes");
+		clickLink("principal");
+		
+		assertElementNotPresent("exitoRegistroViaje");
+		
 	}
 
 	@Test
