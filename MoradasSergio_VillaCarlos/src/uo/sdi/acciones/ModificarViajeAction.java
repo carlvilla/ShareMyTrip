@@ -55,7 +55,6 @@ public class ModificarViajeAction implements Accion{
 	Long idViaje = Long.valueOf(request.getParameter("viajeID"));
 	HttpSession session = request.getSession();
 	
-	//String resultado ="EXITO";
 	
 	//Comprobamos que no hay caso vacios a excepcion de la longitud y latitud
 	if (comprobarCamposVacios(calleSalida, ciudadSalida, provinciaSalida,
