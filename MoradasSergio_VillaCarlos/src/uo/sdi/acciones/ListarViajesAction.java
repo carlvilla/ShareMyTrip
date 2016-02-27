@@ -26,7 +26,6 @@ public class ListarViajesAction implements Accion {
 			for(Trip viaje:viajesAux){
 				if(viaje.getStatus().equals(TripStatus.OPEN) && viaje.getAvailablePax()>0)
 					viajes.add(viaje);
-				
 			}
 		
 			request.setAttribute("listaViajes", viajes);

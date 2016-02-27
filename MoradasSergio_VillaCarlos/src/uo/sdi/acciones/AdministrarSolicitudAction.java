@@ -1,11 +1,7 @@
 package uo.sdi.acciones;
 
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import uo.sdi.model.Application;
 import uo.sdi.model.Seat;
 import uo.sdi.model.SeatStatus;
 import uo.sdi.model.Trip;
@@ -41,19 +37,14 @@ public class AdministrarSolicitudAction implements Accion {
 		
 		if(decision.equals("aceptada")){
 		
-		//Quitar plaza al viaje
+			//Quitar plaza al viaje
+			viaje.setAvailablePax(viaje.getAvailablePax()-1);
+			daoViaje.update(viaje);
 		
-		viaje.setAvailablePax(viaje.getAvailablePax()-1);
-		daoViaje.update(viaje);
-		
-		//Añadir usuario a tabla TSEATS (Usuarios aceptados)
-		seat.setStatus(SeatStatus.ACCEPTED);
-		
-		
+			//Añadir usuario a tabla TSEATS (Usuarios aceptados)
+			seat.setStatus(SeatStatus.ACCEPTED);
 		}
-		
-		else{
-			
+		else{	
 			seat.setStatus(SeatStatus.EXCLUDED);
 		}
 		

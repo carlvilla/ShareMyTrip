@@ -41,7 +41,7 @@
 
         <ul class="menu">  
             <li><a href="registrarViaje.jsp">Registrar Viaje</a></li>  
-            <li><a href="#">Historial de Viajes</a></li>  
+            <li><a href="historialViajes">Historial de Viajes</a></li>  
 
         </ul>    
         

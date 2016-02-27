@@ -12,7 +12,7 @@
 
  	<center><h2>Administrar viaje</h2></center>
  	
- 	<form method="get" action="cancelarSolicitud?idViaje=${idViaje}&idUsuario=${idUsuario}&implicacion${implicacion}" >
+ 	<form method="get" action="cancelarSolicitud?idViaje=${idViaje}&idUsuario=${idUsuario}&implicacion${implicacion}">
     	<button type="submit">Cancelar solicitud de plaza</button>
 	</form>
  	
