@@ -1,126 +1,336 @@
 package uo.sdi.tests;
 
-import org.junit.*;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertElementNotPresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertElementPresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextInElement;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextPresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
+import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
+import static net.sourceforge.jwebunit.junit.JWebUnit.clickLink;
+import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
+import static net.sourceforge.jwebunit.junit.JWebUnit.setTextField;
+import static net.sourceforge.jwebunit.junit.JWebUnit.submit;
 
-import static net.sourceforge.jwebunit.junit.JWebUnit.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import uo.sdi.persistence.util.Jdbc;
 
 /**
  * Estos tests deben de ejecutarse con la base de datos inicializada con los
- * datos proporcionados en el fichero Script.sql. Los tests de comprobación
- * de viajes en el listado funcionarán hasta 2020, ya que se pasa la fecha 
- * de cierre de las inscripciones a los viajes.
+ * datos proporcionados en el fichero Script.sql. Los tests de comprobación de
+ * viajes en el listado funcionarán hasta 2020, ya que se pasa la fecha de
+ * cierre de las inscripciones a los viajes.
  * 
  * @author Sergio Moradas y Carlos Villa
- *
+ * 
  */
 public class Sesion4Tests {
 
-    @Before
-    public void prepare() {
-        setBaseUrl("http://localhost:8280/MoradasSergio_VillaCarlos");
-        
-    }
-    
-    @Test
-    public void registrarseSinExito(){
-    	beginAt("/registrarse.jsp");
-    	
-    	//Rellenar información formulario
-        setTextField("nombreUsuario", "usuario10"); // Rellenar primer campo de formulario
-        setTextField("apellidosUsuario", "usuario10");
-        setTextField("email", "usuario10@uniovi.es");
-        setTextField("loginUsuario", "usuario10");
-        setTextField("passwordUsuario", "usuario10");
-        setTextField("confirmPasswordUsuario", "PasswordNoCoincide");
-   
-        submit();
-        
-        //La contraseña introducida doblemente no coincide
-        assertTextPresent("Error al registrarse: las contraseñas no coinciden");
-       
-    }
+	@Before
+	public void prepare() throws SQLException {
+		setBaseUrl("http://localhost:8280/MoradasSergio_VillaCarlos");
+		executeDBScripts();
+	}
+	
 
-    @Test
-    public void testListarViajesUsuarioPublico() {
-        beginAt("/");  // Navegar a la URL
-        assertLinkPresent("listarViajes");  // Comprobar que existe el hipervínculo
-        clickLink("listarViajes"); // Seguir el hipervínculo
+	public boolean executeDBScripts() throws SQLException{
 
-        assertTitleEquals("ShareMyTrip - Listado de viajes");  // Comprobar título de la página
+		Connection conn = Jdbc.getCurrentConnection();
 
-        // La base de datos contiene 2 viajes tal y como se entrega
-        assertElementPresent("item_0"); // Comprobar elemento presente en la página
-        assertElementPresent("item_1"); // Comprobar elemento presente en la página
-        assertElementPresent("item_2"); // Comprobar elemento presente en la página
+		Statement stmt = conn.createStatement();
+		
+		boolean isScriptExecuted = false;
+		try {
+			BufferedReader in = new BufferedReader(new FileReader(
+					"src/Script.sql"));
+			String str;
+			StringBuffer sb = new StringBuffer();
+			while ((str = in.readLine()) != null) {
+				sb.append(str + "\n ");
+			}
+			in.close();
+			stmt.executeUpdate(sb.toString());
+			isScriptExecuted = true;
+		} catch (Exception e) {
+			System.err.println("Fallo al ejecutar Script.sql");
+		}
+		return isScriptExecuted;
+	}
+	
 
-    }
-    
-    @Test
-    public void testListarViajesUsuarioRegistrado() {
-        beginAt("/");  // Navegar a la URL
-        assertLinkPresent("listarViajes");  // Comprobar que existe el hipervínculo
-        clickLink("listarViajes"); // Seguir el hipervínculo
+	@Test
+	public void registrarseSinExito() {
+		beginAt("/registrarse.jsp");
 
-        assertTitleEquals("ShareMyTrip - Listado de viajes");  // Comprobar título de la página
+		// Rellenar información formulario
+		setTextField("nombreUsuario", "usuario10"); // Rellenar primer campo de
+													// formulario
+		setTextField("apellidosUsuario", "usuario10");
+		setTextField("email", "usuario10@uniovi.es");
+		setTextField("loginUsuario", "usuario10");
+		setTextField("passwordUsuario", "usuario10");
+		setTextField("confirmPasswordUsuario", "PasswordNoCoincide");
 
-        // La base de datos contiene 2 viajes tal y como se entrega
-        assertElementPresent("item_0"); // Comprobar elemento presente en la página
-        assertElementPresent("item_1"); // Comprobar elemento presente en la página
-        assertElementPresent("item_2"); // Comprobar elemento presente en la página
+		submit();
 
-    }
+		// La contraseña introducida doblemente no coincide
+		assertTextPresent("Error al registrarse: las contraseñas no coinciden");
 
-    @Test
-    public void testIniciarSesionConExito() {
-    	// Rellenando el formulario HTML
-    	beginAt("/"); 
-        setTextField("nombreUsuario", "user1"); // Rellenar primer campo de formulario
-        setTextField("passwordUsuario", "user1"); //Introducir contraseña
-        submit(); // Enviar formulario
-        assertTitleEquals("ShareMyTrip - Página principal del usuario");  // Comprobar título de la página
-        assertTextInElement("login", "user1");  // Comprobar cierto elemento contiene cierto texto
-        assertTextInElement("name", "Fernando");  // Comprobar cierto elemento contiene cierto texto
-    
-    }
+	}
 
-    @Test
-    public void testIniciarSesionConExitoConQueryString() {
-    	// Rellenando el formulario HTML
-        beginAt("/validarse?nombreUsuario=user2&passwordUsuario=user2");  // Navegar a la URL
-        assertTitleEquals("ShareMyTrip - Página principal del usuario");  // Comprobar título de la página
-        assertTextInElement("login", "user2");  // Comprobar cierto elemento contiene cierto texto
-        assertTextInElement("name", "Luisa");  // Comprobar cierto elemento contiene cierto texto
-    }
-    
-    @Test
-    public void testIniciarSesionSinExito() {
-    	// Rellenando el formulario HTML
-        beginAt("/");  // Navegar a la URL
-        setTextField("nombreUsuario", "yoNoExisto"); // Rellenar primer campo de formulario
-        submit(); // Enviar formulario
-        assertTitleEquals("ShareMyTrip - Inicie sesión");  // Comprobar título de la página
-    }
-    
-    @Test
-    public void registrarViajeNuevo(){
-    	
-    	//Iniciar sesión
-    	beginAt("/"); 
-        setTextField("nombreUsuario", "user1");
-        setTextField("passwordUsuario", "user1"); 
-        submit(); 
-        assertTitleEquals("ShareMyTrip - Página principal del usuario"); 
-        
-        //Nos dirigimos a la página de registro de viajes
-        clickLink("misViajes");
-        clickLink("registrarViaje");
-    
-    }
-    
-    
-    @Test
-    public void cerrarSesion(){
-    	
-    }
+	@Test
+	public void testListarViajesUsuarioPublico() {
+		beginAt("/"); // Navegar a la URL
+		assertLinkPresent("listarViajes"); // Comprobar que existe el
+											// hipervínculo
+		clickLink("listarViajes"); // Seguir el hipervínculo
+
+		assertTitleEquals("ShareMyTrip - Listado de viajes"); // Comprobar
+																// título de la
+																// página
+
+		// La base de datos contiene 2 viajes tal y como se entrega
+		assertElementPresent("item_0"); // Comprobar elemento presente en la
+										// página
+		assertElementPresent("item_1"); // Comprobar elemento presente en la
+										// página
+		assertElementPresent("item_2"); // Comprobar elemento presente en la
+										// página
+
+	}
+
+	@Test
+	public void testListarViajesUsuarioRegistrado() {
+		beginAt("/"); // Navegar a la URL
+		assertLinkPresent("listarViajes"); // Comprobar que existe el
+											// hipervínculo
+		clickLink("listarViajes"); // Seguir el hipervínculo
+
+		assertTitleEquals("ShareMyTrip - Listado de viajes"); // Comprobar
+																// título de la
+																// página
+
+		// La base de datos contiene 2 viajes tal y como se entrega
+		assertElementPresent("item_0"); // Comprobar elemento presente en la
+										// página
+		assertElementPresent("item_1"); // Comprobar elemento presente en la
+										// página
+		assertElementPresent("item_2"); // Comprobar elemento presente en la
+										// página
+
+	}
+
+	@Test
+	public void testIniciarSesionConExito() {
+		// Rellenando el formulario HTML
+		beginAt("/");
+		setTextField("nombreUsuario", "user1"); // Rellenar primer campo de
+												// formulario
+		setTextField("passwordUsuario", "user1"); // Introducir contraseña
+		submit(); // Enviar formulario
+		assertTitleEquals("ShareMyTrip - Página principal del usuario"); // Comprobar
+																			// título
+																			// de
+																			// la
+																			// página
+		assertTextInElement("login", "user1"); // Comprobar cierto elemento
+												// contiene cierto texto
+		assertTextInElement("name", "Fernando"); // Comprobar cierto elemento
+													// contiene cierto texto
+
+	}
+
+	@Test
+	public void testIniciarSesionConExitoConQueryString() {
+		// Rellenando el formulario HTML
+		beginAt("/validarse?nombreUsuario=user2&passwordUsuario=user2"); // Navegar
+																			// a
+																			// la
+																			// URL
+		assertTitleEquals("ShareMyTrip - Página principal del usuario"); // Comprobar
+																			// título
+																			// de
+																			// la
+																			// página
+		assertTextInElement("login", "user2"); // Comprobar cierto elemento
+												// contiene cierto texto
+		assertTextInElement("name", "Luisa"); // Comprobar cierto elemento
+												// contiene cierto texto
+	}
+	
+	@Test
+	public void testIniciarSesionSinExitoPassInconrrecta() {
+		beginAt("/"); 
+		setTextField("nombreUsuario", "usuario1");
+		setTextField("passwordUsuario", "incorrecta");
+	
+		submit(); 
+		assertTitleEquals("ShareMyTrip - Inicie sesión"); 
+	}
+
+	@Test
+	public void testIniciarSesionSinExitoNoExiste() {
+
+		beginAt("/"); 
+		setTextField("nombreUsuario", "noExiste"); 
+		setTextField("passwordUsuario", "noExiste");
+	
+		submit(); 
+		assertTitleEquals("ShareMyTrip - Inicie sesión"); 
+	}
+
+	@Test
+	public void registrarViajeNuevo() {
+
+		// Iniciar sesión
+		beginAt("/");
+		setTextField("nombreUsuario", "user1");
+		setTextField("passwordUsuario", "user1");
+		submit();
+		assertTitleEquals("ShareMyTrip - Página principal del usuario");
+
+		// Nos dirigimos a la página de registro de viajes
+		clickLink("misViajes");
+		clickLink("registrarViaje");
+
+		// Rellenar formulario
+		setTextField("calleSalida", "calle");
+		setTextField("ciudadSalida", "Oviedo");
+		setTextField("provinciaSalida", "Asturias");
+		setTextField("paisSalida", "Spain");
+		setTextField("postalSalida", "33234");
+		setTextField("longitudSalida", "47.3");
+		setTextField("latitudSalida", "47.3");
+
+		setTextField("calleDestino", "Calle");
+		setTextField("ciudadDestino", "Bilbao");
+		setTextField("provinciaDestino", "Vizcaya");
+		setTextField("paisDestino", "Spain");
+		setTextField("postalDestino", "77556");
+		setTextField("longitudDestino", "33.45");
+		setTextField("latitudDestino", "34.3");
+
+		setTextField("fechaHoraSalida", "10/10/2016-10:00:00");
+		setTextField("fechaHoraLLegada", "10/10/2016-15:00:00");
+		setTextField("fechaLimite", "08/10/2016-21:00:00");
+		setTextField("costeViaje", "15");
+		setTextField("descripcionViaje", "Buen rollo");
+		setTextField("numeroMaxPlazas", "5");
+		setTextField("numeroDispPlazas", "4");
+
+		submit();
+		
+		
+
+	}
+
+	@Test
+	public void cerrarSesion() {
+
+		// Iniciar sesión
+		beginAt("/");
+		setTextField("nombreUsuario", "usuario1");
+		setTextField("passwordUsuario", "usuario1");
+		submit();
+		assertTitleEquals("ShareMyTrip - Página principal del usuario");
+		assertTextInElement("login", "usuario1");
+		assertTextInElement("name", "usuario1");
+		assertTextInElement("email", "usuario1@uniovi.es");
+
+		assertTitleEquals("ShareMyTrip - Página principal del usuario");
+
+		// Cerrar sesión
+		clickLink("cerrarSesion");
+
+		assertTitleEquals("ShareMyTrip - Inicie sesión");
+
+		// Iniciar sesión
+		setTextField("nombreUsuario", "usuario3");
+		setTextField("passwordUsuario", "usuario3");
+		submit();
+		assertTitleEquals("ShareMyTrip - Página principal del usuario");
+		assertTextInElement("login", "usuario3");
+		assertTextInElement("name", "usuario3");
+		assertTextInElement("email", "usuario3@uniovi.es");
+
+		assertTitleEquals("ShareMyTrip - Página principal del usuario");
+
+	}
+
+	@Test
+	public void usuarioNoPromotorSolicitaPlaza() {
+
+		// Iniciar sesión
+		beginAt("/");
+		setTextField("nombreUsuario", "usuario1");
+		setTextField("passwordUsuario", "usuario1");
+		submit();
+		assertTitleEquals("ShareMyTrip - Página principal del usuario");
+
+		// Nos dirigimos a la página de listado de viajes
+		clickLink("listarViajes");
+
+		// Seleccionamos un viaje y enviamos solicitud
+		clickLink("item_0");
+		assertTitleEquals("ShareMyTrip - Datos del viaje");
+		submit();
+
+		// Nos dirigimos a la página de mis viajes
+		clickLink("misViajes");
+		assertTitleEquals("ShareMyTrip - Mis viajes");
+
+		// Se añadió el viaje al que se le solicitó la plaza
+		assertElementPresent("item_0");
+		assertTextPresent("PENDIENTE");
+
+		// Solo hay un viaje en la página de mis viajes
+		assertElementNotPresent("item_1");
+
+	}
+
+	@Test
+	public void usuarioNoPromotorCancelaPlaza() {
+
+		// Iniciar sesión
+		beginAt("/");
+		setTextField("nombreUsuario", "usuario1");
+		setTextField("passwordUsuario", "usuario1");
+		submit();
+		assertTitleEquals("ShareMyTrip - Página principal del usuario");
+
+		// Nos dirigimos a la página de listado de viajes
+		clickLink("listarViajes");
+
+		// Seleccionamos un viaje y enviamos solicitud
+		clickLink("item_0");
+		assertTitleEquals("ShareMyTrip - Datos del viaje");
+		submit();
+
+		// Nos dirigimos a la página de mis viajes
+		clickLink("misViajes");
+		assertTitleEquals("ShareMyTrip - Mis viajes");
+
+		// Se añadió el viaje al que se le solicitó la plaza
+		assertElementPresent("item_0");
+		assertTextPresent("PENDIENTE");
+
+		// Solo hay un viaje en la página de mis viajes
+		assertElementNotPresent("item_1");
+
+		// Cancelamos la plaza
+		clickLink("item_CancelaPlaza_0");
+
+		// Ya no existe la entrada de la petición
+		assertElementNotPresent("item_0");
+
+	}
 
 }
