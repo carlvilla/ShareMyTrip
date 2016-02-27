@@ -76,7 +76,7 @@ h1 {
 										<c:otherwise>
 											<c:if test="${entry.key!='PROMOTOR' && entry.key!='SIN PLAZA' && entry.key!='EXCLUIDO'
 											&& !viaje.fechaCierrePasada()}">
-											<li><a href="cancelarPlaza?
+											<li><a id="item_CancelaPlaza_${i.index}" href="cancelarPlaza?
 											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar plaza</a></li>
 											</c:if>
 											

@@ -161,6 +161,7 @@ public class RegistrarViajeAction implements Accion {
 				return "FRACASO";
 			}
 
+			request.setAttribute("notificacionRegistro", true);
 			return "EXITO";
 		} else {
 			request.setAttribute("error", "Error al registrarse:CAMPOS VACIOS");

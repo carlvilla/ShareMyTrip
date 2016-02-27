@@ -43,11 +43,11 @@
 <nav>
 
         <ul class="menu">  
-            <li><a href="principal.jsp">Home</a></li>  
-            <li><a href="modificarDatos.jsp">Modificar datos</a></li>  
-            <li><a href="listarViajes">Lista de viajes</a></li>
-             <li><a href="misViajes">Mis viajes</a></li> 
-            <li><a href="cerrarSesion">Cerrar sesión</a></li> 
+            <li><a id="principal" href="principal.jsp">Home</a></li>  
+            <li><a id="modificarDatos" href="modificarDatos.jsp">Modificar datos</a></li>  
+            <li><a id="listarViajes" href="listarViajes">Lista de viajes</a></li>
+             <li><a id="misViajes" href="misViajes">Mis viajes</a></li> 
+            <li><a id="cerrarSesion" href="cerrarSesion">Cerrar sesión</a></li> 
         </ul>    
         
         

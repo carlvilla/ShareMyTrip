@@ -40,8 +40,8 @@ $(document).ready(function() {
 				<th>Plazas libres</th>
 			</tr>
 			<c:forEach var="entry" items="${listaViajes}" varStatus="i">
-				<tr id="item_${i.index}">
-					<td><a href="mostrarViaje?id=${entry.id}">${entry.id}</a></td>
+				<tr>
+					<td><a id="item_${i.index}" href="mostrarViaje?id=${entry.id}">${entry.id}</a></td>
 					<td>${entry.departure.city}</td>
 					<td>${entry.destination.city}</td>
 					<td>${entry.availablePax}</td>
