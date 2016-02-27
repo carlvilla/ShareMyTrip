@@ -26,11 +26,10 @@
 		</tr>
 	</table>
 	<c:if test="${notificacionRegistro==true}">
-<div class="alert alert-success">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Success!</strong> Indicates a successful or positive action.
+<div id="exitoRegistroViaje" class="alert alert-success">
+  <a href="principal.jsp" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Éxito!</strong> Se ha añadido el viaje con éxito.
 </div>
-	${request.notificacionRegistro==false}
 	
 </c:if>
 </body>
