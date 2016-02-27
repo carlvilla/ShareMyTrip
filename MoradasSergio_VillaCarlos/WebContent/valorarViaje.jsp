@@ -10,8 +10,7 @@
 </head>
 <body>
 	<h1 align="center">Valorar Viaje</h1>
-	<form action="valorarViaje" method="POST">
-		<input type="text" value="${param.idViaje}"/>
+	<form action="valorarViaje?idViaje=${param.idViaje}" method="POST">
 		<textarea rows="4" cols="50" name="comentario">Introduzca su comentario...</textarea>
 		<input type="submit" value="Valorar"/>
 	</form>				
