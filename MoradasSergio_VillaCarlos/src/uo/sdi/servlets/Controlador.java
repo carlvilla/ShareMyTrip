@@ -209,7 +209,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		//ModificarViaje
 		resJSP=new HashMap<String, String>();
 		resJSP.put("EXITO","/misViajes");
-		resJSP.put("FRACASO","/mostraDatos");
+		resJSP.put("FRACASO","/misViajes");
 		opcionResJSP.put("modificarViaje", resJSP);
 		
 		//Cancelar Viaje
