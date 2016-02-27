@@ -17,6 +17,14 @@
 h1 {
 	text-align: center;
 }
+
+li{	
+	font-size: 14px
+}
+td{
+	font-size: 14px;
+	vertical-align:middle !important;
+}
 </style>
 
 
@@ -38,6 +46,7 @@ h1 {
 					<th>Fecha salida</th>
 					<th>Fecha llegada</th>
 					<th>Implicación con el viaje</th>
+					<th>Status</th>
 					<th>Administracion</th>
 				</tr>
 			</thead>
@@ -53,23 +62,25 @@ h1 {
 							<td>${viaje.arrivalDate}</td>
 							<td>${entry.key}</td>
 							<td>${viaje.status}</td>
-							<%-- 
+							
 							<td>
+							<c:if test="${viaje.status!='CANCELLED'}">
 								<ul>
 									<c:choose>
-										<c:when test="${entry.key=='PROMOTOR}">
-											<li><a href="listarSolicitudes?idViaje=${viaje.id}">Listado Solicitudes</a></li>
+										<c:when test="${entry.key=='PROMOTOR'}">
+											<li><a href="#">Valorar Viaje</a></li>
+											<li><a href="#">Valorar participantes</a></li>
 										</c:when>
 										<c:otherwise>
-											<li><a href="cancelarPlaza?
-											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar plaza</a></li>
-											<li><a href="cancelarPlaza?
-											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar plaza</a></li>
+											<li><a href="valorarViaje.jsp?idViaje=${viaje.id}">Valorar Viaje</a></li>
+											<li><a href="#">Valorar Promotor</a></li>
+											<li><a href="#">Valorar Compañeros</a></li>
 										</c:otherwise>
 									</c:choose>
 								</ul>
+							</c:if>	
 							</td>
-							--%>
+							
 						</tr>
 					</c:forEach>
 				</c:forEach>
