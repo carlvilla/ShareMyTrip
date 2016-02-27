@@ -41,11 +41,10 @@ public class Sesion4Tests {
     @Test
     public void testIniciarSesionConExitoConQueryString() {
     	// Rellenando el formulario HTML
-        beginAt("/validarse?nombreUsuario=user2");  // Navegar a la URL
+        beginAt("/validarse?nombreUsuario=user2&passwordUsuario=user2");  // Navegar a la URL
         assertTitleEquals("ShareMyTrip - Página principal del usuario");  // Comprobar título de la página
         assertTextInElement("login", "user2");  // Comprobar cierto elemento contiene cierto texto
         assertTextInElement("name", "Luisa");  // Comprobar cierto elemento contiene cierto texto
-        assertTextPresent("Es Vd el usuario número:"); // Comprobar cierto texto está presente
     }
     
     @Test
