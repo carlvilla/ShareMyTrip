@@ -2,14 +2,10 @@ package uo.sdi.acciones;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import uo.sdi.model.AddressPoint;
-import uo.sdi.model.Seat;
 import uo.sdi.model.Trip;
 import uo.sdi.model.TripStatus;
 import uo.sdi.model.User;
