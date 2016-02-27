@@ -31,7 +31,7 @@ public class FechaYhoraTag extends TagSupport{
 			fecha= trip.getDepartureDate();
 		}
 		else if(date.compareTo("arrivalDate")==0){
-			fecha = trip.getDepartureDate();
+			fecha = trip.getArrivalDate();
 		}else
 			fecha = trip.getClosingDate();
 		

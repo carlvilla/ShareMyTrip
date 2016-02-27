@@ -98,7 +98,9 @@ public class ListarMisViajesAction implements Accion {
 		viajes.put("SIN PLAZA", viajesSinPlaza);
 		viajes.put("EXCLUIDO", viajesExcluido);
 
+
 		request.setAttribute("viajes", viajes);
+
 
 		return "EXITO";
 	}

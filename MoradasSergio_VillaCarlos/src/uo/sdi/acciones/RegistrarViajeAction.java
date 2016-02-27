@@ -96,8 +96,8 @@ public class RegistrarViajeAction implements Accion {
 				
 				SimpleDateFormat formatoDeFecha = new SimpleDateFormat(
 						"dd/MM/yyyy-HH:mm:ss");
-				newTrip.setArrivalDate(formatoDeFecha.parse(fechaHoraSalida));
-				newTrip.setDepartureDate(formatoDeFecha.parse(fechaHoraLLegada));
+				newTrip.setDepartureDate(formatoDeFecha.parse(fechaHoraSalida));
+				newTrip.setArrivalDate(formatoDeFecha.parse(fechaHoraLLegada));
 				newTrip.setClosingDate(formatoDeFecha.parse(fechaLimite));
 
 				//Comprobamos fechas
