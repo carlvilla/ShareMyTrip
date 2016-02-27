@@ -49,7 +49,7 @@ public class MostrarHistorialViajesAction implements Accion{
 			
 			Trip viajeSeat = PersistenceFactory.newTripDao().findById(seat.getTripId());
 			
-			if(fechaActual.after(viajeSeat.getArrivalDate())){
+			if(fechaActual.after(viajeSeat.getArrivalDate())&& !viajeSeat.getPromoterId().equals(seat.getUserId())){
 				if(viajeSeat.getStatus()!=TripStatus.DONE){
 					viajeSeat.setStatus(TripStatus.DONE);
 				}
