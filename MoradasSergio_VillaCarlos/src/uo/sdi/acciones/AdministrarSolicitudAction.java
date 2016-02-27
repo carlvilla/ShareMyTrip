@@ -50,7 +50,7 @@ public class AdministrarSolicitudAction implements Accion {
 		
 		daoSeat.save(seat);
 	
-		return "EXITO";
+		return "EXITO"; 
 	}
 	
 	@Override
