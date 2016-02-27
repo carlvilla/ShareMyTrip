@@ -2,9 +2,11 @@ package uo.sdi.acciones;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
 import uo.sdi.model.AddressPoint;
 import uo.sdi.model.Trip;
 import uo.sdi.model.TripStatus;
@@ -97,8 +99,8 @@ public class ModificarViajeAction implements Accion{
 			//Añadimos las fechas al viaje
 			SimpleDateFormat formatoDeFecha = new SimpleDateFormat(
 					"dd/MM/yyyy-HH:mm:ss");
-			newTrip.setArrivalDate(formatoDeFecha.parse(fechaHoraSalida));
-			newTrip.setDepartureDate(formatoDeFecha.parse(fechaHoraLLegada));
+			newTrip.setArrivalDate(formatoDeFecha.parse(fechaHoraLLegada) );
+			newTrip.setDepartureDate(formatoDeFecha.parse(fechaHoraSalida));
 			newTrip.setClosingDate(formatoDeFecha.parse(fechaLimite));
 
 			//Comprobamos fechas
@@ -143,6 +145,10 @@ public class ModificarViajeAction implements Accion{
 			Trip tripMismaFecha = tdao
 					.findByPromoterIdAndArrivalDate(userByLogin.getId(), 
 							formatoDeFecha.parse(fechaHoraSalida));
+			if(tripMismaFecha!=null && tripMismaFecha.getId()==idViaje){
+				tripMismaFecha=null;
+			}
+			
 			if(tripMismaFecha!=null){
 				request.setAttribute("error", "Error al modificar: YA HAS CREADO UN VIAJE EN ESA MISMA FECHA");
 				return "FRACASO";
