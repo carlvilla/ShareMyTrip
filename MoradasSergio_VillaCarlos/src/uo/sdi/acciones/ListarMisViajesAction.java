@@ -24,78 +24,87 @@ public class ListarMisViajesAction implements Accion {
 	public String execute(HttpServletRequest request,
 			HttpServletResponse response) {
 
-		//Crear distintas colecciones para los viajes en los es:
-		//participante, interesado o promotor
+		// Crear distintas colecciones para los viajes en los es:
+		// participante, interesado o promotor
 
-		List<Trip> viajesParticipante = new LinkedList<Trip>(); //Tabla TSeats
-		List<Trip> viajesInteresado = new LinkedList<Trip>(); //Tabla TApplications
-		List<Trip> viajesExcluido = new LinkedList<Trip>(); //Tabla TApplications
-		List<Trip> viajesSinPlaza = new LinkedList<Trip>(); //Tabla TApplications
-		List<Trip> viajesPromotor; //Tabla TTrip
+		List<Trip> viajesParticipante = new LinkedList<Trip>(); // Tabla TSeats
+		List<Trip> viajesInteresado = new LinkedList<Trip>(); // Tabla
+																// TApplications
+		List<Trip> viajesExcluido = new LinkedList<Trip>(); // Tabla
+															// TApplications
+		List<Trip> viajesSinPlaza = new LinkedList<Trip>(); // Tabla
+															// TApplications
+		List<Trip> viajesPromotor; // Tabla TTrip
 		List<Trip> viajesPromotorAux = new LinkedList<Trip>();
-		
+
 		HttpSession session = request.getSession();
-		
-		Long idUsuario = (Long)((User) session.getAttribute("user")).getId();
-	
-		List<Seat> participanteAux = PersistenceFactory.newSeatDao().findByUser(idUsuario);
-		
-		for(Seat seat:participanteAux){
-			
-			Trip viajeSeat = PersistenceFactory.newTripDao().findById(seat.getTripId());
-			
+
+		Long idUsuario = (Long) ((User) session.getAttribute("user")).getId();
+
+		List<Seat> participanteAux = PersistenceFactory.newSeatDao()
+				.findByUser(idUsuario);
+
+		for (Seat seat : participanteAux) {
+
+			Trip viajeSeat = PersistenceFactory.newTripDao().findById(
+					seat.getTripId());
+
 			comprobarFechaViaje(viajeSeat);
-			
-			if(!viajeSeat.getStatus().equals(TripStatus.DONE)){
-				if(seat.getStatus().equals(SeatStatus.ACCEPTED))
+
+			if (!viajeSeat.getStatus().equals(TripStatus.DONE)
+					&& !viajeSeat.getStatus().equals(TripStatus.CANCELLED)) {
+				if (seat.getStatus().equals(SeatStatus.ACCEPTED))
 					viajesParticipante.add(viajeSeat);
 				else
 					viajesExcluido.add(viajeSeat);
 			}
-			
+
 		}
-		
-		List<Application> interesadosAux = PersistenceFactory.newApplicationDao().findByUserId(idUsuario); 
-			
-		for(Application app: interesadosAux){
-			Trip viajeApp = PersistenceFactory.newTripDao().findById(app.getTripId());
-			
+
+		List<Application> interesadosAux = PersistenceFactory
+				.newApplicationDao().findByUserId(idUsuario);
+
+		for (Application app : interesadosAux) {
+			Trip viajeApp = PersistenceFactory.newTripDao().findById(
+					app.getTripId());
+
 			comprobarFechaViaje(viajeApp);
-			
-			if(!viajeApp.equals(TripStatus.DONE)){
-				if(viajeApp.getAvailablePax()>0)
+
+			if (!viajeApp.equals(TripStatus.DONE)
+					&& !viajeApp.getStatus().equals(TripStatus.CANCELLED)) {
+				if (viajeApp.getAvailablePax() > 0)
 					viajesInteresado.add(viajeApp);
 				else
 					viajesSinPlaza.add(viajeApp);
 			}
 		}
-		
-		viajesPromotor = PersistenceFactory.newTripDao().findByPromoterId(idUsuario);
-		
-		for(Trip viaje:viajesPromotor){
-			comprobarFechaViaje(viaje);
-			if(!viaje.getStatus().equals(TripStatus.DONE)){
-				viajesPromotorAux.add(viaje);
+
+		viajesPromotor = PersistenceFactory.newTripDao().findByPromoterId(
+				idUsuario);
+
+		for (Trip viaje : viajesPromotor) {
+			if (!viaje.getStatus().equals(TripStatus.CANCELLED)) {
+				comprobarFechaViaje(viaje);
+				if (!viaje.getStatus().equals(TripStatus.DONE)) {
+					viajesPromotorAux.add(viaje);
+				}
 			}
 		}
-		
-		Map<String,List<Trip>> viajes = new HashMap<String,List<Trip>>();
+
+		Map<String, List<Trip>> viajes = new HashMap<String, List<Trip>>();
 		viajes.put("ADMITIDO", viajesParticipante);
 		viajes.put("PROMOTOR", viajesPromotorAux);
 		viajes.put("PENDIENTE", viajesInteresado);
 		viajes.put("SIN PLAZA", viajesSinPlaza);
 		viajes.put("EXCLUIDO", viajesExcluido);
-		
-		
+
 		request.setAttribute("viajes", viajes);
-	
-		
-				
+
 		return "EXITO";
 	}
-	
+
 	private void comprobarFechaViaje(Trip viajeSeat) {
-		if(new Date().after(viajeSeat.getArrivalDate()))
+		if (new Date().after(viajeSeat.getArrivalDate()))
 			viajeSeat.setStatus(TripStatus.DONE);
 	}
 
@@ -103,5 +112,5 @@ public class ListarMisViajesAction implements Accion {
 	public String toString() {
 		return getClass().getName();
 	}
-	
+
 }

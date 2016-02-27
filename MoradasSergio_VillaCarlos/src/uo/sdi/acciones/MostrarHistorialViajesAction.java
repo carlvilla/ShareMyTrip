@@ -35,8 +35,8 @@ public class MostrarHistorialViajesAction implements Accion{
 		List<Trip> listaViajesPromotor = tripDao.findByPromoterId(idUsuario);
 		
 		for(Trip viaje:listaViajesPromotor){
-			if(fechaActual.after(viaje.getArrivalDate())){
-				if(viaje.getStatus()!=TripStatus.DONE){
+			if(fechaActual.after(viaje.getArrivalDate()) || viaje.getStatus().equals(TripStatus.CANCELLED)){
+				if(viaje.getStatus()!=TripStatus.DONE && !viaje.getStatus().equals(TripStatus.CANCELLED)){
 					viaje.setStatus(TripStatus.DONE);
 				}
 				viajesPromotorDone.add(viaje);
