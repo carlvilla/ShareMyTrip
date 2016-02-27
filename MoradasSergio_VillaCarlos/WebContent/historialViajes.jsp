@@ -3,6 +3,7 @@
 <%@ include file="comprobarUsuario.jsp"%>
 <%@ include file="barraNavegacion.jsp"%>
 <%@ include file="barraNavegacionMisViajes.jsp"%>
+<%@ taglib uri="http://www.uniovi.es/sdi/comment" prefix="cm" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,13 +69,12 @@ td{
 								<ul>
 									<c:choose>
 										<c:when test="${entry.key=='PROMOTOR'}">
-											<li><a href="#">Valorar Viaje</a></li>
-											<li><a href="#">Valorar participantes</a></li>
+											<cm:comment idViaje="${viaje.id}" idUsuario="${sessionScope.user.id}"
+											 implicacion ="PROMOTOR"/>
 										</c:when>
 										<c:otherwise>
-											<li><a href="valorarViaje.jsp?idViaje=${viaje.id}">Valorar Viaje</a></li>
-											<li><a href="#">Valorar Promotor</a></li>
-											<li><a href="#">Valorar Compañeros</a></li>
+											<cm:comment idViaje="${viaje.id}" idUsuario="${sessionScope.user.id}" 
+											implicacion ="ADMITIDO"/>
 										</c:otherwise>
 									</c:choose>
 								</ul>
