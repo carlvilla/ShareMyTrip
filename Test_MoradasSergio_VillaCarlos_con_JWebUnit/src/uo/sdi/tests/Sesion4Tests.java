@@ -8,7 +8,8 @@ public class Sesion4Tests {
 
     @Before
     public void prepare() {
-        setBaseUrl("http://localhost:8280/sesion4.MVCCasero");
+        setBaseUrl("http://localhost:8280/MoradasSergio_VillaCarlos");
+        
     }
 
     @Test
@@ -27,23 +28,23 @@ public class Sesion4Tests {
     @Test
     public void testIniciarSesionConExito() {
     	// Rellenando el formulario HTML
-        beginAt("/");  // Navegar a la URL
+    	beginAt("/"); 
         setTextField("nombreUsuario", "user1"); // Rellenar primer campo de formulario
+        setTextField("passwordUsuario", "user1"); //Introducir contraseña
         submit(); // Enviar formulario
         assertTitleEquals("ShareMyTrip - Página principal del usuario");  // Comprobar título de la página
         assertTextInElement("login", "user1");  // Comprobar cierto elemento contiene cierto texto
         assertTextInElement("name", "Fernando");  // Comprobar cierto elemento contiene cierto texto
-        assertTextPresent("Es Vd el usuario número:"); // Comprobar cierto texto está presente
+    
     }
 
     @Test
     public void testIniciarSesionConExitoConQueryString() {
     	// Rellenando el formulario HTML
-        beginAt("/validarse?nombreUsuario=user2");  // Navegar a la URL
+        beginAt("/validarse?nombreUsuario=user2&passwordUsuario=user2");  // Navegar a la URL
         assertTitleEquals("ShareMyTrip - Página principal del usuario");  // Comprobar título de la página
         assertTextInElement("login", "user2");  // Comprobar cierto elemento contiene cierto texto
         assertTextInElement("name", "Luisa");  // Comprobar cierto elemento contiene cierto texto
-        assertTextPresent("Es Vd el usuario número:"); // Comprobar cierto texto está presente
     }
     
     @Test
@@ -53,6 +54,11 @@ public class Sesion4Tests {
         setTextField("nombreUsuario", "yoNoExisto"); // Rellenar primer campo de formulario
         submit(); // Enviar formulario
         assertTitleEquals("ShareMyTrip - Inicie sesión");  // Comprobar título de la página
+    }
+    
+    @Test
+    public void cerrarSesion(){
+    	
     }
 
 }

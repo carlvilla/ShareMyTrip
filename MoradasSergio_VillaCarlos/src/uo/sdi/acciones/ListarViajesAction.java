@@ -33,8 +33,10 @@ public class ListarViajesAction implements Accion {
 		try {
 			viajesAux = PersistenceFactory.newTripDao().findAll();
 
-			for (Trip viaje : viajesAux) {
-
+			if(usuario!=null){
+				//Para usuarios registrados
+				for (Trip viaje : viajesAux) {
+				
 				if (viaje.getStatus().equals(TripStatus.OPEN)
 						&& viaje.getAvailablePax() > 0
 						&& !viaje.getPromoterId().equals(usuario.getId())
@@ -46,6 +48,21 @@ public class ListarViajesAction implements Accion {
 
 				}
 
+			}
+			}
+			else{
+				//Para usuarios públicos
+				for (Trip viaje : viajesAux) {
+
+					if (viaje.getStatus().equals(TripStatus.OPEN)
+							&& viaje.getAvailablePax() > 0
+							&& viaje.getClosingDate().after(new Date())) {
+
+						viajes.add(viaje);
+
+					}
+
+				}
 			}
 
 			request.setAttribute("listaViajes", viajes);

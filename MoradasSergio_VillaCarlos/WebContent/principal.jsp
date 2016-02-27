@@ -26,11 +26,5 @@
 		</tr>
 	</table>
 	
-	<br/>	
-		  
-	 <a id="registrarViaje" href="registrarViaje.jsp">Registrar Viaje</a>
-	 
-	<br/>
-
 </body>
 </html>

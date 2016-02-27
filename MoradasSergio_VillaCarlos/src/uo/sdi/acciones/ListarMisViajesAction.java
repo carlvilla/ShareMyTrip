@@ -70,12 +70,15 @@ public class ListarMisViajesAction implements Accion {
 
 			comprobarFechaViaje(viajeApp);
 
-			if (!viajeApp.equals(TripStatus.DONE)
-					&& !viajeApp.getStatus().equals(TripStatus.CANCELLED)) {
+			if (viajeApp.getStatus().equals(TripStatus.OPEN)) {
 				if (viajeApp.getAvailablePax() > 0)
 					viajesInteresado.add(viajeApp);
 				else
 					viajesSinPlaza.add(viajeApp);
+			}
+			
+			else if(viajeApp.getStatus().equals(TripStatus.CLOSED)){
+				viajesExcluido.add(viajeApp);
 			}
 		}
 
@@ -106,8 +109,12 @@ public class ListarMisViajesAction implements Accion {
 	}
 
 	private void comprobarFechaViaje(Trip viajeSeat) {
+		
 		if (new Date().after(viajeSeat.getArrivalDate()))
 			viajeSeat.setStatus(TripStatus.DONE);
+		
+		else if (new Date().after(viajeSeat.getClosingDate()))
+			viajeSeat.setStatus(TripStatus.CLOSED);
 	}
 
 	@Override
