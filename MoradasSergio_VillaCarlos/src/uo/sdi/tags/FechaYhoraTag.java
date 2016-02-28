@@ -1,4 +1,4 @@
-package uo.sdi;
+package uo.sdi.tags;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
