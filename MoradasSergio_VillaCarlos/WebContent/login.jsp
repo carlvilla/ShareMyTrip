@@ -35,10 +35,7 @@
    		<p align="center"><c:out value="${error}"/></p>
    </c:if>
    
-   <a id="registrarse" href="registrarse.jsp">Registrarse</a>
-   <br>
-   <a id="listarViajes" href="listarViajes">Lista de viajes</a>
-   
+
    
 </body>
 </html>
