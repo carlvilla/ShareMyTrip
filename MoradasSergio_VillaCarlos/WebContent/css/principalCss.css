@@ -1,0 +1,46 @@
+#info {
+	font-size: 20px;
+	display: block;
+	border-left-width: 62px;
+	margin-top: 30px;
+	margin-bottom: 57px;
+	padding-left: 10px;
+	border-right-width: 55px;
+	background-color: #1abc9c;
+	dding-right: 200px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.table {
+	background-color: #1abc9c;
+	margin-left: auto;
+	margin-right: auto;
+	width: 777px;
+	margin-top: 30px;
+}
+
+th {
+	text-align: center;
+}
+
+td {
+	text-align: center;
+}
+
+#comentario {
+	font-size: 17px;
+	text-align: center;
+	display: block;
+	margin-top: 29px;
+	margin-bottom: -15;
+}
+
+#comentarios {
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-top: 0px;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+      http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd" 
+      version="2.1"> 
+	<tlib-version>2016</tlib-version>
+	<short-name>comment</short-name>
+	<uri>http://www.uniovi.es/sdi/showcomments</uri>
+	<tag>
+		<name>showComments</name>
+		<tag-class>uo.sdi.tags.MostrarValoracionesUsuarioTag</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>idUsuario</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+</taglib>
