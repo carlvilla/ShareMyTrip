@@ -14,17 +14,14 @@ public class MostrarDatosViajeAction implements Accion {
 	public String execute(HttpServletRequest request,
 			HttpServletResponse response) {
 		
-		Trip viaje;
-		User promotor;
-		
+		Trip viaje;		
 		
 		try {
 			
 			viaje=PersistenceFactory.newTripDao().findById(Long.valueOf(request.getParameter("id")));
 			request.setAttribute("viaje", viaje);
-			
-			promotor = PersistenceFactory.newUserDao().findById(viaje.getPromoterId());
-			request.setAttribute("promotor", promotor);
+
+			request.setAttribute("promotorId", viaje.getPromoterId());
 			
 			Log.debug("Obtenido viaje con id [%d]", viaje.getId());
 		}

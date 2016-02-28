@@ -12,6 +12,8 @@
 <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/misViajes.css" type="text/css"></link>
+	
 
 </head>
 <body>

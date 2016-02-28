@@ -26,7 +26,6 @@ public class ModificarDatosAction implements Accion {
 		HttpSession session=request.getSession();
 		User usuario=((User)session.getAttribute("user"));
 	
-	//	request.setAttribute("error", null);
 		
 		//Puede querer modificar solo la información personal y
 		//no la contraseña, por ello se comprueba que no modifica los campos de las
