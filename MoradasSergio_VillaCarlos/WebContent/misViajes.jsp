@@ -18,6 +18,17 @@
 h1 {
 	text-align: center;
 }
+li{	
+	font-size: 14px
+}
+td{
+	font-size: 14px;
+	vertical-align:middle !important;
+}
+
+th{
+	font-size: 14px;
+}
 
 #comboBoxOrden {
 	width: 220px;

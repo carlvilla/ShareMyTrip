@@ -3,9 +3,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ include file="comprobarUsuarioRegistrarse.jsp" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
+<style>
+h1 {
+	text-align: center;
+}
+</style>
 <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ShareMyTrip - Registrarse</title>
@@ -14,25 +19,25 @@
 	<form action="registrarse" method="post">
 
 	<p>¿Ya tienes una cuenta?</p><a href="login.jsp">Iniciar sesión</a>
- 	<center><h1>Registrarse</h1></center>
+ 	<h1>Registrarse</h1>
  	
  	<hr><br>
- 	<table align="center">
+ 	<table>
     	<tr> 
-	    	<td><input type="text" name="nombreUsuario" placeholder="Nombre" align="left" size="20"></td>
-	    	<td><input type="text" name="apellidosUsuario" placeholder="Apellidos" align="left" size="20"></td>
+	    	<td><input type="text" name="nombreUsuario" placeholder="Nombre" size="20"></td>
+	    	<td><input type="text" name="apellidosUsuario" placeholder="Apellidos"size="20"></td>
       	</tr>
       	<tr> 
-	    	<td><input type="text" name="email" placeholder="Email" align="left" size="20"></td>
+	    	<td><input type="text" name="email" placeholder="Email"size="20"></td>
       	</tr>
       	<tr> 
-	    	<td><input type="text" name="loginUsuario" placeholder="Nombre Usuario" align="left" size="20"></td>
+	    	<td><input type="text" name="loginUsuario" placeholder="Nombre Usuario" size="20"></td>
       	</tr>
       	<tr> 
-	    	<td><input type="password" name="passwordUsuario" placeholder="Contraseña" align="left" size="20"></td>
+	    	<td><input type="password" name="passwordUsuario" placeholder="Contraseña"  size="20"></td>
       	</tr>
       	<tr> 
-      		<td><input type="password" name="confirmPasswordUsuario" placeholder="Confirma tu contraseña" align="left" size="20"></td>
+      		<td><input type="password" name="confirmPasswordUsuario" placeholder="Confirma tu contraseña"  size="20"></td>
       	</tr>
       	<tr>
     	    <td><input type="submit"  value="Registrarse"/></td>

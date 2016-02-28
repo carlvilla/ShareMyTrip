@@ -24,6 +24,8 @@ public class ValorarPromotorAction implements Accion{
 		RatingDao daoRating = PersistenceFactory.newRatingDao();
 		
 		String comentario = request.getParameter("comentario");
+		Integer valoracion = Integer.parseInt(request.getParameter("valoracion"));
+		
 		TripDao tripDao = PersistenceFactory.newTripDao();
 		Trip viaje = tripDao.findById(idViaje);
 		
@@ -33,8 +35,8 @@ public class ValorarPromotorAction implements Accion{
 		rating.setSeatFromTripId(idViaje);
 		rating.setSeatAboutUserId(viaje.getPromoterId());
 		rating.setSeatFromUserId(idUsuario);
-		//cambiar
-		rating.setValue(5);
+		rating.setValue(valoracion);
+		
 		daoRating.save(rating);
 		
 		return "EXITO";
