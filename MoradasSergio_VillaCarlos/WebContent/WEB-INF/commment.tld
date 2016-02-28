@@ -9,7 +9,7 @@
 	<uri>http://www.uniovi.es/sdi/comment</uri>
 	<tag>
 		<name>comment</name>
-		<tag-class>uo.sdi.ValoracionesTag</tag-class>
+		<tag-class>uo.sdi.tags.ValoracionesTag</tag-class>
 		<body-content>empty</body-content>
 		<attribute>
 			<name>idViaje</name>

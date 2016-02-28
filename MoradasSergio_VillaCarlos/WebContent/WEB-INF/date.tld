@@ -9,7 +9,7 @@
 	<uri>http://www.uniovi.es/sdi</uri>
 	<tag>
 		<name>fechaHora</name>
-		<tag-class>uo.sdi.FechaYhoraTag</tag-class>
+		<tag-class>uo.sdi.tags.FechaYhoraTag</tag-class>
 		<body-content>empty</body-content>
 		<attribute>
 			<name>idViaje</name>
