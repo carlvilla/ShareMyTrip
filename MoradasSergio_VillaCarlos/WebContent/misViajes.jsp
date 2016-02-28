@@ -18,6 +18,12 @@
 h1 {
 	text-align: center;
 }
+
+#comboBoxOrden {
+	width: 220px;
+	left: 970px;
+	bottom: 40px;
+}
 </style>
 
 
@@ -30,6 +36,22 @@ h1 {
 
 	<div class="container">
 		<h2>Viajes en los que ha tenido implicación</h2>
+
+
+		<div id="comboBoxOrden" class="col-xs-5 selectContainer">
+			<select class="form-control" name="size"
+				onchange="window.location=this.options[this.selectedIndex].value">
+				<option value="">Ordenar por</option>
+				<option value="misViajes?orden=origen">Origen</option>
+				<option value="misViajes?orden=destino">Destino</option>
+				<option value="misViajes?orden=fechaSalida">Fecha salida</option>
+				<option value="misViajes?orden=fechaLlegada">Fecha llegada</option>
+				<option value="misViajes?orden=fechaFin">Fecha fin inscripción</option>
+				<option value="misViajes?orden=implicacion">Implicación con el viaje</option>
+				<option value="misViajes?orden=estado">Estado</option>
+			</select>
+		</div>
+
 
 		<table id="tabla" class="table table-hover">
 			<thead>
@@ -67,25 +89,34 @@ h1 {
 							<td>
 								<ul>
 									<c:choose>
-										<c:when test="${entry.key=='PROMOTOR' && viaje.status=='OPEN' && !viaje.fechaCierrePasada()}">
-											<li><a href="listarSolicitudes?idViaje=${viaje.id}">Listado Solicitudes</a></li>
-											<li><a href="cancelarViaje?
-											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar viaje</a></li>
-											<li><a href="mostrarDatosViaje?idViaje=${viaje.id}">Modificar viaje</a></li>
+										<c:when
+											test="${entry.key=='PROMOTOR' && viaje.status=='OPEN' && !viaje.fechaCierrePasada()}">
+											<li><a href="listarSolicitudes?idViaje=${viaje.id}">Listado
+													Solicitudes</a></li>
+											<li><a
+												href="cancelarViaje?
+											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar
+													viaje</a></li>
+											<li><a href="mostrarDatosViaje?idViaje=${viaje.id}">Modificar
+													viaje</a></li>
 										</c:when>
 										<c:otherwise>
-											<c:if test="${entry.key!='PROMOTOR' && entry.key!='SIN PLAZA' && entry.key!='EXCLUIDO'
+											<c:if
+												test="${entry.key!='PROMOTOR' && entry.key!='SIN PLAZA' && entry.key!='EXCLUIDO'
 											&& !viaje.fechaCierrePasada()}">
-											<li><a id="item_CancelaPlaza_${i.index}" href="cancelarPlaza?
-											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar plaza</a></li>
+												<li><a id="item_CancelaPlaza_${i.index}"
+													href="cancelarPlaza?
+											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar
+														plaza</a></li>
 											</c:if>
-											
-											<c:if test="${viaje.fechaCierrePasada() && viaje.status=='OPEN'}">
-											
+
+											<c:if
+												test="${viaje.fechaCierrePasada() && viaje.status=='OPEN'}">
+
 												<li>La fecha de cierre ha pasado</li>
-											
+
 											</c:if>
-				
+
 										</c:otherwise>
 									</c:choose>
 								</ul>
