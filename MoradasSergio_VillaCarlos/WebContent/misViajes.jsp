@@ -43,8 +43,6 @@ th{
 
 	<h1>Mis viajes</h1>
 
-
-
 	<div class="container">
 		<h2>Viajes en los que ha tenido implicación</h2>
 
@@ -112,13 +110,17 @@ th{
 													viaje</a></li>
 										</c:when>
 										<c:otherwise>
+											
 											<c:if
 												test="${entry.key!='PROMOTOR' && entry.key!='SIN PLAZA' && entry.key!='EXCLUIDO'
 											&& !viaje.fechaCierrePasada()}">
+												
 												<li><a id="item_CancelaPlaza_${i.index}"
-													href="cancelarPlaza?
-											idViaje=${viaje.id}&implicacion=${entry.key}">Cancelar
-														plaza</a></li>
+													href="cancelarPlaza?idViaje=${viaje.id}&implicacion=${entry.key}">
+													Cancelar plaza</a>
+												</li>
+												
+								
 											</c:if>
 
 											<c:if
@@ -133,6 +135,8 @@ th{
 								</ul>
 							</td>
 						</tr>
+						
+						
 					</c:forEach>
 				</c:forEach>
 			</tbody>

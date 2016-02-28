@@ -51,10 +51,13 @@ public class ListarMisViajesAction implements Accion {
 
 			comprobarFechaViaje(viajeSeat);
 
-			if (!viajeSeat.getStatus().equals(TripStatus.DONE)
+			if (!viajeSeat.getPromoterId().equals(idUsuario) 
+					&& !viajeSeat.getStatus().equals(TripStatus.DONE)
 					&& !viajeSeat.getStatus().equals(TripStatus.CANCELLED)) {
+				
 				if (seat.getStatus().equals(SeatStatus.ACCEPTED))
 					viajesParticipante.add(viajeSeat);
+				
 				else
 					viajesExcluido.add(viajeSeat);
 			}

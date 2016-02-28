@@ -70,7 +70,9 @@ public class ListarViajesAction implements Accion {
 			
 			if(orden!=null){
 				
-				//Se llama al m
+				//Se llama a un método estático de la clase Sorter
+				//encargado de ordenar la lista de viajes dependiendo
+				//de la opción elegida en el comboBox
 				Sorter.ordenarViajes(viajes,orden);
 				
 			}

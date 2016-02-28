@@ -1,5 +1,5 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ include file="comprobarUsuario.jsp" %>
+<%@ include file="comprobarUsuario.jsp"%>
 <%@ include file="barraNavegacion.jsp"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -11,13 +11,16 @@
 	<jsp:useBean id="user" class="uo.sdi.model.User" scope="session" />
 	<table>
 		<tr>
-			<td>Login:</td><td id="login"><jsp:getProperty property="login" name="user" /></td>
+			<td>Login:</td>
+			<td id="login"><jsp:getProperty property="login" name="user" /></td>
 		</tr>
 		<tr>
-			<td>Nombre:</td><td id="name"><jsp:getProperty property="name" name="user" /></td>
+			<td>Nombre:</td>
+			<td id="name"><jsp:getProperty property="name" name="user" /></td>
 		</tr>
 		<tr>
-			<td>Apellidos:</td><td id="surname"><jsp:getProperty property="surname" name="user" /></td>
+			<td>Apellidos:</td>
+			<td id="surname"><jsp:getProperty property="surname" name="user" /></td>
 		</tr>
 		<tr>
 			<td>Email:</td>
@@ -26,11 +29,10 @@
 		</tr>
 	</table>
 	<c:if test="${notificacionRegistro==true}">
-<div id="exitoRegistroViaje" class="alert alert-success">
-  <a href="principal.jsp" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Éxito!</strong> Se ha añadido el viaje con éxito.
-</div>
-	
-</c:if>
+		<div id="exitoRegistroViaje" class="alert alert-success">
+			<strong>Éxito!</strong> Se ha añadido el viaje con éxito.
+		</div>
+
+	</c:if>
 </body>
 </html>
