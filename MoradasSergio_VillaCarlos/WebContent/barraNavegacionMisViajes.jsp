@@ -1,5 +1,5 @@
 <head>
-	<link rel="stylesheet" href="css/barraNavegacionMisViajesCss.css" type="text/css"></link>
+	<link rel="stylesheet" href="css/barraNavegacionMisViajes.css" type="text/css"></link>
 </head>
 <nav id="navMisViajes">
 

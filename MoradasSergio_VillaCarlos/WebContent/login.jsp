@@ -6,6 +6,8 @@
 <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
 
 <title>ShareMyTrip - Inicie sesión</title>
+<link rel="stylesheet" href="css/login.css" type="text/css"></link>
+
 </head> 
 <body>
   <form class="form-signin" action="validarse" method="post">
@@ -14,11 +16,11 @@
  	<hr><br>
  	<table align="center">
     	<tr> 
-    		<td align="right">Identificador de usuario:  </td>
+    		<td id="loginLabel" align="right">Identificador de usuario:  </td>
 	    	<td><input type="text"  id="inputEmail" class="form-control" name="nombreUsuario" align="left" size="15"></td>
       	</tr>
       	<tr> 
-    		<td align="right">Contraseña:  </td>
+    		<td id="passLabel" align="right">Contraseña:  </td>
 	    	<td><input type="password" id="inputPassword" class="form-control" name="passwordUsuario" align="left" size="15"></td>
       	</tr>
       	<tr>

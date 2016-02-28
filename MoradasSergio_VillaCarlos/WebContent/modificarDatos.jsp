@@ -7,7 +7,7 @@
 <head>
 <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
 <title>ShareMyTrip - Modificar datos de usuario</title>
-<link rel="stylesheet" href="css/modificarDatosCss.css" type="text/css"></link>
+<link rel="stylesheet" href="css/modificarDatos.css" type="text/css"></link>
 
 </head>
 <body>

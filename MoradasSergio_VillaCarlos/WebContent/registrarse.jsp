@@ -14,6 +14,8 @@ h1 {
 <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ShareMyTrip - Registrarse</title>
+<link rel="stylesheet" href="css/registrarse.css" type="text/css"></link>
+
 </head>
 <body>
 	<form action="registrarse" method="post">
