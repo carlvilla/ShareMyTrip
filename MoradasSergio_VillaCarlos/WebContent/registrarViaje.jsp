@@ -78,7 +78,7 @@
 			<td><input class="form-control form-control-sm" type="text" name="fechaHoraSalida" placeholder="dd/MM/yyyy-HH:mm:ss" align="left" size="18"></td>
 		</tr>
 		<tr>
-			<td>Fecha y Hora LLegada:</td>
+			<td>Fecha y Hora Llegada:</td>
 			<td><input class="form-control form-control-sm" type="text" name="fechaHoraLLegada" placeholder="dd/MM/yyyy-HH:mm:ss" align="left" size="18"></td>
 		</tr>
 		<tr>

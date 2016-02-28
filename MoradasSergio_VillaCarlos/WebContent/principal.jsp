@@ -17,38 +17,12 @@
 	
 	<sc:showComments idUsuario="${user.id}"/>
 	
-
-	<%-- 
-	<table>
-		<tr>
-			<td>Login:</td>
-			<td id="login"><jsp:getProperty property="login" name="user" /></td>
-		</tr>
-		<tr>
-			<td>Nombre:</td>
-			<td id="name"><jsp:getProperty property="name" name="user" /></td>
-		</tr>
-		<tr>
-			<td>Apellidos:</td>
-			<td id="surname"><jsp:getProperty property="surname" name="user" /></td>
-		</tr>
-		<tr>
-			<td>Email:</td>
-			<td id="email"><jsp:getProperty property="email" name="user" />
-			</td>
-		</tr>
-	</table>
-	
-	
-	
 	<c:if test="${notificacionRegistro==true}">
 		<div id="exitoRegistroViaje" class="alert alert-success">
 			<strong>Éxito!</strong> Se ha añadido el viaje con éxito.
 		</div>
 
 	</c:if>
-	
-	--%>
 	
 </body>
 </html>

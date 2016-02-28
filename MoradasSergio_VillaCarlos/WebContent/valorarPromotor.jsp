@@ -6,11 +6,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+h1 {
+	text-align: center;
+}
+
+li{	
+	font-size: 14px
+}
+td{
+	font-size: 14px;
+	vertical-align:middle !important;
+}
+</style>
 <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
 <title>ShareMyTrip - Valorar Promotor</title>
 </head>
 <body>
 	<h1 align="center">Valorar Promotor</h1>
+	<div class="container">
 	<form action="valorarPromotor?idViaje=${param.idViaje}" method="POST">
 	<table id="tabla" class="table table-hover">
 	<thead>
@@ -21,11 +35,12 @@
 				</tr>
 			</thead>
 				<tr>
-					<td><textarea rows="4" cols="50" name="comentario">Introduzca su comentario...</textarea></td>
-					<td><input type="number" name="valoracion" value="0" min="0" max="10"></td>
+					<td><textarea class="form-control" rows="4" cols="50" name="comentario">Introduzca su comentario...</textarea></td>
+					<td><input class="form-control" type="number" name="valoracion" value="0" min="0" max="10"></td>
 				</tr>
 	</table>
-		<input type="submit" value="Valorar"/>
-	</form>				
+		<input class="btn btn-lg btn-primary btn-block" type="submit" value="Valorar"/>
+	</form>			
+	</div>	
 </body>
 </html>

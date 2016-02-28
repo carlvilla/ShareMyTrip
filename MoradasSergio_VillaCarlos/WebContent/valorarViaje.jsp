@@ -11,9 +11,11 @@
 </head>
 <body>
 	<h1 align="center">Valorar Viaje</h1>
+	<div class="container">
 	<form action="valorarViaje?idViaje=${param.idViaje}" method="POST">
-		<textarea rows="4" cols="50" name="comentario">Introduzca su comentario...</textarea>
-		<input type="submit" value="Valorar"/>
+		<textarea class="form-control" rows="4" cols="50" name="comentario" style="margin-bottom: 10px" >Introduzca su comentario...</textarea>
+		<input class="btn btn-lg btn-primary btn-block" type="submit" value="Valorar"/>
 	</form>				
+	</div>
 </body>
 </html>
