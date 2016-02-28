@@ -13,31 +13,6 @@
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
-
-<style>
-h1 {
-	text-align: center;
-}
-li{	
-	font-size: 14px
-}
-td{
-	font-size: 14px;
-	vertical-align:middle !important;
-}
-
-th{
-	font-size: 14px;
-}
-
-#comboBoxOrden {
-	width: 220px;
-	left: 970px;
-	bottom: 40px;
-}
-</style>
-
-
 </head>
 <body>
 
