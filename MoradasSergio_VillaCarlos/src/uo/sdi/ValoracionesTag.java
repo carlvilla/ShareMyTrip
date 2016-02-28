@@ -32,7 +32,8 @@ public class ValoracionesTag extends TagSupport {
 		
 		TripDao tripDao = PersistenceFactory.newTripDao();
 		Trip trip = tripDao.findById(idViaje);
-
+		List<Seat> asientos = seatDao.findByTrip(idViaje);
+		
 		try {
 			JspWriter out = pageContext.getOut();
 			
@@ -44,7 +45,7 @@ public class ValoracionesTag extends TagSupport {
 						comments = true;
 					}
 				}
-				if (!comments)
+				if (!comments && asientos.size()>1)
 					out.println("<li><a href=\"informacionCompañeros?idViaje="
 							+ idViaje + "\">Valorar Compañeros</a></li>");
 			} else {
@@ -60,11 +61,11 @@ public class ValoracionesTag extends TagSupport {
 					}
 				}
 				
-				List<Seat> asientos = seatDao.findByTrip(idViaje);
-				if(asientos.size()>2)
-					if (!comments)
-						out.println("<li><a href=\"informacionCompañeros?idViaje="
-								+ idViaje + "\">Valorar Compañeros</a></li>");
+				if(!(asientos.size()==2 && !idUsuario.equals(trip.getPromoterId())))
+						if(asientos.size()>1)
+							if (!comments)
+								out.println("<li><a href=\"informacionCompañeros?idViaje="
+										+ idViaje + "\">Valorar Compañeros</a></li>");
 				if (seat != null && seat.getComment() == null)
 					out.println("<li><a href=\"valorarViaje.jsp?idViaje="
 							+ idViaje + "\">Valorar Viaje</a></li>");

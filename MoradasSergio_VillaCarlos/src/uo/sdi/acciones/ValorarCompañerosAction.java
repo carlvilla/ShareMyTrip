@@ -27,22 +27,26 @@ public class ValorarCompañerosAction implements Accion{
 		
 		Long idViaje = Long.valueOf(request.getParameter("idViaje"));
 		
+		TripDao tripDao = PersistenceFactory.newTripDao();
+		Trip trip = tripDao.findById(idViaje);
+		
 		RatingDao daoRating = PersistenceFactory.newRatingDao();
 		SeatDao daoSeat = PersistenceFactory.newSeatDao();
 		List<Seat> asientos = daoSeat.findByTrip(idViaje);
 		
 		for(Seat seat:asientos){
-			if(!seat.getUserId().equals(idUsuario)){
+			if(!seat.getUserId().equals(idUsuario) && !seat.getUserId().equals(trip.getPromoterId())){
 				String comentario = request.getParameter(""+seat.getUserId());
-				//Valor
+				Integer valoracion = Integer.parseInt(request.getParameter(seat.getUserId()+"_valoracion"));
+				
 				Rating rating = new Rating();
 				rating.setComment(comentario);
 				rating.setSeatAboutTripId(idViaje);
 				rating.setSeatFromTripId(idViaje);
 				rating.setSeatAboutUserId(seat.getUserId());
 				rating.setSeatFromUserId(idUsuario);
-				//cambiar
-				rating.setValue(5);
+				rating.setValue(valoracion);
+				
 				daoRating.save(rating);
 			}
 		}
