@@ -20,8 +20,6 @@ public class MostrarDatosViajeAction implements Accion {
 			
 			viaje=PersistenceFactory.newTripDao().findById(Long.valueOf(request.getParameter("id")));
 			request.setAttribute("viaje", viaje);
-
-			request.setAttribute("promotorId", viaje.getPromoterId());
 			
 			Log.debug("Obtenido viaje con id [%d]", viaje.getId());
 		}

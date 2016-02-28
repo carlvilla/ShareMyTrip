@@ -67,7 +67,7 @@
 	
 	<br/>
 	
-	<a href="informacionPromotor?id=${promotorId}">Datos del promotor</a>	
+	<a href="informacionPromotor?id=${viaje.getPromoterId()}">Datos del promotor</a>
 
 	<br/><br/>
 
