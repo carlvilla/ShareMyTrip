@@ -16,7 +16,9 @@
 	
 	<form action="modificarDatos" method="POST">				
 	
-	<table>
+	<center><h2>Modificar datos personales</h2></center>
+	
+	<table class=".table-bordered">
 		<tr>
 			<td>Login:</td><td id="login"> <jsp:getProperty property="login" name="user"/> </td>
 		</tr>
@@ -60,8 +62,6 @@
 		</tr>
 	</table>
 	
-		
-		
 		<input type="submit" value="Modificar"/>
 
 	</form>

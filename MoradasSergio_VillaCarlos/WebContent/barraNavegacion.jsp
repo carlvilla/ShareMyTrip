@@ -3,42 +3,9 @@
 
 
 <head>
-	<style>
-		nav {
-			height: 45px;
-			left : 0;
-			width : 100%;
-			background : url(resources/nav_background.png);
- 		    margin-bottom: 15px;
-			
-			}
-			nav ul {
-			margin : 0 auto;
-			width : 840px;
-			list-style : none;
-			}
-			nav ul li {
-			float : left;
-			}
-			nav ul li a {
-			display : block;
-			margin-right : 20px;
-			width : 140px;
-			font-size : 14px;
-			line-height : 44px;
-			text-align : center;
-			text-decoration : none;
-			color : #ccc;
-			}
-			nav ul li a:hover {
-			color : #fff;
-			}
-			nav ul li.selected a {
-			color : #fff;
-			}
-			
-	
-	</style>
+
+<link rel="stylesheet" href="css/barraNavegacionCss.css" type="text/css"></link>
+
 </head>
 <nav>
 

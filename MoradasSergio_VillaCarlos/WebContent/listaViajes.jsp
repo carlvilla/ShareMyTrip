@@ -9,15 +9,6 @@
 <title>ShareMyTrip - Listado de viajes</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<style>
-
-	#comboBoxOrden{
-		 width: 220px;
-		  left: 1070px;
-   		 bottom: 27px;
-	}
-
-</style>
 
 <script>
 $(document).ready(function() {
@@ -32,6 +23,7 @@ $(document).ready(function() {
 });
 </script>
 
+<link rel="stylesheet" href="css/listaViajesCss.css" type="text/css"></link
 
 </head>
 
