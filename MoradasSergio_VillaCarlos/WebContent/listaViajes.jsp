@@ -9,6 +9,16 @@
 <title>ShareMyTrip - Listado de viajes</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<style>
+
+	#comboBoxOrden{
+		 width: 220px;
+		  left: 1070px;
+   		 bottom: 27px;
+	}
+
+</style>
+
 <script>
 $(document).ready(function() {
 
@@ -29,6 +39,20 @@ $(document).ready(function() {
 
 	<center><h2>Viajes disponibles</h2></center>
 	
+	
+        <div id="comboBoxOrden" class="col-xs-5 selectContainer">
+            <select class="form-control" name="size" onchange="window.location=this.options[this.selectedIndex].value">
+                <option value="">Ordenar por</option>
+                <option value="listarViajes?orden=origen">Origen</option>
+                <option value="listarViajes?orden=destino">Destino</option>
+                <option value="listarViajes?orden=fechaSalida">Fecha salida</option>
+                <option value="listarViajes?orden=fechaLlegada">Fecha llegada</option>
+                <option value="listarViajes?orden=fechaFin">Fecha fin inscripción</option>
+                <option value="listarViajes?orden=plazas">Plazas disponible</option>
+            </select>
+        </div>
+
+	
 	<br/>
 	
 	<div class="container">
@@ -37,13 +61,19 @@ $(document).ready(function() {
 				<th>ID viaje</th>
 				<th>Origen</th>
 				<th>Destino</th>
+				<th>Fecha salida</th>
+				<th>Fecha llegada</th>
+				<th>Fecha fin inscripción</th>
 				<th>Plazas libres</th>
 			</tr>
 			<c:forEach var="entry" items="${listaViajes}" varStatus="i">
 				<tr>
 					<td><a id="item_${i.index}" href="mostrarViaje?id=${entry.id}">${entry.id}</a></td>
 					<td>${entry.departure.city}</td>
-					<td>${entry.destination.city}</td>
+					<td>${entry.destination.city}</td>		
+					<td>${entry.departureDate}</td>
+					<td>${entry.arrivalDate}</td>
+					<td>${entry.closingDate}</td>				
 					<td>${entry.availablePax}</td>
 				</tr>
 			</c:forEach>
