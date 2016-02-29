@@ -98,7 +98,7 @@
 				value=<fh:fechaHora idViaje="${viajeModificar.id}" date="departureDate"/> align="left" size="18"></td>
 		</tr>
 		<tr>
-			<td>Fecha y Hora LLegada:</td>
+			<td>Fecha y Hora Llegada:</td>
 			<td><input class="form-control form-control-sm" type="text" name="fechaHoraLLegada" 
 				value=<fh:fechaHora idViaje="${viajeModificar.id}" date="arrivalDate"/> align="left" size="18"></td>
 		</tr>

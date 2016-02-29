@@ -15,7 +15,7 @@ import uo.sdi.persistence.SeatDao;
 import uo.sdi.persistence.TripDao;
 import uo.sdi.persistence.UserDao;
 
-public class InformacionCompañerosViajeAction implements Accion{
+public class InformacionPartnersViajeAction implements Accion{
 
 	@Override
 	public String execute(HttpServletRequest request,
@@ -31,7 +31,7 @@ public class InformacionCompañerosViajeAction implements Accion{
 		List<Seat> listaAsientos = seatDao.findByTrip(idViaje);
 		
 		UserDao userDao = PersistenceFactory.newUserDao();
-		List<User> compañeros =  new LinkedList<>();
+		List<User> partners =  new LinkedList<>();
 		
 		TripDao tripDao = PersistenceFactory.newTripDao();
 		Trip viaje = tripDao.findById(idViaje);
@@ -39,11 +39,11 @@ public class InformacionCompañerosViajeAction implements Accion{
 		for(Seat seat : listaAsientos){
 			if(!seat.getUserId().equals(idUsuario) && !seat.getUserId().equals(viaje.getPromoterId())){
 				User compi = userDao.findById(seat.getUserId());
-				compañeros.add(compi);
+				partners.add(compi);
 			}
 		}
 		
-		request.setAttribute("compañeros",compañeros);
+		request.setAttribute("partners",partners);
 		
 		return "EXITO";
 	}

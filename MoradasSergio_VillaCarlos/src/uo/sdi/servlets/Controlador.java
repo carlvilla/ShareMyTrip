@@ -128,9 +128,9 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		mapaRegistrado.put("administrarSolicitud", new AdministrarSolicitudAction());
 		mapaRegistrado.put("historialViajes", new MostrarHistorialViajesAction());
 		mapaRegistrado.put("valorarViaje", new ValorarViajeAction());
-		mapaRegistrado.put("valorarCompañeros", new ValorarCompañerosAction());
+		mapaRegistrado.put("valorarPartners", new ValorarPartnersAction());
 		mapaRegistrado.put("valorarPromotor", new ValorarPromotorAction());
-		mapaRegistrado.put("informacionCompañeros", new InformacionCompañerosViajeAction());
+		mapaRegistrado.put("informacionPartners", new InformacionPartnersViajeAction());
 		mapaDeAcciones.put("REGISTRADO", mapaRegistrado);
 	}
 	
@@ -262,7 +262,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		//Valorar Viaje
 		resJSP=new HashMap<String, String>();
 		resJSP.put("EXITO","/historialViajes");
-		opcionResJSP.put("valorarCompañeros", resJSP);
+		opcionResJSP.put("valorarPartners", resJSP);
 		
 		//Valorar Viaje
 		resJSP=new HashMap<String, String>();
@@ -271,8 +271,8 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		
 		//Informacion Compañeros
 		resJSP=new HashMap<String, String>();
-		resJSP.put("EXITO","/valorarCompañeros.jsp");
-		opcionResJSP.put("informacionCompañeros", resJSP);
+		resJSP.put("EXITO","/valorarPartners.jsp");
+		opcionResJSP.put("informacionPartners", resJSP);
 		
 		mapaDeNavegacion.put("REGISTRADO",opcionResJSP);
 	}

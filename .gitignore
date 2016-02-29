@@ -5,14 +5,11 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
-#Files
-sesion4.MVCCasero/data/test.script
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-#Folders
-sesion4.MVCCasero/data
+
 
 # Windows Installer files
 *.cab
@@ -51,9 +48,3 @@ sesion4.MVCCasero/data
 Network Trash Folder
 Temporary Items
 .apdisk
-*.script
-sesion4.MVCCasero/data/test.script
-MoradasSergio_VillaCarlos/data/test.properties
-MoradasSergio_VillaCarlos/data/test.properties
-MoradasSergio_VillaCarlos/data/test.lck
-MoradasSergio_VillaCarlos/data/test.lck
