@@ -31,7 +31,7 @@ $(document).ready(function() {
 <body>
 
 	<center><h2>Viajes disponibles</h2></center>
-	
+
 	
         <div id="comboBoxOrden" class="col-xs-5 selectContainer">
             <select class="form-control" name="size" onchange="window.location=this.options[this.selectedIndex].value">
@@ -66,7 +66,6 @@ $(document).ready(function() {
 		<button type="submit" name="filtrar" class="btn btn-default" id="botonElimFiltro">Eliminar filtro</button>
         </form>
         
-
 	
 	<br/>
 	

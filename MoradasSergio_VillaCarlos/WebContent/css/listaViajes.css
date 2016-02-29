@@ -1,12 +1,12 @@
 #comboBoxOrden {
 	width: 220px;
-	left: 1080px;
+	left: 980px;
 	bottom: 35px;
 }
 
 #comboBoxFiltrado {
 	width: 170px;
-	left: 740px;
+	left: 640px;
 	position: relative;
 	top: 14px;
 	display: inline-block;
@@ -15,19 +15,19 @@
 #filtro {
 	position: relative;
 	width: 180px;
-	left: 730px;
+	left: 630px;
 	top: 14px;
 }
 
 #botonFiltrar {
-	left: 1307px;
+	left: 1207px;
 	bottom: 35px;
 	position: relative;
 }
 
 #botonElimFiltro {
 	position: relative;
-	left: 1307px;
+	left: 1207px;
 	bottom: 30px;
 }
 
