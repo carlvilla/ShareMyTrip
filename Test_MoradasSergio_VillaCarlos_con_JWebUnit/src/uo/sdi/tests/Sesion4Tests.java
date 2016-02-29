@@ -85,28 +85,39 @@ public class Sesion4Tests {
 	}
 
 	@Test
-	public void testListarViajesUsuarioPublico() {
+	public void testListarViajesUsuarioRegistrado() {
 		beginAt("/"); // Navegar a la URL
 		assertLinkPresent("listarViajes"); // Comprobar que existe el
 											// hipervínculo
+		
+		setTextField("nombreUsuario", "usuario1");
+		setTextField("passwordUsuario", "usuario1");
+		submit();
+		
 		clickLink("listarViajes"); // Seguir el hipervínculo
 
 		assertTitleEquals("ShareMyTrip - Listado de viajes"); // Comprobar
 																// título de la
 																// página
 
-		// La base de datos contiene 2 viajes tal y como se entrega
+		// La base de datos contiene 9 viajes que puede 
+		//ver el usuario1 tal y como se entrega
+		
 		assertElementPresent("item_0"); // Comprobar elemento presente en la
 										// página
-		assertElementPresent("item_1"); // Comprobar elemento presente en la
-										// página
-		assertElementPresent("item_2"); // Comprobar elemento presente en la
-										// página
-
+		assertElementPresent("item_1");
+		assertElementPresent("item_2");
+		assertElementPresent("item_3");
+		assertElementPresent("item_4");
+		assertElementPresent("item_5");
+		assertElementPresent("item_6");
+		assertElementPresent("item_7");
+		assertElementPresent("item_8");
+		assertElementNotPresent("item_9");
 	}
 
 	@Test
-	public void testListarViajesUsuarioRegistrado() {
+	public void testListarViajesUsuarioPublico() {
 		beginAt("/"); // Navegar a la URL
 		assertLinkPresent("listarViajes"); // Comprobar que existe el
 											// hipervínculo
