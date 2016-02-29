@@ -67,7 +67,7 @@
 	
 	<br/>
 	
-	<a href="informacionPromotor?idViaje=${viaje.id}">Datos del promotor</a>
+	<a href="infoPromotorParticipantes?idViaje=${viaje.id}">Datos del promotor y participantes</a>
 
 	<br/><br/>
 

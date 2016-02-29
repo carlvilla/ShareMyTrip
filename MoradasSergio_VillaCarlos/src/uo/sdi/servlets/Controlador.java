@@ -115,7 +115,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		mapaRegistrado.put("modificarDatos", new ModificarDatosAction());
 		mapaRegistrado.put("listarViajes", new ListarViajesAction());
 		mapaRegistrado.put("mostrarViaje", new MostrarDatosViajeAction());
-		mapaRegistrado.put("informacionPromotor", new InformacionPromotorAction());
+		mapaRegistrado.put("infoPromotorParticipantes", new InfoPromotorParticipantesAction());
 		mapaRegistrado.put("cerrarSesion", new CerrarSesionAction());
 		mapaRegistrado.put("registrarViaje", new RegistrarViajeAction());
 		mapaRegistrado.put("mostrarDatosViaje", new MostrarDatosModificarViajeAction());
@@ -195,8 +195,8 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 				
 		//Información Promotor
 		resJSP=new HashMap<String, String>();
-		resJSP.put("EXITO","/informacionPromotor.jsp");
-		opcionResJSP.put("informacionPromotor", resJSP);
+		resJSP.put("EXITO","/informacionPromotorParticipantes.jsp");
+		opcionResJSP.put("infoPromotorParticipantes", resJSP);
 		
 		
 		//Registrar Viaje

@@ -13,7 +13,7 @@
 	<jsp:useBean id="promotor" class="uo.sdi.model.User" scope="request" />
 
 
-	<h3>Información de contacto</h3>
+	<h3>Información de contacto del promotor</h3>
 
 	<table>
 

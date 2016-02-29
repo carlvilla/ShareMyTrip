@@ -16,7 +16,7 @@ import uo.sdi.model.User;
 import uo.sdi.persistence.PersistenceFactory;
 import alb.util.log.Log;
 
-public class InformacionPromotorAction implements Accion {
+public class InfoPromotorParticipantesAction implements Accion {
 
 	@Override
 	public String execute(HttpServletRequest request,
