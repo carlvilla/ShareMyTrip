@@ -52,6 +52,29 @@
     </tbody>
   </table>
 </div>
+
+
+<h3>Puntuación y comentarios de los participantes</h3>
+	
+	<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Puntuación</th>
+        <th>Comentario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <c:forEach var="comentario" items="${comentariosPromotor}" varStatus="i">
+			<tr  class="info" id="item_${i.index}">
+				<td>${comentario.value}</td>
+				<td>${comentario.comment}</td>
+			</tr>
+		</c:forEach>	
+ 
+    </tbody>
+  </table>
+</div>
 	
 	
 		
