@@ -13,7 +13,7 @@
 
 	<jsp:useBean id="user" class="uo.sdi.model.User" scope="session" />
 
-	<center><h2>Bienvenido <jsp:getProperty property="name" name="user" />!!</h2></center>
+	<center><h2>Bienvenido/a <jsp:getProperty property="name" name="user" />!!</h2></center>
 	
 	<sc:showComments idUsuario="${user.id}"/>
 	

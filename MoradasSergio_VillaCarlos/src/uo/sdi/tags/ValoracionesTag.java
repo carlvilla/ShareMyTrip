@@ -46,7 +46,7 @@ public class ValoracionesTag extends TagSupport {
 					}
 				}
 				if (!comments && asientos.size()>1)
-					out.println("<li><a href=\"informacionCompañeros?idViaje="
+					out.println("<li><a href=\"informacionPartners?idViaje="
 							+ idViaje + "\">Valorar Compañeros</a></li>");
 			} else {
 				List<Rating> ratings = ratingDao.findByFrom(idUsuario, idViaje);
@@ -64,7 +64,7 @@ public class ValoracionesTag extends TagSupport {
 				if(!(asientos.size()==2 && !idUsuario.equals(trip.getPromoterId())))
 						if(asientos.size()>1)
 							if (!comments)
-								out.println("<li><a href=\"informacionCompañeros?idViaje="
+								out.println("<li><a href=\"informacionPartners?idViaje="
 										+ idViaje + "\">Valorar Compañeros</a></li>");
 				if (seat != null && seat.getComment() == null)
 					out.println("<li><a href=\"valorarViaje.jsp?idViaje="

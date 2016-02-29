@@ -27,7 +27,7 @@ td{
 <body>
 	<h1>Valorar Compañeros</h1>
 	<div class="container">
-	<form id="usrform" action="valorarCompañeros?idViaje=${param.idViaje}" method="POST">
+	<form id="usrform" action="valorarPartners?idViaje=${param.idViaje}" method="POST">
 	<table id="tabla" class="table table-hover">
 	<thead>
 				<tr>
@@ -36,7 +36,7 @@ td{
 					<th>Valoracion</th>
 				</tr>
 			</thead>
-	<c:forEach var="entry" items="${compañeros}" varStatus="i">
+	<c:forEach var="entry" items="${partners}" varStatus="i">
 				<tr id="item_${i.index}">
 					<td style="width: 200px"><p >${entry.name} ${entry.surname} (${entry.email})</p></td>
 					<td style="width: 200px"><textarea class="form-control" rows="4" cols="20" name="${entry.id}" form="usrform">Introduzca su comentario...</textarea></td>

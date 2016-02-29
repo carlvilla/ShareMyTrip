@@ -15,7 +15,7 @@ import uo.sdi.persistence.RatingDao;
 import uo.sdi.persistence.SeatDao;
 import uo.sdi.persistence.TripDao;
 
-public class ValorarCompañerosAction implements Accion{
+public class ValorarPartnersAction implements Accion{
 
 	@Override
 	public String execute(HttpServletRequest request,

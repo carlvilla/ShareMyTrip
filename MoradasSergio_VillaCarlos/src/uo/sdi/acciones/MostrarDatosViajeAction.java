@@ -2,9 +2,7 @@ package uo.sdi.acciones;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import uo.sdi.model.Trip;
-import uo.sdi.model.User;
 import uo.sdi.persistence.PersistenceFactory;
 import alb.util.log.Log;
 
