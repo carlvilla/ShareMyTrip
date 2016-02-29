@@ -157,7 +157,7 @@ public class Sesion4Tests {
 																			// de
 																			// la
 																			// página
-		assertTextPresent("Bienvenido Fernando!!");
+		assertTextPresent("Bienvenido/a Fernando!!");
 
 	}
 
@@ -167,7 +167,7 @@ public class Sesion4Tests {
 		beginAt("/validarse?nombreUsuario=user2&passwordUsuario=user2");
 		assertTitleEquals("ShareMyTrip - Página principal del usuario");
 
-		assertTextPresent("Bienvenido Luisa!!"); //Se muestra el mensaje de 'Bienvenido'
+		assertTextPresent("Bienvenido/a Luisa!!"); //Se muestra el mensaje de 'Bienvenido'
 												 //con el nombre del usuario, en 
 												 //este caso se llama 'Luisa'
 
@@ -258,7 +258,7 @@ public class Sesion4Tests {
 		submit();
 		assertTitleEquals("ShareMyTrip - Página principal del usuario");
 		
-		assertTextPresent("Bienvenido usuario1!!");
+		assertTextPresent("Bienvenido/a usuario1!!");
 
 		// Cerrar sesión
 		clickLink("cerrarSesion");
@@ -270,7 +270,7 @@ public class Sesion4Tests {
 		setTextField("passwordUsuario", "usuario3");
 		submit();
 		assertTitleEquals("ShareMyTrip - Página principal del usuario");
-		assertTextPresent("Bienvenido usuario3!!");
+		assertTextPresent("Bienvenido/a usuario3!!");
 
 
 	}

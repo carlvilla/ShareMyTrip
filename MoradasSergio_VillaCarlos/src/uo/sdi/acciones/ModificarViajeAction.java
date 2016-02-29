@@ -103,6 +103,7 @@ public class ModificarViajeAction implements Accion{
 			newTrip.setDepartureDate(formatoDeFecha.parse(fechaHoraSalida));
 			newTrip.setClosingDate(formatoDeFecha.parse(fechaLimite));
 			
+			
 			Date fechaActual = new Date();
 			if(newTrip.getArrivalDate().before(fechaActual)
 					||newTrip.getDepartureDate().before(fechaActual)
@@ -110,7 +111,7 @@ public class ModificarViajeAction implements Accion{
 				request.setAttribute("error", "Error al modificar: FECHAS ANTERIORES A LA FECHA ACTUAL");
 				return "FRACASO";
 			}
-
+			
 			//Comprobamos fechas
 			if(formatoDeFecha.parse(fechaHoraSalida)
 					.after(formatoDeFecha.parse(fechaHoraLLegada))||
