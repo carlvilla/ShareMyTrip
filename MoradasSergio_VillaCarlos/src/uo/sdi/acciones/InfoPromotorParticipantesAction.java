@@ -42,7 +42,7 @@ public class InfoPromotorParticipantesAction implements Accion {
 					.findByTrip(viaje.getId());
 			
 			for(Seat usuario:usuarios){
-				if(usuario.getStatus().equals(SeatStatus.ACCEPTED)){
+				if(usuario.getStatus().equals(SeatStatus.ACCEPTED) && !viaje.getPromoterId().equals(usuario.getUserId())){
 					User usuarioAceptado = PersistenceFactory.newUserDao()
 							.findById(usuario.getUserId());
 					

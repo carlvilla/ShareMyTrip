@@ -2,6 +2,8 @@ package uo.sdi.acciones;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import alb.util.log.Log;
 import uo.sdi.model.Seat;
 import uo.sdi.model.SeatStatus;
 import uo.sdi.model.Trip;
@@ -30,6 +32,7 @@ public class AdministrarSolicitudAction implements Accion {
 		
 		String decision = request.getParameter("decision");
 		
+		Log.info("El usuario [%s] ha sido [%s] en el viaje [%s]", idUsuario,decision,idViaje);
 		
 		Seat seat = new Seat();
 		seat.setUserId(idUsuario);

@@ -74,7 +74,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach var="entry" items="${comentariosAceptados}" varStatus="i">
+				<c:forEach var="entry" items="${comentariosUsuarios}" varStatus="i">
 
 
 					<c:forEach var="comentario" items="${entry.value}">

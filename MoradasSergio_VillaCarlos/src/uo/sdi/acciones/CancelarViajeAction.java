@@ -5,6 +5,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import alb.util.log.Log;
 import uo.sdi.model.Seat;
 import uo.sdi.model.SeatStatus;
 import uo.sdi.model.Trip;
@@ -34,6 +35,8 @@ public class CancelarViajeAction implements Accion{
 				s.setStatus(SeatStatus.EXCLUDED);
 				daoSeat.update(s);
 			}
+			
+			Log.info("El  viaje [%s] ha sido cancelado",idViaje);
 
 			return "EXITO";
 		}

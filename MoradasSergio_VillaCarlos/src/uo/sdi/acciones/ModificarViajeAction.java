@@ -193,14 +193,10 @@ private boolean comprobarCamposVacios(String calleSalida,
 			|| provinciaSalida.compareTo("") == 0
 			|| paisSalida.compareTo("") == 0
 			|| postalSalida.compareTo("") == 0
-			//|| longitudSalida.compareTo("") == 0
-			//|| latitudSalida.compareTo("") == 0
 			|| calleDestino.compareTo("") == 0
 			|| provinciaDestino.compareTo("") == 0
 			|| paisDestino.compareTo("") == 0
 			|| postalDestino.compareTo("") == 0
-			//|| longitudDestino.compareTo("") == 0
-			//|| latitudDestino.compareTo("") == 0
 			|| fechaHoraSalida.compareTo("") == 0
 			|| fechaHoraLLegada.compareTo("") == 0
 			|| fechaLimite.compareTo("") == 0

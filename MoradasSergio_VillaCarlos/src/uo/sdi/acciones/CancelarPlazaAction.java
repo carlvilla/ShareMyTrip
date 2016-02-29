@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import alb.util.log.Log;
 import uo.sdi.model.Trip;
 import uo.sdi.model.User;
 import uo.sdi.persistence.ApplicationDao;
@@ -43,6 +44,8 @@ public class CancelarPlazaAction implements Accion {
 			
 		}
 		
+		Log.info("La plaza del usuario [%s] ha sido cancelada en el viaje [%s]", 
+				idUsuario,idViaje);
 			
 		return "EXITO";
 	}

@@ -171,6 +171,7 @@ public class RegistrarViajeAction implements Accion {
 			}
 
 			request.setAttribute("notificacionRegistro", true);
+			Log.info("Se ha registrado correctamente el viaje");
 			return "EXITO";
 		} else {
 			request.setAttribute("error", "Error al registrarse:CAMPOS VACIOS");

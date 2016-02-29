@@ -3,7 +3,6 @@ package uo.sdi.tests;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertElementNotPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertElementPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
-import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextInElement;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
 import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
