@@ -32,8 +32,6 @@ public class SolicitarPlazaAction implements Accion {
 		
 		if(viaje.getAvailablePax()>0){
 			
-			
-			
 			Long idUsuario = (Long)((User) session.getAttribute("user")).getId();
 			
 			try{

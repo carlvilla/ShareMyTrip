@@ -67,6 +67,8 @@ public class ListarViajesAction implements Accion {
 			}
 			
 			String orden = request.getParameter("orden");
+			String filtrar = request.getParameter("filtrar");
+			String cadenaFiltrar = request.getParameter("cadenaFiltrar");
 			
 			if(orden!=null){
 				
@@ -74,6 +76,16 @@ public class ListarViajesAction implements Accion {
 				//encargado de ordenar la lista de viajes dependiendo
 				//de la opción elegida en el comboBox
 				Sorter.ordenarViajes(viajes,orden);
+				
+			}
+			
+			if(filtrar!=null && cadenaFiltrar!=null 
+					&& !filtrar.isEmpty() && !cadenaFiltrar.isEmpty()){
+				
+				//Se llama a un método estático de la clase Sorter
+				//encargado de ordenar la lista de viajes dependiendo
+				//de la opción elegida en el comboBox
+				Sorter.filtrarViajes(viajes,filtrar,cadenaFiltrar);
 				
 			}
 

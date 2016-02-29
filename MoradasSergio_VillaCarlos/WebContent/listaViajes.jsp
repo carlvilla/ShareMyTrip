@@ -44,6 +44,28 @@ $(document).ready(function() {
                 <option value="listarViajes?orden=plazas">Plazas disponible</option>
             </select>
         </div>
+        
+        <form>
+        <div id="comboBoxFiltrado" class="col-xs-5 selectContainer">
+            <select class="form-control" name="filtrar">
+                <option value="">Filtrar por</option>
+                <option value="origen">Origen</option>
+                <option value="destino">Destino</option>
+                <option value="plazas">Plazas disponible</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+ 		 	<input type="text" name="cadenaFiltrar" placeholder="Indica cadena para filtrar" class="form-control" id="filtro">
+		</div>
+			<button type="submit" name="filtrar" class="btn btn-default" id="botonFiltrar">Filtrar</button>
+		
+		</form>
+		
+		<form action="listarViajes">
+		<button type="submit" name="filtrar" class="btn btn-default" id="botonElimFiltro">Eliminar filtro</button>
+        </form>
+        
 
 	
 	<br/>

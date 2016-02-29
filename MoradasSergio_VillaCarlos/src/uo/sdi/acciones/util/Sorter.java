@@ -1,5 +1,6 @@
 package uo.sdi.acciones.util;
 
+import java.util.LinkedList;
 import java.util.List;
 
 import uo.sdi.model.Trip;
@@ -112,6 +113,64 @@ public class Sorter {
 		
 
 		return false;
+	}
+
+	public static void filtrarViajes(List<Trip> viajes, String filtrar,String cadena) {
+		
+		List<Trip> viajesAEliminar = new LinkedList<Trip>();
+		
+		for(Trip viaje:viajes){
+			
+			if(filtrar.equals("origen")){
+				
+				if(!viaje.getDeparture().getCity().toUpperCase().equals(cadena.toUpperCase())){
+					viajesAEliminar.add(viaje);
+				}
+				
+			
+			}
+			else if(filtrar.equals("destino")){
+				
+				if(!viaje.getDestination().getCity().toUpperCase().equals(cadena.toUpperCase())){
+					viajesAEliminar.add(viaje);
+				}
+				
+			}
+			
+			else if(filtrar.equals("plazas")){
+				
+				if(esNumerico(cadena) && viaje.getAvailablePax()!=(Integer.parseInt(cadena))){
+					viajesAEliminar.add(viaje);
+				}
+				
+			}
+			
+		}
+		
+		
+		
+		
+		for(Trip viaje:viajesAEliminar){
+			viajes.remove(viaje);
+		}
+	
+		
+	}
+	
+	/**
+	 * 
+	 * Comprueba si el string pasado es un número
+	 * 
+	 * @param cadena
+	 * @return
+	 */
+	private static boolean esNumerico(String cadena){
+		try {
+			Integer.parseInt(cadena);
+			return true;
+		} catch (NumberFormatException nfe){
+			return false;
+		}
 	}
 
 }

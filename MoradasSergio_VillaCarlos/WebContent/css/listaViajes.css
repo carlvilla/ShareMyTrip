@@ -1,5 +1,37 @@
 #comboBoxOrden {
 	width: 220px;
-	left: 1070px;
-	bottom: 27px;
+	left: 1080px;
+	bottom: 35px;
+}
+
+#comboBoxFiltrado {
+	width: 170px;
+	left: 740px;
+	position: relative;
+	top: 14px;
+	display: inline-block;
+}
+
+#filtro {
+	position: relative;
+	width: 180px;
+	left: 730px;
+	top: 14px;
+}
+
+#botonFiltrar {
+	left: 1307px;
+	bottom: 35px;
+	position: relative;
+}
+
+#botonElimFiltro {
+	position: relative;
+	left: 1307px;
+	bottom: 30px;
+}
+
+h2 {
+	position: relative;
+	top: 55px;
 }
