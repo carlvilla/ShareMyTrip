@@ -7,7 +7,7 @@
   <div class="container-fluid">
  
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="listarViajes"> Lista viajes</a></li>
+      <li><a id="listarViajes" href="listarViajes"> Lista viajes</a></li>
       <li><a href="registrarse.jsp"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
       <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>

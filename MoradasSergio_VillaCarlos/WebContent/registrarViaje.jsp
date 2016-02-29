@@ -23,7 +23,7 @@
 		</tr>
 		<tr>
 			<td><input class="form-control form-control-sm" type="text" name="provinciaSalida" placeholder="Provincia" align="left" size="20"></td>
-			<td><input class="form-control form-control-sm" type="text" name="paisSalida" placeholder="Pais" align="left" size="20"></td>
+			<td><input class="form-control form-control-sm" type="text" name="paisSalida" placeholder="Pais*" align="left" size="20"></td>
 		</tr>
 		<tr>
 			<td><input class="form-control form-control-sm" type="text" name="postalSalida" placeholder="Codigo Postal" align="left" size="20"></td>
@@ -32,12 +32,18 @@
 		<td></br></td>
 		</tr>
 		<tr>
-			<td>Coordenadas GPS:</td>		
+			<td>*Coordenadas GPS:</td>		
 		</tr>	
 		<tr>
 			<td><input class="form-control form-control-sm" type="text" name="longitudSalida" placeholder="Longitud" align="left" size="20"></td>		
 			<td><input class="form-control form-control-sm" type="text" name="latitudSalida" placeholder="Latitud" align="left" size="20"></td>			
+		</tr>
+		<tr>
+			<td><br></td>
 		</tr>	
+		<tr>
+			<td><p style="font-size: 11px">* Campos Opcionales</p></td>
+		</tr>
 		
 		
 	</table>
@@ -60,11 +66,11 @@
 		<td><br></td>
 		</tr>
 		<tr>
-			<td>Coordenadas GPS:</td>		
+			<td>*Coordenadas GPS:</td>		
 		</tr>	
 		<tr>
-			<td><input class="form-control form-control-sm" type="text" name="longitudDestino" placeholder="Longitud" align="left" size="20"></td>		
-			<td><input class="form-control form-control-sm" type="text" name="latitudDestino" placeholder="Latitud" align="left" size="20"></td>			
+			<td><input class="form-control form-control-sm" type="text" name="longitudDestino" placeholder="Longitud*" align="left" size="20"></td>		
+			<td><input class="form-control form-control-sm" type="text" name="latitudDestino" placeholder="Latitud*" align="left" size="20"></td>			
 		</tr>	
 		
 		

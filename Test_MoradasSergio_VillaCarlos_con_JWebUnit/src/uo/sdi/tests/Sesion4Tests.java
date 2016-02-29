@@ -39,14 +39,13 @@ public class Sesion4Tests {
 		setBaseUrl("http://localhost:8280/MoradasSergio_VillaCarlos");
 		executeDBScripts();
 	}
-	
 
-	public boolean executeDBScripts() throws SQLException{
+	public boolean executeDBScripts() throws SQLException {
 
 		Connection conn = Jdbc.getCurrentConnection();
 
 		Statement stmt = conn.createStatement();
-		
+
 		boolean isScriptExecuted = false;
 		try {
 			BufferedReader in = new BufferedReader(new FileReader(
@@ -64,7 +63,6 @@ public class Sesion4Tests {
 		}
 		return isScriptExecuted;
 	}
-	
 
 	@Test
 	public void registrarseSinExito() {
@@ -118,13 +116,20 @@ public class Sesion4Tests {
 																// título de la
 																// página
 
-		// La base de datos contiene 2 viajes tal y como se entrega
+		// La base de datos contiene 10 viajes tal y como se entrega
 		assertElementPresent("item_0"); // Comprobar elemento presente en la
 										// página
-		assertElementPresent("item_1"); // Comprobar elemento presente en la
-										// página
-		assertElementPresent("item_2"); // Comprobar elemento presente en la
-										// página
+		assertElementPresent("item_1"); 
+		assertElementPresent("item_2"); 
+		assertElementPresent("item_3"); 
+		assertElementPresent("item_4"); 
+		assertElementPresent("item_5"); 
+		assertElementPresent("item_6"); 
+		assertElementPresent("item_7"); 
+		assertElementPresent("item_8"); 
+		assertElementPresent("item_9"); 
+		assertElementNotPresent("item_10");
+
 
 	}
 
@@ -141,50 +146,41 @@ public class Sesion4Tests {
 																			// de
 																			// la
 																			// página
-		assertTextInElement("login", "user1"); // Comprobar cierto elemento
-												// contiene cierto texto
-		assertTextInElement("name", "Fernando"); // Comprobar cierto elemento
-													// contiene cierto texto
+		assertTextPresent("Bienvenido Fernando!!");
 
 	}
 
 	@Test
 	public void testIniciarSesionConExitoConQueryString() {
-		// Rellenando el formulario HTML
-		beginAt("/validarse?nombreUsuario=user2&passwordUsuario=user2"); // Navegar
-																			// a
-																			// la
-																			// URL
-		assertTitleEquals("ShareMyTrip - Página principal del usuario"); // Comprobar
-																			// título
-																			// de
-																			// la
-																			// página
-		assertTextInElement("login", "user2"); // Comprobar cierto elemento
-												// contiene cierto texto
-		assertTextInElement("name", "Luisa"); // Comprobar cierto elemento
-												// contiene cierto texto
+
+		beginAt("/validarse?nombreUsuario=user2&passwordUsuario=user2");
+		assertTitleEquals("ShareMyTrip - Página principal del usuario");
+
+		assertTextPresent("Bienvenido Luisa!!"); //Se muestra el mensaje de 'Bienvenido'
+												 //con el nombre del usuario, en 
+												 //este caso se llama 'Luisa'
+
 	}
-	
+
 	@Test
 	public void testIniciarSesionSinExitoPassInconrrecta() {
-		beginAt("/"); 
+		beginAt("/");
 		setTextField("nombreUsuario", "usuario1");
 		setTextField("passwordUsuario", "incorrecta");
-	
-		submit(); 
-		assertTitleEquals("ShareMyTrip - Inicie sesión"); 
+
+		submit();
+		assertTitleEquals("ShareMyTrip - Inicie sesión");
 	}
 
 	@Test
 	public void testIniciarSesionSinExitoNoExiste() {
 
-		beginAt("/"); 
-		setTextField("nombreUsuario", "noExiste"); 
+		beginAt("/");
+		setTextField("nombreUsuario", "noExiste");
 		setTextField("passwordUsuario", "noExiste");
-	
-		submit(); 
-		assertTitleEquals("ShareMyTrip - Inicie sesión"); 
+
+		submit();
+		assertTitleEquals("ShareMyTrip - Inicie sesión");
 	}
 
 	@Test
@@ -227,19 +223,18 @@ public class Sesion4Tests {
 		setTextField("numeroDispPlazas", "4");
 
 		submit();
-		
-		//Aparece un mensaje diciendo que se ha añadido correctamente 
-		//el viaje
+
+		// Aparece un mensaje diciendo que se ha añadido correctamente
+		// el viaje
 		assertElementPresent("exitoRegistroViaje");
 
-		
-		//Si cambiamos de pestaña y volvemos a la principal, el mensaje
-		//de alerta habrá desaparecido
+		// Si cambiamos de pestaña y volvemos a la principal, el mensaje
+		// de alerta habrá desaparecido
 		clickLink("misViajes");
 		clickLink("principal");
-		
+
 		assertElementNotPresent("exitoRegistroViaje");
-		
+
 	}
 
 	@Test
@@ -251,11 +246,8 @@ public class Sesion4Tests {
 		setTextField("passwordUsuario", "usuario1");
 		submit();
 		assertTitleEquals("ShareMyTrip - Página principal del usuario");
-		assertTextInElement("login", "usuario1");
-		assertTextInElement("name", "usuario1");
-		assertTextInElement("email", "usuario1@uniovi.es");
-
-		assertTitleEquals("ShareMyTrip - Página principal del usuario");
+		
+		assertTextPresent("Bienvenido usuario1!!");
 
 		// Cerrar sesión
 		clickLink("cerrarSesion");
@@ -267,11 +259,8 @@ public class Sesion4Tests {
 		setTextField("passwordUsuario", "usuario3");
 		submit();
 		assertTitleEquals("ShareMyTrip - Página principal del usuario");
-		assertTextInElement("login", "usuario3");
-		assertTextInElement("name", "usuario3");
-		assertTextInElement("email", "usuario3@uniovi.es");
+		assertTextPresent("Bienvenido usuario3!!");
 
-		assertTitleEquals("ShareMyTrip - Página principal del usuario");
 
 	}
 

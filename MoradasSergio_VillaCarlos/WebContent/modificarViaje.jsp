@@ -38,13 +38,19 @@
 		<td><br></td>
 		</tr>
 		<tr>
-			<td>Coordenadas GPS:</td>		
+			<td>*Coordenadas GPS:</td>		
 		</tr>	
 		<tr>
 			<td><input class="form-control form-control-sm" type="text" name="longitudSalida" 
 				value="${viajeModificar.departure.waypoint.lon}" align="left" size="20"></td>		
 			<td><input class="form-control form-control-sm" type="text" name="latitudSalida" 
 				value="${viajeModificar.departure.waypoint.lat}" align="left" size="20"></td>			
+		</tr>
+		<tr>
+			<td><br></td>
+		</tr>	
+		<tr>
+			<td><p style="font-size: 11px">* Campos Opcionales</p></td>
 		</tr>	
 	</table>
 	</div>
@@ -71,7 +77,7 @@
 		<td><br></td>
 		</tr>
 		<tr>
-			<td>Coordenadas GPS:</td>		
+			<td>*Coordenadas GPS:</td>		
 		</tr>	
 		<tr>
 			<td><input class="form-control form-control-sm" type="text" name="longitudDestino" 

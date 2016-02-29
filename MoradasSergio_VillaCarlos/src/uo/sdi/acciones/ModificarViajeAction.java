@@ -2,6 +2,7 @@ package uo.sdi.acciones;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -101,6 +102,14 @@ public class ModificarViajeAction implements Accion{
 			newTrip.setArrivalDate(formatoDeFecha.parse(fechaHoraLLegada) );
 			newTrip.setDepartureDate(formatoDeFecha.parse(fechaHoraSalida));
 			newTrip.setClosingDate(formatoDeFecha.parse(fechaLimite));
+			
+			Date fechaActual = new Date();
+			if(newTrip.getArrivalDate().before(fechaActual)
+					||newTrip.getDepartureDate().before(fechaActual)
+					||newTrip.getClosingDate().before(fechaActual)){
+				request.setAttribute("error", "Error al modificar: FECHAS ANTERIORES A LA FECHA ACTUAL");
+				return "FRACASO";
+			}
 
 			//Comprobamos fechas
 			if(formatoDeFecha.parse(fechaHoraSalida)
