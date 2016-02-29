@@ -56,7 +56,7 @@
 
 
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="pwd">Constraseña
+				<label class="control-label col-sm-2" for="pwd">Contraseña
 					anterior:</label>
 				<div class="col-sm-10">
 					<input name="pass" type="password" class="form-control" id="pwd">
@@ -66,7 +66,7 @@
 
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="pwdNueva">Nueva
-					constraseña:</label>
+					contraseña:</label>
 				<div class="col-sm-10">
 					<input name="newPass" type="password" class="form-control"
 						id="pwdNueva">

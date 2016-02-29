@@ -13,7 +13,6 @@
 	<h1>Datos del viaje</h1>
 		
 	<jsp:useBean id="viaje" class="uo.sdi.model.Trip" scope="request" />
-	<jsp:useBean id="promotor" class="uo.sdi.model.User" scope="request" />
 	
 	<form action="solicitarPlaza" >
 	
@@ -68,7 +67,7 @@
 	
 	<br/>
 	
-	<a href="informacionPromotor?id=${promotor.id}">Datos del promotor</a>	
+	<a href="informacionPromotor?id=${viaje.getPromoterId()}">Datos del promotor</a>
 
 	<br/><br/>
 
