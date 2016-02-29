@@ -2,6 +2,7 @@ package uo.sdi.acciones;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -59,9 +60,9 @@ public class RegistrarViajeAction implements Accion {
 		
 		//Comprobamos que no hay caso vacios a excepcion de la longitud y latitud
 		if (comprobarCamposVacios(calleSalida, ciudadSalida, provinciaSalida,
-				paisSalida, postalSalida, longitudSalida, latitudSalida,
+				paisSalida, postalSalida,
 				calleDestino, ciudadDestino, provinciaDestino, paisDestino,
-				postalDestino, longitudDestino, latitudDestino,
+				postalDestino, 
 				fechaHoraSalida, fechaHoraLLegada, fechaLimite, costeViaje,
 				descripcionViaje, nMaxPlazas, nDispoPlazas)) {
 
@@ -103,6 +104,14 @@ public class RegistrarViajeAction implements Accion {
 				newTrip.setArrivalDate(formatoDeFecha.parse(fechaHoraLLegada));
 				newTrip.setClosingDate(formatoDeFecha.parse(fechaLimite));
 
+				Date fechaActual = new Date();
+				if(newTrip.getArrivalDate().before(fechaActual)
+						||newTrip.getDepartureDate().before(fechaActual)
+						||newTrip.getClosingDate().before(fechaActual)){
+					request.setAttribute("error", "Error al modificar: FECHAS ANTERIORES A LA FECHA ACTUAL");
+					return "FRACASO";
+				}
+				
 				//Comprobamos fechas
 				if(formatoDeFecha.parse(fechaHoraSalida)
 						.after(formatoDeFecha.parse(fechaHoraLLegada))||
@@ -171,10 +180,9 @@ public class RegistrarViajeAction implements Accion {
 
 	private boolean comprobarCamposVacios(String calleSalida,
 			String ciudadSalida, String provinciaSalida, String paisSalida,
-			String postalSalida, String longitudSalida, String latitudSalida,
+			String postalSalida,
 			String calleDestino, String ciudadDestino, String provinciaDestino,
-			String paisDestino, String postalDestino, String longitudDestino,
-			String latitudDestino, String fechaHoraSalida,
+			String paisDestino, String postalDestino,String fechaHoraSalida,
 			String fechaHoraLLegada, String fechaLimite, String costeViaje,
 			String descripcionViaje, String nMaxPlazas, String nDispoPlazas) {
 
@@ -182,14 +190,10 @@ public class RegistrarViajeAction implements Accion {
 				|| provinciaSalida.compareTo("") == 0
 				|| paisSalida.compareTo("") == 0
 				|| postalSalida.compareTo("") == 0
-				//|| longitudSalida.compareTo("") == 0
-				//|| latitudSalida.compareTo("") == 0
 				|| calleDestino.compareTo("") == 0
 				|| provinciaDestino.compareTo("") == 0
 				|| paisDestino.compareTo("") == 0
 				|| postalDestino.compareTo("") == 0
-				//|| longitudDestino.compareTo("") == 0
-				//|| latitudDestino.compareTo("") == 0
 				|| fechaHoraSalida.compareTo("") == 0
 				|| fechaHoraLLegada.compareTo("") == 0
 				|| fechaLimite.compareTo("") == 0

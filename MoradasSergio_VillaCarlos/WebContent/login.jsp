@@ -5,10 +5,8 @@
 <html>
 <head> 
 <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-
 <title>ShareMyTrip - Inicie sesión</title>
 <link rel="stylesheet" href="css/login.css" type="text/css"></link>
-
 </head> 
 <body>
   <form class="form-signin" action="validarse" method="post">

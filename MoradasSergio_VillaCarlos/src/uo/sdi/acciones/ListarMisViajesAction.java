@@ -61,7 +61,6 @@ public class ListarMisViajesAction implements Accion {
 				else
 					viajesExcluido.add(viajeSeat);
 			}
-
 		}
 
 		List<Application> interesadosAux = PersistenceFactory
